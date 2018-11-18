@@ -1,2 +1,1 @@
-# wiki
-Documentaiton de PluXml
+# pluxml-org-wiki

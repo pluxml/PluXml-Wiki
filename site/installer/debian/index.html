@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PluXml staff">
+        <link rel="canonical" href="https://www.pluxml.org/installer/debian/">
+        <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Installer PluXml sous Debian/Ubuntu - Documentation de PluXml</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/custom.css" rel="stylesheet">
+        <link href="../../css/plucss.css" rel="stylesheet">
+        <link href="../../css/plx-common.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+      <nav class="plx-nav">
+        <div class="container">
+          <div class="grid">
+            <div class="col sml-12 med-3">
+              <ul class="menu text-center">
+                <li class="logo"><a href="https://www.pluxml.org" title="PluXml"><img class="float-left" src="../../img/favicon/favicon-32x32.png"><strong>PluXml.org</strong></a></li>
+              </ul>
+            </div>
+            <div class="col sml-12 med-9 lrg-6">
+              <ul class="menu text-center">
+                <li><a href="https://wiki.pluxml.org" title="Documentation">Documentation</a></li>
+                <li><a href="https://ressources.pluxml.org" title="Ressources">Ressources</a></li>
+                <li><a href="https://forum.pluxml.org" title="Forum">Forum</a></li>
+                <li><a href="https://www.pluxml.org/blog" title="Blog">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col sml-hide med-hide lrg-3 lrg-show">
+              <ul class="menu text-right">
+                <li><a href="http://plucss.pluxml.org/" title="PluCSS">PluCSS</a></li>
+                <li><a href="http://visualwizard.pluxml.org/" title="Visual Wizard">Visual Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+
+        <div class="navbar" role="navigation">
+            <div class="container">
+
+                <div class="responsive-menu">
+                	<label for="Menu"></label>
+                	<input type="checkbox" id="Menu">
+                  <ul class="menu vertical expanded sml-show med-hide">
+                      <li class="">
+                        <a class="" href="../installation/">Installer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../developper/developpement/">Développer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/divers-autre/">Divers</a>
+                      </li>
+                  </ul>
+                </div>
+
+                <div class="navbar-collapse collapse sml-show med-show">
+                      <ul class="nav navbar-nav sml-hide med-show">
+                        <li>
+                            <a href="https://wiki.pluxml.org">Documentation de PluXml</a>
+                        </li>
+                      </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/pluxml/installer/debian.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="grid">
+                <div class="col med-2 sml-hide med-show">
+<ul class="menu vertical expanded">
+    <li class="">
+      <a class="" href="../installation/">Installer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../developper/developpement/">Développer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/divers-autre/">Divers</a>
+    </li>
+</ul></div>
+                
+                
+                    <div class="col med-7" role="main">
+
+<h1 id="installer-pluxml-sous-debianubuntu">Installer PluXml sous Debian/Ubuntu</h1>
+<p>PluXml est disponible sous la forme d'un <a href="http://packages.debian.org/pluxml">paquet Debian</a>.</p>
+<h2 id="interet">Intérêt</h2>
+<p>Le paquet Debian de PluXml contient des informations de dépendances, qui permettent d'installer automatiquement tout ce dont PluXml a besoin pour fonctionner, c'est à dire un serveur web avec un interpréteur PHP.</p>
+<p>Le paquet installe les fichiers et répertoires de PluXml avec des permissions appropriées, de façon à ce qu'aucune adaptation ne soit nécessaire après l'installation.</p>
+<p>Ce paquet inclut également une série de questions de configuration, qui permettent de définir les paramètres initiaux du blog : titre, description, compte administrateur...</p>
+<p>Enfin, les mises à jour sont prises en charge par le système de paquets Debian, c'est à dire que lorsqu'une mise à jour est publiée et intégrée à Debian (ce n'est pas instantané, il faut le temps de l'empaqueter, tout de même !), elle est automatiquement disponible pour tous ceux qui ont installé ce paquet.</p>
+<h2 id="installation">Installation</h2>
+<p>En tant que <em>root</em>, lancez simplement la commande suivante :</p>
+<pre><code>apt-get install pluxml
+</code></pre>
+<p>Une série de questions devrait vous être présentée. Ces questions ont une priorité variable : certaines sont de priorité moyenne (questions avec une valeur par défaut pertinente), d'autres de priorité haute (questions sans valeur par défaut pertinente, en l'occurrence une seule question : le mot de passe administrateur de PluXml). Selon le réglage défini pour l'outil de configuration <em>debconf</em>, les questions de priorité moyenne peuvent être omises. Avec certains réglages extrêmes, même les questions de priorité élevée peuvent être omises, ce qui définira un mot de passe vide !</p>
+<p>Si vos réglages de <em>debconf</em> ont eu pour résultat d'omettre des questions, vous pouvez demander de reconfigurer le paquet :</p>
+<pre><code>dpkg-reconfigure pluxml
+</code></pre>
+<p>Si tel est votre cas, il peut être pertinent de modifier de façon permanente les réglages de <em>debconf</em>, de façon à ce qu'il cesse d'omettre des questions de priorité moyenne pour les prochains logiciels que vous installerez :</p>
+<pre><code>dpkg-reconfigure debconf
+</code></pre>
+<h2 id="utilisation">Utilisation</h2>
+<p>Après l'installation, votre instance de PluXml est disponible à l'adresse http://localhost/pluxml, ou http://SERVEUR/pluxml (remplacer <em>SERVEUR</em> par le nom ou l'adresse IP de votre serveur) s'il ne s'agit pas de l'ordinateur sur lequel vous travaillez directement.</p>
+<p>Vous pourrez par la suite définir un hôte virtuel par nom à votre guise, en utilisant simplement comme racine <em>/usr/share/pluxml</em>. Par exemple, avec Apache :</p>
+<pre><code>&lt;VirtualHost *:80&gt;
+    ServerName blog.example.com
+    DocumentRoot /usr/share/pluxml
+&lt;/VirtualHost&gt;
+</code></pre>
+<p>De la même façon, vous pourrez définir des règles de réécriture d'URL, mais cela dépasse le cadre de ce guide d'installation.</p>
+<h2 id="details-de-linstallation">Détails de l'installation</h2>
+<p>Contrairement à une installation habituelle, avec le paquet Debian les fichiers de PluXml sont séparés de façon à respecter la <a href="https://fr.wikipedia.org/wiki/Filesystem_Hierarchy_Standard">FHS</a> :</p>
+<ul>
+<li>les fichiers constituant le code de PluXml sont placés dans <em>/usr/share/pluxml</em> ;</li>
+<li>les fichiers de configuration sont placés dans <em>/etc/pluxml</em> ;</li>
+<li>les fichiers de données de PluXml, par exemple la liste des utilisateurs, ou encore les articles, sont placés dans <em>/var/lib/pluxml</em>.</li>
+</ul>
+<p>Les droits de ces fichiers sont adaptés de façon à minimiser les dégâts qui pourraient résulter d'un piratage par exploitation d'une faille de PluXml, de l'interpréteur PHP ou du serveur web :</p>
+<ul>
+<li>les fichiers constituant le code de PluXml sont accessible en lecture seule par le serveur web ;</li>
+<li>les fichiers de configuration sont par défaut accessibles en lecture seule par le serveur web, mais une question de configuration du paquet permet d'autoriser l'écriture de façon à pouvoir utiliser l'interface web de configuration ;</li>
+<li>les fichiers de données sont accessibles en lecture et en écriture par le serveur web.</li>
+</ul></div>
+                    <div class="col med-3 sml-hide med-show toc"><strong>Table des matières</strong>
+<ul class="menu vertical">
+    <li class="">
+      <a href="#installer-pluxml-sous-debianubuntu">Installer PluXml sous Debian/Ubuntu</a>
+    </li>
+      <ul>
+        <li>
+          <a href="#interet">Intérêt</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#installation">Installation</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#utilisation">Utilisation</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#details-de-linstallation">Détails de l'installation</a>
+        </li>
+
+      </ul>
+</ul></div>
+                
+          </div>
+        </div>
+
+        <footer class="sml-12">
+            <hr>
+            <p>PluXml.org - Blog ou Cms à l'Xml !</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> and <a href="https://plucss.pluxml.org">PluCSS</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+
+    </body>
+</html>

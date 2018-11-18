@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PluXml staff">
+        <link rel="canonical" href="https://www.pluxml.org/installer/nginx/">
+        <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>NGINX, configuration pour PluXml - Documentation de PluXml</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/custom.css" rel="stylesheet">
+        <link href="../../css/plucss.css" rel="stylesheet">
+        <link href="../../css/plx-common.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+      <nav class="plx-nav">
+        <div class="container">
+          <div class="grid">
+            <div class="col sml-12 med-3">
+              <ul class="menu text-center">
+                <li class="logo"><a href="https://www.pluxml.org" title="PluXml"><img class="float-left" src="../../img/favicon/favicon-32x32.png"><strong>PluXml.org</strong></a></li>
+              </ul>
+            </div>
+            <div class="col sml-12 med-9 lrg-6">
+              <ul class="menu text-center">
+                <li><a href="https://wiki.pluxml.org" title="Documentation">Documentation</a></li>
+                <li><a href="https://ressources.pluxml.org" title="Ressources">Ressources</a></li>
+                <li><a href="https://forum.pluxml.org" title="Forum">Forum</a></li>
+                <li><a href="https://www.pluxml.org/blog" title="Blog">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col sml-hide med-hide lrg-3 lrg-show">
+              <ul class="menu text-right">
+                <li><a href="http://plucss.pluxml.org/" title="PluCSS">PluCSS</a></li>
+                <li><a href="http://visualwizard.pluxml.org/" title="Visual Wizard">Visual Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+
+        <div class="navbar" role="navigation">
+            <div class="container">
+
+                <div class="responsive-menu">
+                	<label for="Menu"></label>
+                	<input type="checkbox" id="Menu">
+                  <ul class="menu vertical expanded sml-show med-hide">
+                      <li class="">
+                        <a class="" href="../installation/">Installer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../developper/developpement/">Développer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/divers-autre/">Divers</a>
+                      </li>
+                  </ul>
+                </div>
+
+                <div class="navbar-collapse collapse sml-show med-show">
+                      <ul class="nav navbar-nav sml-hide med-show">
+                        <li>
+                            <a href="https://wiki.pluxml.org">Documentation de PluXml</a>
+                        </li>
+                      </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/pluxml/installer/nginx.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="grid">
+                <div class="col med-2 sml-hide med-show">
+<ul class="menu vertical expanded">
+    <li class="">
+      <a class="" href="../installation/">Installer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../developper/developpement/">Développer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/divers-autre/">Divers</a>
+    </li>
+</ul></div>
+                
+                
+                    <div class="col med-7" role="main">
+
+<h1 id="nginx-configuration-pour-pluxml">NGINX, configuration pour PluXml</h1>
+<h2 id="ou-deposer-la-configuration">Où déposer la configuration</h2>
+<p>Ci-dessous, vous trouverez des exemples de fichiers de configuration pour le serveur web NGINX. Cet exemple rend possible l'utilisation de la réécriture d'url.</p>
+<p>Le fichier doit être placé dans l'un de ces deux emplacements :
+<em> /etc/nginx/conf.d/
+</em> /etc/nginx/sites-enabled/</p>
+<p>Vérifiez néanmoins que le fichier <em>/etc/nginx/nginx.conf</em> contient bien les lignes <em>include /etc/nginx/conf.d/*.conf;</em> ou <em>include /etc/nginx/sites-enabled/*;</em></p>
+<p><a href="http://nginx.org/en/docs/http/ngx_http_core_module.html">Voir la documentation Ngin</a></p>
+<h2 id="cas-1-tout-en-http">Cas 1 : Tout en HTTP</h2>
+<pre><code>server {
+    listen 80;
+    server_name nom_du_site;
+
+    root    /var/www/PluXml;
+    index  index.php;
+
+    # client_header_buffer_size 1k;
+    # client_max_body_size 1m;
+    client_max_body_size 8m; # évite une erreur 413 si on upload un fichier
+
+    ## BASE
+
+    # Règle principale
+    location / {
+        try_files $uri $uri/ @handler;
+    }
+
+    # Réécriture vers l'index
+    location @handler {
+        rewrite ^/(.*)$ /index.php?^$1 last;
+    }
+
+    # Parseur PHP
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        # NOTE: Utilisez "cgi.fix_pathinfo = 0;" dans php.ini
+        include fastcgi.conf;
+        fastcgi_index index.php;
+
+        # Utilisez PHP5 ou PHP7, mais pas les deux
+        # fastcgi_pass unix:/run/php5-fpm.sock;
+        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+        # Sous Alpinelinux v3.8, utiliser le socket comme suit :
+        # fastcgi_pass unix:/run/php-fpm7/php-fpm.sock;
+    }
+
+    ## REDIRECTIONS
+
+    # Flux RSS
+    location /feed/ {
+        rewrite ^/feed\/(.*)$ /feed.php?^$1 last;
+    }
+
+    # Sitemap
+    location = /sitemap.xml {
+        rewrite .* /sitemap.php;
+    }
+
+    ## PROTECTION REPERTOIRES
+
+    location ~ /(version|update|readme|data/configuration) {
+        deny all;
+    }
+
+    ## CACHING
+    # https://www.theodo.fr/blog/2016/06/improve-the-performance-of-your-webapp-configure-nginx-to-cache/
+    # http://www.supinfo.com/articles/single/2843-implementer-cache-navigateur-avec-nginx
+
+    # cache-control
+    location /data/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /core/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /plugins/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /themes/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+
+}
+</code></pre>
+<h2 id="cas-2-site-http-et-administration-https">Cas 2 : Site HTTP et administration HTTPS</h2>
+<p>C'est un cas hybride que vous pouvez utiliser si vous n'avez pas de bonnes performances en HTTPS mais que vous voulez tout de même sécuriser l'administration.</p>
+<pre><code># Paramètrage du socket PHP
+upstream PHP_SOCKET {
+    # Utilisez PHP5 ou PHP7, mais pas les deux
+    #server unix unix:/run/php5-fpm.sock;
+    server unix:/run/php/php7.0-fpm.sock;
+    # Sous Alpinelinux v3.8, utiliser le socket comme suit :
+    # fastcgi_pass unix:/run/php-fpm7/php-fpm.sock;
+}
+
+server {
+    listen 80;
+    server_name nom_du_site;
+
+    root    /var/www/PluXml;
+    index  index.php;
+
+    ## BASE
+
+    # Règle principale
+    location / {
+        try_files $uri $uri/ @handler;
+    }
+
+    # Réécriture vers l'index
+    location @handler {
+        rewrite ^/(.*)$ /index.php?^$1 last;
+    }
+
+    # Parseur PHP
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        # NOTE: Utilisez "cgi.fix_pathinfo = 0;" dans php.ini
+        include fastcgi.conf;
+        fastcgi_index index.php;
+        fastcgi_pass PHP_SOCKET; # This variable is set on top
+    }
+
+    ## REDIRECTIONS
+
+    # L'admin est en HTTPS
+    location /core/admin {
+        return 301 https://$host$request_uri;
+    }
+
+    # Flux RSS
+    location /feed/ {
+        rewrite ^/feed\/(.*)$ /feed.php?^$1 last;
+    }
+
+    # Sitemap
+    location = /sitemap.xml {
+        rewrite .* /sitemap.php;
+    }
+
+    ## PROTECTION REPERTOIRES
+
+    location ~ /(version|update|readme|data/configuration) {
+        deny all;
+    }
+
+    ## CACHING
+    # https://www.theodo.fr/blog/2016/06/improve-the-performance-of-your-webapp-configure-nginx-to-cache/
+    # http://www.supinfo.com/articles/single/2843-implementer-cache-navigateur-avec-nginx
+
+    # cache-control
+    location /data/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /core/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /plugins/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /themes/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+}
+
+server {
+    listen 443 ssl http2;
+    server_name nom_du_site;
+
+    ssl_certificate /path/to/certificate;
+    ssl_certificate_key /path/to/key;
+
+    root   /var/www/PluXml;
+    index  index.php;
+
+    # client_header_buffer_size 1k;
+    # client_max_body_size 1m;
+    client_max_body_size 8m; # évite une erreur 413 si on upload un fichier
+
+    # Conserver ces URL en HTTPS
+    location /core/    { try_files $uri $uri/ @handler; }
+    location /plugins/ { try_files $uri @handler; }
+    location /data/    { try_files $uri @handler; }
+    location /themes/  { try_files $uri @handler; }
+    location /preview  { try_files $uri @handler; }
+
+    # Redirection des autres URL vers HTTP
+    location / {
+        return 302 http://$host$request_uri;
+    }
+
+    # Réécriture vers l'index
+    location @handler {
+        rewrite ^/(.*)$ /index.php?^$1 last;
+    }
+
+    # Parseur PHP
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        include       fastcgi.conf;
+        fastcgi_index index.php;
+        fastcgi_pass  php_socket;
+    }
+}
+</code></pre>
+<h2 id="cas-3-tout-en-https">Cas 3 : Tout en HTTPS</h2>
+<pre><code>server {
+    listen 443 ssl http2;
+    server_name nom_du_site;
+
+    ssl_certificate /path/to/certificate;
+    ssl_certificate_key /path/to/key;
+
+    root    /var/www/PluXml;
+    index  index.php index.html;
+
+    # client_header_buffer_size 1k;
+    # client_max_body_size 1m;
+    client_max_body_size 8m; # évite une erreur 413 si on upload un fichier
+
+    ## BASE
+
+    # Règle principale
+    location / {
+        try_files $uri $uri/ @handler;
+    }
+
+    # Réécriture vers l'index
+    location @handler {
+        rewrite ^/(.*)$ /index.php?^$1 last;
+    }
+
+    # Parseur PHP
+    location ~ \.php$ {
+        fastcgi_split_path_info ^(.+\.php)(/.+)$;
+        # NOTE: Utilisez "cgi.fix_pathinfo = 0;" dans php.ini
+        include fastcgi.conf;
+        fastcgi_index index.php;
+
+        # Utilisez PHP5 ou PHP7, mais pas les deux
+        # fastcgi_pass unix:/run/php5-fpm.sock;
+        fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+        # Sous Alpinelinux v3.8, utiliser le socket comme suit :
+        # fastcgi_pass unix:/run/php-fpm7/php-fpm.sock;
+    }
+
+    ## REDIRECTIONS
+
+    # Flux RSS
+    location /feed/ {
+        rewrite ^/feed\/(.*)$ /feed.php?^$1 last;
+    }
+
+    # Sitemap
+    location = /sitemap.xml {
+        rewrite .* /sitemap.php;
+    }
+
+    ## PROTECTION REPERTOIRES
+
+    location ~ /(version|update|readme|data/configuration) {
+        deny all;
+    }
+
+    ## CACHING
+    # https://www.theodo.fr/blog/2016/06/improve-the-performance-of-your-webapp-configure-nginx-to-cache/
+    # http://www.supinfo.com/articles/single/2843-implementer-cache-navigateur-avec-nginx
+
+    # cache-control
+    location /data/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /core/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /plugins/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+    location /themes/ {
+    add_header Cache-Control public;
+    expires 12h;
+    }
+}
+
+server {
+    listen 80;
+    server_name nom_du_site;
+
+    # Tout doit être en HTTPS
+    return 301 https://$host$request_uri;
+}
+</code></pre>
+<h2 id="notes-sur-les-fichiers-de-configuration">Notes sur les fichiers de configuration</h2>
+<p><strong>Gestion du HTTP/2</strong></p>
+<p>Les configurations proposée ci-dessous pour HTTPS utilisent HTTP/2 (cas 2 et cas 3). Cette nouvelle version du protocole HTTP est disponible à partir de NGINX 1.9.5. Si vous utilisez une version plus ancienne, supprimez <em>http2</em> dans la ligne <em>listen 443 ssl http2;</em> sinon NGINX ne pourra pas démarrer.</p>
+<p><strong>Attention</strong>, pour fonctionner il faut remplacer les valeurs des variables sur les lignes suivantes :</p>
+<ul>
+<li><em>server_name nom_du_site;</em> : "nom_du_site" doit être remplacé par le DNS ou l'adresse IP de votre serveur, vous pouvez également le remplacer par <em>localhost</em> si vous lancez le serveur web en local sur votre machine. Exemple : <em>server_name pluxml.org www.pluxml.org 5.123.123.321;</em></li>
+<li><em>root /var/www/PluXml;</em>  : modifier le chemin d'accès root <em>/var/www/PluXml</em> si l'archive Zip de PluXml a été décompréssée dans un répertoire différent.</li>
+<li>Si vous utilisez php5, décommentez la ligne <em>fastcgi_pass unix:/run/php5-fpm.sock;</em> (en supprimant le "#" devant la ligne) et commentez la ligne <em>fastcgi_pass unix:/run/php/php7.0-fpm.sock;</em> (en ajoutant un "#" devant la ligne). Inversement si vous utilisez php7.</li>
+</ul></div>
+                    <div class="col med-3 sml-hide med-show toc"><strong>Table des matières</strong>
+<ul class="menu vertical">
+    <li class="">
+      <a href="#nginx-configuration-pour-pluxml">NGINX, configuration pour PluXml</a>
+    </li>
+      <ul>
+        <li>
+          <a href="#ou-deposer-la-configuration">Où déposer la configuration</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#cas-1-tout-en-http">Cas 1 : Tout en HTTP</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#cas-2-site-http-et-administration-https">Cas 2 : Site HTTP et administration HTTPS</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#cas-3-tout-en-https">Cas 3 : Tout en HTTPS</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#notes-sur-les-fichiers-de-configuration">Notes sur les fichiers de configuration</a>
+        </li>
+
+      </ul>
+</ul></div>
+                
+          </div>
+        </div>
+
+        <footer class="sml-12">
+            <hr>
+            <p>PluXml.org - Blog ou Cms à l'Xml !</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> and <a href="https://plucss.pluxml.org">PluCSS</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+
+    </body>
+</html>

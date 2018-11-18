@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PluXml staff">
+        <link rel="canonical" href="https://www.pluxml.org/developper/developpement/">
+        <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Développer - Documentation de PluXml</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/custom.css" rel="stylesheet">
+        <link href="../../css/plucss.css" rel="stylesheet">
+        <link href="../../css/plx-common.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+      <nav class="plx-nav">
+        <div class="container">
+          <div class="grid">
+            <div class="col sml-12 med-3">
+              <ul class="menu text-center">
+                <li class="logo"><a href="https://www.pluxml.org" title="PluXml"><img class="float-left" src="../../img/favicon/favicon-32x32.png"><strong>PluXml.org</strong></a></li>
+              </ul>
+            </div>
+            <div class="col sml-12 med-9 lrg-6">
+              <ul class="menu text-center">
+                <li><a href="https://wiki.pluxml.org" title="Documentation">Documentation</a></li>
+                <li><a href="https://ressources.pluxml.org" title="Ressources">Ressources</a></li>
+                <li><a href="https://forum.pluxml.org" title="Forum">Forum</a></li>
+                <li><a href="https://www.pluxml.org/blog" title="Blog">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col sml-hide med-hide lrg-3 lrg-show">
+              <ul class="menu text-right">
+                <li><a href="http://plucss.pluxml.org/" title="PluCSS">PluCSS</a></li>
+                <li><a href="http://visualwizard.pluxml.org/" title="Visual Wizard">Visual Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+
+        <div class="navbar" role="navigation">
+            <div class="container">
+
+                <div class="responsive-menu">
+                	<label for="Menu"></label>
+                	<input type="checkbox" id="Menu">
+                  <ul class="menu vertical expanded sml-show med-hide">
+                      <li class="">
+                        <a class="" href="../../installer/installation/">Installer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+                      </li>
+                      <li class="">
+                        <a class="active" href="./">Développer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/divers-autre/">Divers</a>
+                      </li>
+                  </ul>
+                </div>
+
+                <div class="navbar-collapse collapse sml-show med-show">
+                      <ul class="nav navbar-nav sml-hide med-show">
+                        <li>
+                            <a href="https://wiki.pluxml.org">Documentation de PluXml</a>
+                        </li>
+                      </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/pluxml/developper/developpement.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="grid">
+                <div class="col med-2 sml-hide med-show">
+<ul class="menu vertical expanded">
+    <li class="">
+      <a class="" href="../../installer/installation/">Installer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+    </li>
+    <li class="">
+      <a class="active" href="./">Développer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/divers-autre/">Divers</a>
+    </li>
+</ul></div>
+                
+                
+                    <div class="col med-7" role="main">
+
+<h1 id="creer-un-template">Créer un template</h1>
+<p>Pour créer un template, éditez un nouveau fichier php dans le dossier de votre thème Le nom d'un template est normalisé :</p>
+<ul>
+<li>Template pour la page d'accueil : home-xxx.php</li>
+<li>Template pour un article : article-xxx.php</li>
+<li>Template pour une categorie : categorie-xxx.php</li>
+<li>Template pour une page statique : static-xxx.php</li>
+</ul>
+<p>Un fichier template doit toujours commencer par home-, article-, categorie- ou static- et se terminer par l'extension .php. Remplacez xxxx par le texte de votre choix pour identifier facilement vos templates.</p>
+<p>Pour créer facilement un template vous pouvez dupliquer les fichiers correspondants home.php, article.php, categorie.php ou static.php en leur donnant un nom respectant les normes de nommage mentionnées précédemment.</p>
+<h2 id="fonction-templatecss">fonction templateCss()</h2>
+<p>Cette fonction permet de charger automatiquement un fichier .css spécifique à votre template. Vous  pouvez ainsi donner un style différent à votre thème dès que le template est appelé. Le fichier .css associé à un template doit être stocké dans le dossier thème de votre PluXml et porter le même nom que le template, mais avec l'extension .css. Ainsi si votre template s’appelle static-exemple.php votre fichier .css devra s’appeler static-exemple.css.</p>
+<p>Assurez-vous que le code ci-dessous existe entre les balises \&lt;head> ... \&lt;/head> de votre fichier header.php. C'est cette instruction qui permet de charger automatiquement le fichier .css associé à un template, lorsque celui-ci est utilisé.</p>
+<pre><code>&lt;?php $plxShow-&gt;templaceCss(); ?&gt;
+</code></pre>
+<h1 id="creer-un-theme">Créer un thème</h1>
+<p>Documentation de plxShow : <a href="../plxshow/">cliquer ici</a>.</p>
+<h2 id="description-des-fichiers-composant-un-theme">Description des fichiers composant un thème</h2>
+<p>Chaque thème est composé de plusieurs fichiers utiles au design et au bon fonctionnement de celui-ci. Voici la liste des fichiers présents dans un thème (pour une meilleure compréhension, nous nous baserons sur le thème par défaut de PluXml).</p>
+<p>Liste des fichiers situés à la racine de votre thème (par ordre alphabétique) :</p>
+<ul>
+<li>archives.php : gère les pages des archives</li>
+<li>article.php : gère les articles avec sidebar</li>
+<li>article-full-width.php : template qui gère les articles en pleine page (sans sidebar)</li>
+<li>categorie.php : gère l’affichage des articles en fonction d’une catégorie</li>
+<li>categorie-full-width.php : template qui gère les articles d’une catégorie en pleine page (sans
+sidebar)</li>
+<li>commentaires.php : gère la partie commentaires des articles</li>
+<li>erreur.php : gère la page d’erreur</li>
+<li>footer.php : gère le pied de page de votre site</li>
+<li>header.php : gère l’entête de votre site</li>
+<li>home.php : gère la page d’accueil</li>
+<li>index.html : n’a aucune utilité pour le thème (présent par mesure de sécurité)</li>
+<li>infos.xml : regroupe les informations affichées sur la page Thèmes de l’administration</li>
+<li>preview.png : image miniature affichant l’aspect général du thème. Cette image est utilisée dans l’administration, menu Thèmes pour prévisualiser le thème</li>
+<li>sidebar.php : gère la barre latérale de votre site</li>
+<li>static.php : gère les pages statiques avec une sidebar</li>
+<li>static-full-width.php : template qui gère les pages statiques en pleine page (sans sidebar)</li>
+<li>tag.php : gère l’affichage des articles en fonction d’un tag</li>
+</ul>
+<p>Votre thème contient également plusieurs dossiers importants :</p>
+<ul>
+<li>css/ : contient les feuilles de style utilisées pour l’affichage du thème<ul>
+<li>Le thème par défaut s’appuie sur le framework css PluCSS développé par l’équipe de PluXml disponible à cette adresse : http://plucss.pluxml.org/. Il a pour objectif de faciliter et d’unifier l’utilisation du css pour homogénéiser le développement des
+thèmes en se basant sur une même syntaxe de référence</li>
+<li>Fichier plucss.css : framework css PluCSS</li>
+<li>Fichier theme.css : contient la personnalisation propre au thème</li>
+</ul>
+</li>
+<li>img/ : contient les images utilisées dans votre thème (par exemple le favicon ou l’image présente en face des commentaires)</li>
+<li>lang/ : contient les fichiers prenant en charge les différentes langues gérées par le thème (français, anglais, espagnol, ...)</li>
+</ul>
+<h2 id="les-modes-daffichage">Les modes d’affichage</h2>
+<p>PluXml dispose de différents modes d’affichage, qui permettent d’afficher un contenu en tenant compte d’un contexte particulier. Par exemple, lorsque vous cliquez sur une catégorie dans le menu, vous entrez dans le mode d’affichage « Catégorie », qui va alors vous afficher les articles relatifs à la catégorie active.</p>
+<p>Les différents modes d’affichage sont :</p>
+<ul>
+<li>home : gère la page d’accueil de votre site (dans votre thème : « home.php »),</li>
+<li>categorie : gère l’affichage des articles par catégories (dans votre thème : « categorie.php »),</li>
+<li>tag : gère l’affichage des articles par tags (dans votre thème : « tags.php »),</li>
+<li>archive : gère l’affichage des articles par archives (dans votre thème « archives.php »)</li>
+<li>articles : gère le contenu des articles (dans votre thème « article.php »),</li>
+<li>statique : gère le contenu des pages statiques (dans votre thème « static.php »),</li>
+<li>erreur : gère la page d’erreur de votre site (dans votre thème « erreur.php »)</li>
+</ul>
+<h2 id="les-themes-adaptes-aux-mobiles">Les thèmes adaptés aux mobiles</h2>
+<p>Pour faciliter le développement de thème compatibilité avec les smartphones ou tablettes, nous vous conseillons d’utiliser le framework css PluCSS.</p>
+<p>PluCSS est un Framework CSS dédié à PluXml. Cet outil est Full CSS (sans JavaScript), pensé pour le mobile (Mobile First), et s'adapte à toutes les résolutions d'écran (Responsive Design). Il est supporté par les principaux navigateurs modernes (Chrome, Firefox, IE9+, Opera, Safari) et valide W3C.</p>
+<p>PluCSS est disponible à cette adresse : http://plucss.pluxml.org/</p>
+<h1 id="creer-un-plugin">Créer un plugin</h1>
+<h2 id="contenu-du-dossier-dun-plugin">Contenu du dossier d’un plugin</h2>
+<p>Les plugins de PluXml sont installés dans le dossier /plugins. Chaque dossier des plugins doit respecter un nommage simple : pas d'espace, pas de caractères spéciaux et accentués. La constante PLX_PLUGINS permet de connaître le dossier de stockage des plugins.</p>
+<p>Un plugin est composé de plusieurs fichiers : certains sont obligatoires, d’autres optionnels.</p>
+<table>
+<thead>
+<tr>
+<th>Nom du fichier</th>
+<th>Description</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>admin.php</td>
+<td>Fichier utilisé dans l’administration de PluXml. Contient l’interface pour les utilisateurs accédant à l’administration de PluXml pour utiliser le plugin.</td>
+<td>optionnel</td>
+</tr>
+<tr>
+<td>config.php</td>
+<td>Fichier utilisé dans l’administration de PluXml. Contient l’interface pour les administrateurs pour configurer et paramétrer le plugin.</td>
+<td>optionnel</td>
+</tr>
+<tr>
+<td>icon.png</td>
+<td>Image identifiant le plugin et affichée sur l’écran de gestion des plugins (Menu Paramètres &gt; Plugins). Formats autorisés : jpg, gif, png. Taille de l’image : 48 x 48 pixels</td>
+<td>optionnel</td>
+</tr>
+<tr>
+<td>infos.xml</td>
+<td>Fichier xml contenant les informations sur le plugin : Titre, Auteur, N° de version, Date du plugin, Site de l’auteur, Description du plugin</td>
+<td>obligatoire</td>
+</tr>
+<tr>
+<td>parameters.xml</td>
+<td>Fichier xml contenant le paramétrage servant au fonctionnement du plugin. Depuis la version 5.1.7 de PluXml, le fichier parameters.xml est stocké dans le dossier data/configuration/plugins/</td>
+<td>optionnel</td>
+</tr>
+<tr>
+<td>plugin.php</td>
+<td>Fichier core du plugin. Le nom du fichier doit être le même que celui du répertoire dans lequel il est stocké, écrit avec la même orthographe en respectant les majuscules et minuscules.</td>
+<td>obligatoire</td>
+</tr>
+</tbody>
+</table>
+<h2 id="squelette-dun-plugin">Squelette d’un plugin</h2>
+<p>Développer un plugin nécessite de coder le fichier plugin.php en respectant un squelette et en utilisant diverses fonctions mises à disposition du développeur afin d’interagir avec PluXml et ses utilisateurs.</p>
+<p>Prenons l’exemple d’un plugin test composé du fichier test.php</p>
+<pre><code>&lt;?php
+  class test extends plxPlugin {
+    public function __construct($default_lang) {
+      # appel du constructeur de la classe plxPlugin (obligatoire)
+      parent::__construct($default_lang);
+    }
+  }
+?&gt;
+</code></pre>
+<p>Un plugin est une classe portant le même nom que le dossier dans lequel il est stocké. Cette classe est dérivée de la classe plxPlugin propre à PluXml et au fonctionnement des plugins. Le nom de la classe doit être identique au nom du dossier du plugin : même orthographe en respectant les majuscules et les minuscules.</p>
+<p>Si le plugin est stocké dans un dossier s’appelant test, la classe du plugin devra porter également le nom test.</p>
+<pre><code>class test extends plxPlugin { }
+</code></pre>
+<p>Le constructeur de la classe <em>test</em> est obligatoire.</p>
+<pre><code>public function __construct($default_lang) {
+    # appel du constructeur de la classe plxPlugin (obligatoire)
+    parent::__construct($default_lang);
+}
+</code></pre>
+<p>L’appel au constructeur de la classe mère de plxPlugin est obligatoire.</p>
+<pre><code>parent::__construct($default_lang);
+</code></pre>
+<p>Le paramètre $default_lang contient la langue par défaut utilisée par PluXml. Il servira à charger le fichier de langue du plugin s’il existe.</p>
+<h2 id="code-a-executer-a-lactivation-dun-plugin">Code à exécuter à l’activation d’un plugin</h2>
+<p>Lors de l’activation d’un plugin il est possible d’exécuter du code spécifique. Si la méthode <em>OnActivate</em> existe dans la classe du plugin, elle sera appelée lors de l’activation du plugin. Cette méthode n’est pas obligatoire.</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+        }
+        public function OnActivate() {
+            # code à exécuter à l’activation du plugin
+        }
+    }
+?&gt;
+</code></pre>
+<h2 id="code-a-executer-a-la-desactivation-dun-plugin">Code à exécuter à la désactivation d’un plugin</h2>
+<p>Lors de la désactivation d’un plugin il est possible d’exécuter du code spécifique. Si la méthode <em>OnDeactivate</em> existe dans la classe du plugin, elle sera appelée lors de la désactivation du plugin. Cette méthode n’est pas obligatoire.</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+        }
+        public function OnDeactivate() {
+            # code à exécuter à la désactivation du plugin
+        }
+    }
+?&gt;
+</code></pre>
+<h2 id="code-a-executer-a-la-mise-a-jour-dun-plugin">Code à exécuter à la mise à jour d’un plugin</h2>
+<p>Pour exécuter du code spécifique lors de l’installation d’une nouvelle version d’un plugin, placez dans le dossier du plugin un fichier texte <em>update</em> (exemple : <em>/plugins/monplugin/update</em>) contenant la ligne ci-dessous</p>
+<pre><code>&lt;?php exit; ?&gt;
+</code></pre>
+<p>Dans le fichier principal du plugin créez une méthode <em>onUpdate</em>. Cette méthode sera exécutée par le moteur des plugins de PluXml si la présence d’un fichier update est détectée.</p>
+<p>Une fois la méthode <em>onUpdate</em> exécutée, le fichier update est supprimé (pour éviter que <em>onUpdate</em> soit exécutée à chaque chargement du plugin)</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+        }
+        public function OnUpdate() {
+            # code à exécuter à la mise à jour du plugin
+        }
+    }
+?&gt;
+</code></pre>
+<h2 id="les-hooks">Les hooks</h2>
+<h3 id="quest-ce-quun-hook">Qu'est-ce qu'un hook ?</h3>
+<p>Le moteur de plugin de PluXml repose sur un système de hooks (« crochets » en français) permettant d’injecter du code php, html, javascript dans celui de PluXml.</p>
+<p>Ces parties sont identifiables dans le code de PluXml par l'appel de la méthode <em>callHook</em>.</p>
+<p>Exemple 1 : dans les fichiers core</p>
+<pre><code>eval($this-&gt;plxPlugins-&gt;callHook('plxMotorConstruct'));
+</code></pre>
+<p>Exemple 2 : dans les fichiers core</p>
+<pre><code>if(eval($this-&gt;plxMotor-&gt;plxPlugins-&gt;callHook('plxShowPagination'))) return;
+</code></pre>
+<p>Exemple 3 : dans les fichiers de l'administration</p>
+<pre><code>&lt;?php eval($plxAdmin-&gt;plxPlugins-&gt;callHook('AdminTopEndHead')) ?&gt;
+</code></pre>
+<p>Exemple 4 : dans les fichiers thèmes</p>
+<pre><code>&lt;?php eval($plxShow-&gt;callHook('PluginTest'))) ?&gt;
+</code></pre>
+<h3 id="appel-des-hooks">Appel des hooks</h3>
+<p>C’est donc la méthode callHook de la classe plxPlugins (fichier core/lib/class.plx.plugins) qui sert à définir les endroits du code de PluXml qui pourront être « hookés ».</p>
+<p>La méthode callHook accepte 2 paramètres :</p>
+<ul>
+<li>le nom du hook appelé (obligatoire).</li>
+<li>un ou plusieurs paramètres passés à la fonction du hook appelé (option)</li>
+</ul>
+<p>Le nom des hooks est normalisé de la façon suivante :</p>
+<pre><code>&lt;nom du fichier/classe&gt;&lt;nom de la méthode&gt;&lt;nom de l’emplacement&gt;
+</code></pre>
+<p><strong>Exemples :</strong></p>
+<p>plxShowPagination</p>
+<pre><code>Fichier : core/lib/class.plx.show.php
+Class : plxShow
+Méthode : pagination()
+</code></pre>
+<p>plxMotorConstruct</p>
+<pre><code>Fichier : core/lib/class.plx.motor.php
+Class : plxMotor
+Méthode : __construct()
+</code></pre>
+<p>plxAdminEditUsersUpdate</p>
+<pre><code>Fichier : core/lib/class.plx.admin.php
+Class : plxAdmin
+Méthode : editUsers()
+Emplacement : Update, partie de mise à jour des utilisateurs
+</code></pre>
+<p>AdminTopEndHead</p>
+<pre><code>Fichier : core/admin/top.php
+Méthode : Header du fichier (balises &lt;/head&gt;)
+</code></pre>
+<h3 id="liste-des-hooks">Liste des hooks</h3>
+<p>Cette liste peut être modifiée et complétée en fonction des évolutions de PluXml.</p>
+<p>/core/admin/article.php</p>
+<pre><code>AdminArticleContent
+AdminArticleFoot
+AdminArticleInitData
+AdminArticleParseData
+AdminArticlePostData
+AdminArticlePrepend
+AdminArticlePreview
+AdminArticleSidebar
+AdminArticleTop
+</code></pre>
+<p>/core/admin/auth.php</p>
+<pre><code>AdminAuthPrepend
+AdminAuthEndHead
+AdminAuthTop
+AdminAuth
+AdminAuthEndBody
+</code></pre>
+<p>/core/admin/categorie.php</p>
+<pre><code>AdminCategoryPrepend
+AdminCategoryTop&gt;
+AdminCategory
+AdminCategoryFoot
+</code></pre>
+<p>/core/admin/categories.php</p>
+<pre><code>AdminCategoriesPrepend
+AdminCategoriesTop
+AdminCategoriesFoot
+</code></pre>
+<p>/core/admin/comment.php</p>
+<pre><code>AdminCommentPrepend
+AdminCommentTop
+AdminComment
+AdminCommentFoot
+</code></pre>
+<p>/core/admin/comments.php</p>
+<pre><code>AdminCommentsPrepend
+AdminCommentsTop
+AdminCommentsPagination
+AdminCommentsFoot/core/admin/comment_new.php
+AdminCommentNewPrepend
+AdminCommentNewTop
+AdminCommentNew
+AdminCommentNewList
+AdminCommentNewFoot
+</code></pre>
+<p>/core/admin/foot.php</p>
+<pre><code>AdminFootEndBody
+</code></pre>
+<p>/core/admin/index.php</p>
+<pre><code>AdminIndexPrepend
+AdminIndexTop
+AdminIndexPagination
+AdminIndexFoot
+</code></pre>
+<p>/core/admin/medias.php</p>
+<pre><code>AdminMediasPrepend
+AdminMediasTop
+AdminMediasFoot
+AdminMediasUpload
+</code></pre>
+<p>/core/admin/parametres_affichage.php</p>
+<pre><code>AdminSettingsDisplayTop
+AdminSettingsDisplay
+AdminSettingsDisplayFoot
+</code></pre>
+<p>/core/admin/parametres_avances.php</p>
+<pre><code>AdminSettingsAdvancedTop
+AdminSettingsAdvanced
+AdminSettingsAdvancedFoot
+</code></pre>
+<p>/core/admin/parametres_base.php</p>
+<pre><code>AdminSettingsBaseTop
+AdminSettingsBase
+AdminSettingsBaseFoot
+</code></pre>
+<p>/core/admin/parametres_edittpl.php</p>
+<pre><code>AdminSettingsEdittplTop
+AdminSettingsEdittpl
+AdminSettingsEdittplFoot
+</code></pre>
+<p>/core/admin/parametres_infos.php</p>
+<pre><code>AdminSettingsInfos
+</code></pre>
+<p>/core/admin/parametres_plugins.php</p>
+<pre><code>AdminSettingsPluginsTop
+AdminSettingsPluginsFoot
+</code></pre>
+<p>/core/admin/parametres_themes.php</p>
+<pre><code>AdminThemesDisplay
+AdminThemesDisplayFoot
+AdminThemesDisplayTop
+</code></pre>
+<p>/core/admin/parametres_users.php</p>
+<pre><code>AdminSettingsUsersTop
+AdminSettingsUsersFoot
+</code></pre>
+<p>/core/admin/prepend.php</p>
+<pre><code>AdminPrepend
+</code></pre>
+<p>/core/admin/profil.php</p>
+<pre><code>AdminProfilPrepend
+AdminProfilTop
+AdminProfil
+AdminProfilFoot
+</code></pre>
+<p>/core/admin/statique.php</p>
+<pre><code>AdminStaticPrepend
+AdminStaticTop
+AdminStatic
+AdminStaticFoot
+</code></pre>
+<p>/core/admin/statiques.php</p>
+<pre><code>AdminStaticsPrepend
+AdminStaticsTop
+AdminStaticsFoot
+</code></pre>
+<p>/core/admin/top.php</p>
+<pre><code>AdminTopEndHead
+AdminTopMenus
+AdminTopBottom
+</code></pre>
+<p>/core/admin/user.php</p>
+<pre><code>AdminUserPrepend
+AdminUserTop
+AdminUser
+AdminUserFoot
+</code></pre>
+<p>/core/lib/class.plx.admin.php</p>
+<pre><code>plxAdminConstruct
+plxAdminEditConfiguration
+plxAdminHtaccess
+plxAdminEditProfil *
+plxAdminEditProfilXml
+plxAdminEditUsersUpdate
+plxAdminEditUsersXml
+plxAdminEditUser
+plxAdminEditCategoriesNew
+plxAdminEditCategoriesUpdate
+plxAdminEditCategoriesXml
+plxAdminEditCategorie
+plxAdminEditStatiquesUpdate
+plxAdminEditStatiquesXml
+plxAdminEditStatique
+plxAdminEditArticle *
+plxAdminEditArticleXml
+plxAdminDelArticle */core/lib/class.plxfeed.php
+plxFeedConstruct
+plxFeedPreChauffageBegin *
+plxFeedPreChauffageEnd
+plxFeedDemarrageBegin *
+plxFeedDemarrageEnd
+plxFeedRssArticlesXml
+plxFeedRssCommentsXml
+plxFeedAdminCommentsXml
+</code></pre>
+<p>/core/lib/class.plx.motor.php</p>
+<pre><code>plxMotorConstruct
+plxMotorPreChauffageBegin *
+plxMotorPreChauffageEnd
+plxMotorDemarrageBegin *
+plxMotorDemarrageEnd
+plxMotorDemarrageNewCommentaire
+plxMotorDemarrageCommentSessionMessage
+plxMotorGetCategories
+plxMotorGetStatiques
+plxMotorGetUsers
+plxMotorParseArticle
+plxMotorParseCommentaire
+plxMotorRedir301
+plxMotorNewCommentaire *
+plxMotorAddCommentaire *
+plxMotorAddCommentaireXml
+plxMotorSendDownload *
+</code></pre>
+<p>/core/lib/class.plx.show.php</p>
+<pre><code>plxShowConstruct
+plxShowPageTitle *
+plxShowMeta *
+plxShowLastCatList *
+plxShowArtTags *
+plxShowArtFeed *
+plxShowLastArtList *
+plxShowComFeed *
+plxShowLastComList *
+plxShowStaticListBegin *
+plxShowStaticListEnd *
+plxShowStaticContentBegin*
+plxShowStaticContent
+plxShowStaticInclude *
+plxShowPagination *
+plxShowTagList *
+plxShowArchList *plxShowPageBlog *
+plxShowTagFeed *
+plxShowTemplateCss *
+plxShowCapchaQ *
+plxShowCapchaR *
+</code></pre>
+<p>/index.php</p>
+<pre><code>Index
+IndexBegin
+IndexEnd
+</code></pre>
+<p>/sitemap.php</p>
+<pre><code>SitemapStatics
+SitemapCategories
+SitemapArticles
+SitemapBegin
+SitemapEnd
+</code></pre>
+<p>/feed.php</p>
+<pre><code>FeedBegin
+FeedEnd
+</code></pre>
+<p>Hooks des thèmes</p>
+<pre><code>ThemeEndHead
+ThemeEndBody
+</code></pre>
+<p>* Hooks acceptant une valeur de retour permettant d’interrompre l’exécution du code suivant l’appel du hook. Voir chapitre « Interrompre une fonction de PluXml ».</p>
+<h2 id="creation-dun-hook">Création d’un hook</h2>
+<h3 id="ajouter-un-hook">Ajouter un hook</h3>
+<p>L’ajout d’un hook se fait par l’instruction</p>
+<pre><code>$this-&gt;addHook
+</code></pre>
+<p>Exemple :</p>
+<pre><code>$this-&gt;addHook('AdminTopEndHead', 'AdminTopEndHead');
+</code></pre>
+<ul>
+<li>1er paramètre : nom du hook tel qu’il est défini dans la liste des hooks disponibles.</li>
+<li>2ième paramètre : nom de la méthode à exécuter lorsque le hook est appelé. Cette méthode fait partie de la classe du plugin.</li>
+</ul>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # Appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # Déclaration des hooks
+            $this-&gt;addHook('AdminTopEndHead', 'AdminTopEndHead');
+        }
+        public function AdminTopHead() {
+            echo '&lt;script src="'.PLX_PLUGINS.'test/test.js"&gt;&lt;/script&gt;';
+        }
+    }
+?&gt;
+</code></pre>
+<p>Dans cet exemple, le hook va ajouter dans le fichier <em>core/admin/top.php</em> le code suivant avant la balise \&lt;/head></p>
+<pre><code>&lt;script src="../../plugins/test/test.js"&gt;&lt;/script&gt;
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Il est conseillé de nommer la méthode avec même nom que le hook.</p>
+</div>
+<h2 id="fichier-infosxml">Fichier infos.xml</h2>
+<p>Le fichier <em>infos.xml</em> contient les données utilisées pour identifier le plugin sur la page de gestion des Plugins.</p>
+<p><strong>Structure XML du fichier</strong></p>
+<p>Exemple :</p>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;document&gt;
+    &lt;title&gt;&lt;![CDATA[Plugin de test]]&gt;&lt;/title&gt;
+    &lt;author&gt;&lt;![CDATA[Stéphane F.]]&gt;&lt;/author&gt;
+    &lt;version&gt;1.0&lt;/version&gt;
+    &lt;date&gt;01/12/2010&lt;/date&gt;
+    &lt;site&gt;http://pluxml.org&lt;/site&gt;
+    &lt;description&gt;&lt;![CDATA[Plugin de test pour PluXml]]&gt;&lt;/description&gt;
+&lt;/document&gt;
+</code></pre>
+<p><strong>Description des balises</strong></p>
+<table>
+<thead>
+<tr>
+<th>Balises</th>
+<th>Description</th>
+<th>Format</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>Titre du plugin</td>
+<td>cdata</td>
+</tr>
+<tr>
+<td>author</td>
+<td>Nom de l’auteur du plugin</td>
+<td>cdata</td>
+</tr>
+<tr>
+<td>version</td>
+<td>Numéro de version du plugin</td>
+<td>strong</td>
+</tr>
+<tr>
+<td>date</td>
+<td>Date de création ou de mise à jour du plugin</td>
+<td>strong</td>
+</tr>
+<tr>
+<td>site</td>
+<td>Site de l’auteur du plugin</td>
+<td>strong</td>
+</tr>
+<tr>
+<td>description</td>
+<td>Description du plugin</td>
+<td>cdata</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<strong>Utilisation des données du fichier infos.xml</strong></p>
+<p>Les données du fichier <em>infos.xml</em> sont utilisées essentiellement sur l’écran de <em>Gestion des plugins</em>. Chaque donnée des balises XML sont utilisées de la manière suivantes :</p>
+<p><img alt="admin - gestion des plugins" src="../img/admin-gestion-plugins.jpg" /></p>
+<h2 id="aide-et-configuration-dun-plugin">Aide et configuration d'un plugin</h2>
+<p>Suivant les plugins, les liens <em>Aide</em> et <em>Configuration</em> peuvent exister dans l'écran <em>Gestion des plugins</em> de l'administration.</p>
+<p>Si un fichier config.php existe dans le dossier du plugin, le lien <em>Configuration</em> est visible et permet d’accéder à l’écran de configuration du plugin.</p>
+<p>Si un fichier d’aide existe dans le dossier lang du plugin, le lien <em>Aide</em> est visible et permet d’accéder à l’écran d’affichage de l’aide du plugin.</p>
+<p>Le nom du fichier d’aide utilisé dépend de la langue utilisé par PluXml. Si PluXml est configuré pour utiliser la langue anglaise (en), le fichier <em>lang/en-help.php</em> dans le dossier du plugin sera utilisé et affiché (si le fichier existe). Pour une aide en français le fichier <em>fr-help.php</em> doit exister.</p>
+<p>Le menu <em>Code css</em> permet de définir du code css qui sera utilisé par le plugin coté utilisateur et/ou coté administration.</p>
+<p>Le code css est mis en cache dans les fichiers :</p>
+<ul>
+<li>/data/site.css pour la partie visiteur</li>
+<li>/data/admin.css pour la partie administration</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si aucun code n’est présent pour au moins un plugin, les fichiers css de cache n’existe pas.</p>
+</div>
+<p>L’utilisation de ce paramétrage permet à l’administrateur du site de définir le code css nécessaire au fonctionnement des plugins, indépendamment de celui définit et codé en dur par le développeur dans le core plugin.</p>
+<p>Pour initialiser le contenu des zones de saisie <em>Contenu fichier css site</em> et <em>Contenu fichier css administrateur</em>, créer les fichiers css suivants dans le dossier de votre plugin :</p>
+<pre><code>/plugins/monplugin/css/site.css
+/plugins/monplugin/css/admin.css
+</code></pre>
+<p>Si l’un de ces fichiers existe et contient du code css, il sera affiché dans les zones textes de saisies correspondantes. Le contenu des zones pourra être modifié par l’utilisateur. Les modifications seront mises dans les fichiers css en cache, sans altérer les
+fichiers css d’origine stockés dans <em>/plugins/monplugin/css/</em></p>
+<p><img alt="admin - gestion des css plugins" src="../img/admin-css-plugins.jpg" /></p>
+<h2 id="fichier-parametersxml">Fichier parameters.xml</h2>
+<p>Le fichier parameters.xml contient les données utilisées comme paramètres pour le fonctionnement du plugin. Les fichiers parameters.xml des plugins sont stockés dans le dossier</p>
+<pre><code>data/configuration/plugins/
+</code></pre>
+<p><strong>Structure du fichier</strong></p>
+<p>Exemple :</p>
+<pre><code>&lt;?xml version='1.0' encoding='UTF-8'?&gt;
+&lt;document&gt;
+    &lt;parameter name="param1" type="numeric"&gt;999&lt;/parameter&gt;
+    &lt;parameter name="param2" type="string"&gt;parametre&lt;/parameter&gt;
+    &lt;parameter name="param3" type="cdata"&gt;&lt;![CDATA[parametre 2]]&gt;&lt;/parameter&gt;
+&lt;/document&gt;
+</code></pre>
+<p>Chaque paramètre est à mettre dans une balise <em>parameter</em>. Les attributs <em>name</em> et <em>type</em> sont obligatoires. Un type peut être <em>numeric</em>, <em>string</em> ou <em>cdata</em>. Il conditionne la façon de stocker le contenu de la balise <em>parameter</em>. Le nom des paramètres est libre.</p>
+<pre><code>&lt;parameter name="param1" type="numeric"&gt;999&lt;/parameter&gt;
+&lt;parameter name="titre" type="string"&gt;titre&lt;/parameter&gt;
+</code></pre>
+<p>Le fichier parameters.xml peut être utilisé et renseigné de plusieurs façons :</p>
+<ul>
+<li>renseigné et utilisé à partir du code du plugin,</li>
+<li>renseigné de manière interactive à partir de l’écran de configuration du plugin.Lecture des données du fichier <em>parameters.xml</em></li>
+</ul>
+<p>La méthode <em>getParam</em> de l’object <em>$plxPlugin</em> permet de récupérer la valeur d’un paramètre stocké dans le fichier <em>parameters.xml</em>.</p>
+<pre><code>$plxPlugin-&gt;getParam('&lt;nom du parametre&gt;’)
+</code></pre>
+<p>Exemple :</p>
+<pre><code>$plxPlugin-&gt;getParam('param1')
+</code></pre>
+<p><strong>Écriture des données dans le fichier parameters.xml</strong></p>
+<p>L’écriture se fait en 2 temps :</p>
+<ul>
+<li>renseigner la valeur du paramètre en appelant la méthode <em>setParam</em> de l’object <em>$plxPlugin</em></li>
+<li>sauvegarder les données dans le fichier en appelant la méthode <em>saveParams</em> de l’object <em>$plxPlugin</em></li>
+</ul>
+<p><strong>Définir un paramètre</strong></p>
+<pre><code>$plxPlugin-&gt;setParam('&lt;nom du parametre&gt;’, ‘&lt;valeur du parameter&gt;’, ‘&lt;type du parametre&gt;’)
+</code></pre>
+<p><em>setParam</em> permet de définir la valeur d’un paramètre.</p>
+<p>Le type de paramètre doit être une valeur parmi <em>numeric</em>, <em>string</em>, <em>cdata</em></p>
+<p>Exemple :</p>
+<pre><code>$plxPlugin-&gt; setParam ('param1', 12345, 'numeric')
+</code></pre>
+<p><strong>Sauvegarder les paramètres</strong></p>
+<p><em>saveParams</em> permet de sauvegarder tous les paramètres dans le fichier <em>parametres.xml</em> du plugin.</p>
+<p>Exemple :</p>
+<pre><code>$plxPlugin-&gt;saveParams()
+</code></pre>
+<p>Voici un exemple de code qui affiche un formulaire en pré-renseignant les zones de saisies à partir des données stockées dans le fichier <em>parameters.xml</em>, puis qui sauvegarde les nouvelles valeurs saisies une fois le formulaire soumis.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    if(!empty($_POST)) {
+        $plxPlugin-&gt;setParam('param1', $_POST['param1'], 'numeric');
+        $plxPlugin-&gt;setParam('param2', $_POST['param2'], 'string');
+        $plxPlugin-&gt;setParam('param3', $_POST['param3'], 'cdata');
+        $plxPlugin-&gt;saveParams();
+    }
+?&gt;
+&lt;form action="parametres_plugin.php?p=test" method="post"&gt;
+    Parametre 1 : &lt;input type="text" name="param1" value="&lt;?php echo plxUtils::strCheck($plxPlugin-&gt;getParam('param1')) ?&gt;" /&gt;&lt;br /&gt;
+    Parametre 2 : &lt;input type="text" name="param2" value="&lt;?php echo plxUtils::strCheck($plxPlugin-&gt;getParam('param2')) ?&gt;" /&gt;&lt;br /&gt;
+    Parametre 3 : &lt;input type="text" name="param3" value="&lt;?php echo plxUtils::strCheck($plxPlugin-&gt;getParam('param3')) ?&gt;" /&gt;&lt;br /&gt;
+    &lt;br /&gt;
+    &lt;input type="submit" name="submit" value="Enregistrer" /&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Il est indispensable d’utiliser la fonction <em>plxUtils::strCheck</em> afin de protéger l’affichage des caractères spéciaux mais aussi pour éviter, par exemple, d’injecter du code javascript (failles XSS).</p>
+<h2 id="fichiers-de-langue">Fichiers de langue</h2>
+<p>Le paramètre d’entrée <em>$default_lang</em> du constructeur <em>__construct()</em> de la classe du plugin contient la langue par défaut utilisée par PluXml. Il permet de charger le fichier de langue du plugin contenu dans le dossier lang.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+        }
+    }
+?&gt;
+</code></pre>
+<p><strong>Emplacement des fichiers de langue</strong></p>
+<p>Les fichiers de langue sont stockés dans le dossier <em>lang</em> du plugin. Les fichiers de langue sont nommés de la façon suivante :</p>
+<ul>
+<li>fr.php</li>
+<li>en.php</li>
+</ul>
+<p>Si PluXml est configuré en anglais, le paramètre <em>$default_lang</em> contient la valeur <em>en</em>. Le fichier en.php dans le répertoire <em>/plugins/test/lang/</em> est utilisé. De cette façon, les plugins peuvent être multi-langues.</p>
+<p><strong>Structure d’un fichier de langue</strong></p>
+<p>Un fichier de langue est un fichier php qui contient un tableau <em>$LANG</em> avec des mots clés et les traductions dans la langue désirée.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    $LANG = array(
+        'L_TITLE'         =&gt; 'Plugin de test',
+        'L_DESCRIPTION'   =&gt; 'Description du plugin de test'
+    );
+?&gt;
+</code></pre>
+<p><strong>Utilisation d’un fichier de langue</strong></p>
+<p>Le fichier de langue correspondant à langue par défaut de PluXml est, s’il existe, chargé automatiquement par le moteur de plugin. Pour récupérer et utiliser une traduction à partir d’un plugin, il faut utiliser l’une des deux instructions suivantes :</p>
+<p>Renvoie la traduction de la clé passée en paramètre :</p>
+<pre><code>$this-&gt;getLang(‘&lt;clé de traduction&gt;’);
+</code></pre>
+<p>Affiche la traduction de la clé passée en paramètre :</p>
+<pre><code>$this-&gt;lang(‘&lt;clé de traduction&gt;’);
+</code></pre>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # Ajoute le hook
+            $this-&gt;addHook('ThemeEndHead', 'ThemeEndHead');
+        }
+        public function ThemeEndHead() {
+            echo $this-&gt;getLang("L_TITLE");
+            $this-&gt;getLang("L_DESCRIPTION");
+        }
+    }
+?&gt;
+</code></pre>
+<p><strong>Fichier d’aide</strong></p>
+<p>Dans le dossier <em>lang</em> peut également être présent le fichier d’aide du plugin à afficher en fonction de la langue utilisée dan PluXml.
+Les fichiers d’aide sont nommés de la façon suivante :</p>
+<pre><code>&lt;lang&gt;-help.php
+</code></pre>
+<p>Exemple : fr-help.php, en-help.php</p>
+<p>Ces fichiers ne sont pas obligatoires. Si un fichier correspondant à la langue de PluXml existe, il sera affiché lors du clic sur le lien <em>Aide</em> du plugin. Si aucun fichier d’aide n’est présent, le lien <em>Aide</em> n’est pas visible.</p>
+<p>Exemple du contenu d'un fichier aide</p>
+<pre><code>&lt;?php if(!defined('PLX_ROOT')) exit; ?&gt;
+&lt;h2&gt;Aide&lt;/h2&gt;
+&lt;p&gt;Fichier d'aide du plugin test&lt;/p&gt;
+</code></pre>
+<p>Un fichier d’aide est un simple fichier avec du contenu au format html.</p>
+<p><strong>Lien du menu aide</strong>
+Pour des raisons de sécurité il est recommandé d'ajouter la ligne suivante au début du fichier d'aide.</p>
+<pre><code>&lt;?php if(!defined('PLX_ROOT')) exit; ?&gt;
+</code></pre>
+<h2 id="creer-un-ecran-de-configuration">Créer un écran de configuration</h2>
+<p>Il est possible d’avoir un écran de configuration réservé à un ou plusieurs profils d'utilisateur définis par le programmeur, afin de renseigner des paramètres nécessaires au fonctionnement du plugin. Cet écran est conçu par le développeur du plugin en fonction de ses besoins et de celui du plugin.</p>
+<h3 id="creation-de-lecran-de-configuration">Création de l'écran de configuration</h3>
+<p>Le fichier correspondant à l’écran de configuration s’appelle <em>config.php</em>. Il est stocké dans le dossier du plugin. Il n’est pas obligatoire. Si ce fichier est présent, il sera accessible en cliquant sur le lien <em>Configuration</em> du plugin dans l’écran de <em>Gestion des plugins</em> (Menu Paramètres &gt; Sous-menu Plugins).</p>
+<p><img alt="admin - configuration d'un plugin" src="../img/admin-param-plugins.jpg" /></p>
+<p>On accède alors au fichier parametres_plugin.php grâce l’url parametres_plugin.php?p=test (où la valeur du paramètre <em>p</em> est le nom du
+plugin).</p>
+<p>Lors du chargement du fichier parametres_plugin.php le fichier config.php du plugin demandé est chargé et affiché à l’écran.</p>
+<p>Exemple de contenu du fichier <em>config.php</em> :</p>
+<pre><code>&lt;?php if(!defined('PLX_ROOT')) exit; ?&gt;
+&lt;?php
+    # Control du token du formulaire
+    plxToken::validateFormToken($_POST);
+    if(!empty($_POST)) {
+        $plxPlugin-&gt;setParam('param1', $_POST['param1'], 'numeric');
+        $plxPlugin-&gt;setParam('param2', $_POST['param2'], 'string');
+        $plxPlugin-&gt;setParam('param3', $_POST['param3'], 'cdata');
+        $plxPlugin-&gt;saveParams();
+        header('Location: parametres_plugin.php?p=test');
+        exit;
+    }
+?&gt;
+&lt;form class="inline-form" action="parametres_plugin.php?p=test" method="post" id="form_test"&gt;
+    &lt;fieldset&gt;
+        &lt;p&gt;
+            &lt;label for="id_param1"&gt;Paramètre 1 :&lt;/label&gt;
+            &lt;?php plxUtils::printInput('param1',$plxPlugin-&gt;getParam('param1'),'text','4-4') ?&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="id_param2"&gt;Paramètre 2 :&lt;/label&gt;
+            &lt;?php plxUtils::printInput('param2',$plxPlugin-&gt;getParam('param2'),'text','20-20') ?&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="id_param3"&gt;Paramètre 3 :&lt;/label&gt;
+            &lt;?php plxUtils::printInput('param3',$plxPlugin-&gt;getParam('param3'),'text','20-20') ?&gt;
+        &lt;/p&gt;
+        &lt;p class="in-action-bar"&gt;
+            &lt;?php echo plxToken::getTokenPostMethod() ?&gt;
+            &lt;input type="submit" name="submit" value="Enregistrer" /&gt;
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+<p>La première ligne du fichier est indispensable car elle apporte une sécurité au plugin mais aussi à tout PluXml en interdisant d’appeler et d’exécuter directement le fichier <em>config.php</em> sans passer par PluXml.</p>
+<pre><code>&lt;?php if(!defined('PLX_ROOT')) exit; ?&gt;
+</code></pre>
+<h3 id="formulaire-de-saisie">Formulaire de saisie</h3>
+<p>Le formulaire de saisie servant à renseigner les différents paramètres qui seront sauvegardés dans le fichier <em>parametres.xml</em> doit être déclaré de la façon suivante :</p>
+<pre><code>&lt;form action="parametres_plugin.php?p=test" method="post"&gt;
+    ...
+&lt;/form&gt;
+</code></pre>
+<p>L’argument action de la balise <em><form></em> doit pointer vers l’url <em>parametres_plugin.php?p=test</em> où la valeur du paramètre <em>p</em> est le nom du plugin (équivalent au nom du dossier du plugin).</p>
+<h3 id="ajouter-un-bouton-dans-la-barre-daction">Ajouter un bouton dans la barre d’action</h3>
+<p>Pour ajouter un bouton d’action dans la barre d’action, déclarer le dans une balise \&lt;p> ayant la classe css : <em>in-action-bar</em>. De cette façon le bouton sera automatiquement positionné dans la barre d’action.</p>
+<pre><code>&lt;p class="in-action-bar"&gt;
+    &lt;?php echo plxToken::getTokenPostMethod() ?&gt;
+    &lt;input type="submit" name="submit" value="Enregistrer" /&gt;
+&lt;/p&gt;
+</code></pre>
+<h3 id="securite">Sécurité</h3>
+<p>La ligne suivante est obligatoire. Elle créer un champ caché contenant un code de sécurité qui sera vérifié lors du traitement des données du formulaire.</p>
+<pre><code>&lt;?php echo plxToken::getTokenPostMethod() ?&gt;
+</code></pre>
+<p>Les lignes suivantes sont obligatoires. Elles permettent de vérifier le code de sécurité contenu dans le champs caché et créé par <em>plxToken::getTokenPostMethod()</em></p>
+<pre><code># Control du token du formulaire
+plxToken::validateFormToken($_POST);Définir les droits d’accès
+</code></pre>
+<p>Les droits d’accès à l’écran de configuration se définissent dans le code du plugin, grâce à l’instruction :</p>
+<pre><code>$this-&gt;setConfigProfil(&lt;profil&gt;);
+</code></pre>
+<p>Les profils disponibles sont définis par les constantes :</p>
+<ul>
+<li>PROFIL_ADMIN : administrateur</li>
+<li>PROFIL_MANAGER : gestionnaire</li>
+<li>PROFIL_MODERATOR : modérateur</li>
+<li>PROFIL_EDITOR : éditeur</li>
+<li>PROFIL_WRITER : rédacteur</li>
+</ul>
+<p>Plusieurs profils peuvent être spécifiés en les séparant par des virgules :</p>
+<pre><code>$this-&gt; setConfigProfil(PROFIL_ADMIN, PROFIL_WRITER);
+</code></pre>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # limite l'accès à l'écran d'administration du plugin
+            $this-&gt;setConfigProfil(PROFIL_ADMIN);
+        }
+    }
+?&gt;
+</code></pre>
+<p>Si les droits autorisant l’accès à l’écran config.php ne sont pas précisés ou non valides, l’utilisateur sera redirigé vers la page index.php de l’administration avec un message d’erreur « Accès interdit ».</p>
+<h2 id="creer-un-ecran-dadministration">Créer un écran d’administration</h2>
+<p>Il est possible d’avoir un écran d’administration réservé à un ou plusieurs profils utilisateur accédant à l’administration de PluXml. Les droits d’accès sont définis par le développeur du plugin en fonction de ses choix et ceux du plugin.</p>
+<p><img alt="admin - menu admin d'un plugin" src="../img/admin-admin-plugins.jpg" /></p>
+<h3 id="creation-de-lecran-dadministration">Création de l'écran d'administration</h3>
+<p>Le fichier correspondant à l’écran de configuration s’appelle admin.php. Il est stocké dans le dossier du plugin. Il n’est pas obligatoire. Si ce fichier est présent, il sera accessible à partir de la barre des menus de gauche (sidebar). L’affichage du menu tient compte des droits accordés pour accéder à l’écran.</p>
+<p>Exemple de menu d’administration : contenu du fichier <em>admin.php</em></p>
+<pre><code>&lt;?php if(!defined('PLX_ROOT')) exit; ?&gt;
+&lt;form class="inline-form" action="plugin.php?p=test" method="post" id="form_test"&gt;
+    &lt;div class="action-bar"&gt;
+        &lt;h2&gt;Plugin de Test&lt;/h2&gt;
+        &lt;p&gt;Ceci est un plugin de test&lt;/p&gt;
+        &lt;input type="submit" value="Bouton qui sert à rien" /&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+        Et quia Montius inter dilancinantium manus spiritum efflaturus Epigonum et Eusebium nec professionem nec dignitatem ostendens aliquotiens increpabat, qui sint hi magna quaerebatur industria, et nequid intepesceret, Epigonus e Lycia philosophus ducitur et Eusebius ab Emissa Pittacas cognomento, concitatus orator, cum quaestor non hos sed tribunos fabricarum insimulasset promittentes armorum si novas res agitari conperissent.
+    &lt;/p&gt;
+    &lt;fieldset&gt;
+        &lt;p&gt;
+            &lt;label for="id_field1"&gt;Champ de saisie 1 :&lt;/label&gt;
+            &lt;?php plxUtils::printInput('field1','','text','4-4') ?&gt;
+        &lt;/p&gt;
+        &lt;p&gt;
+            &lt;label for="id_field2"&gt;Champ de saisie 2 :&lt;/label&gt;
+            &lt;?php plxUtils::printInput('field2','','text','4-4') ?&gt;
+        &lt;/p&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+</code></pre>
+<p>La première ligne du fichier est indispensable car elle apporte une sécurité au plugin mais aussi à tout PluXml en interdisant d’appeler et d’exécuter directement le fichier <em>admin.php</em> sans passer par PluXml.</p>
+<pre><code>&lt;?php if(!defined('PLX_ROOT')) exit; ?&gt;
+</code></pre>
+<ul>
+<li>class="inline-form" : permet d’avoir les champs de formulaire sur une seule ligne (voir documentation de PluCSS, paragraphe “Formulaire”)</li>
+<li>class="action-bar" : permet d’afficher le contenu de la balise <em>div</em> dans la barre d’action en haut de page</li>
+</ul>
+<h3 id="definir-les-droits-dacces">Définir les droits d’accès</h3>
+<p>Les droits d’accès à l’écran d’administration se définissent dans le code du plugin, grâce à l’instruction :</p>
+<pre><code>$this-&gt;setAdminProfil(&lt;profil&gt;);
+</code></pre>
+<p>Les profils disponibles sont définis par les constantes</p>
+<ul>
+<li>PROFIL_ADMIN : administrateur</li>
+<li>PROFIL_MANAGER : gestionnaire</li>
+<li>PROFIL_MODERATOR : modérateur</li>
+<li>PROFIL_EDITOR : éditeur</li>
+<li>PROFIL_WRITER : rédacteur</li>
+</ul>
+<p>Plusieurs profils peuvent être spécifiés en les séparant par des virgules :</p>
+<pre><code>$this-&gt;setAdminProfil(PROFIL_ADMIN, PROFIL_WRITER);
+</code></pre>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # limite l'accès à l'écran d'administration du plugin
+            $this-&gt;setAdminProfil(PROFIL_MODERATOR);
+        }
+    }
+?&gt;
+</code></pre>
+<p>Si les droits autorisant l’accès à l’écran <em>admin.php</em> ne sont pas précisés ou non valides, l’utilisateur sera redirigé vers la page <em>index.php</em> de l’administration avec un message d’erreur « Accès interdit ».</p>
+<h3 id="personnaliser-le-menu-dadministration">Personnaliser le menu d'administration</h3>
+<p>L'affichage du menu pour accéder à l'écran d'administration peut être personnaliser grâce à la méthode setAdminMenu.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # Accès au menu admin réservé au profil administrateur
+            $this-&gt;setAdminProfil(PROFIL_ADMIN);
+            # Personnalisation du menu admin
+            $this-&gt;setAdminMenu('Titre du menu', 3, 'Légende du lien');
+        }
+    }
+?&gt;
+</code></pre>
+<p>La méthode <em>setAdminMenu</em> accepte 3 paramètres :</p>
+<table>
+<thead>
+<tr>
+<th>paramètres</th>
+<th>nom</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1er paramètre</td>
+<td>title</td>
+<td>titre du menu</td>
+</tr>
+<tr>
+<td>2ième paramètre</td>
+<td>position</td>
+<td>position du menu dans la sidebar</td>
+</tr>
+<tr>
+<td>3ième paramètre</td>
+<td>caption</td>
+<td>légende du menu (balise title du lien)</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+Il peut être intéressant d'offrir à l'utilisateur la possibilité de paramétrer le comportement du menu à partir de l'écran de configuration du plugin, en sauvegardant et en utilisant ses préférences dans le fichier des paramètres du plugin parameters.xml.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # Accès au menu admin réservé au profil administrateur
+            $this-&gt;setAdminProfil(PROFIL_ADMIN);
+            # Personnalisation du menu admin
+            $this-&gt;setAdminMenu($this-&gt;getParam('menuName'), $this-&gt;getParam('menuPos'), $this-&gt;getParam('mnuCaption'));
+        }
+    }
+?&gt;
+</code></pre>
+<h2 id="modifier-le-comportement-de-pluxml">Modifier le comportement de PluXml</h2>
+<h3 id="injecter-du-code">Injecter du code</h3>
+<p>Voyons maintenant comment modifier le comportement d'une fonction de PluXml. Nous allons prendre comme exemple, l'ajout d'un champ de saisie sur l'écran de gestion des options des catégories. Pour cela il nous faut :</p>
+<ul>
+<li>rajouter un champ de saisie sur l'écran des options des catégories (Menu Catégories &gt; Liens Options)</li>
+<li>enregistrer la valeur saisie lors du clic sur le bouton dans le fichier <em>data/configuration/categories.xml</em></li>
+<li>lire la nouvelle donnée lorsque le fichier data/configuration/categories.xml est chargé</li>
+</ul>
+<p><img alt="exemple plugin" src="../img/plugin-exemple-1.jpg" /></p>
+<h4 id="liste-des-hooks-utilises">Liste des hooks utilisés :</h4>
+<table>
+<thead>
+<tr>
+<th>Hook</th>
+<th>Fichier</th>
+<th>Méthode</th>
+<th>Emplacement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>plxAdminEditCategoriesNew</td>
+<td>class.plx.admin.php</td>
+<td>editCategories()</td>
+<td>New : création</td>
+</tr>
+<tr>
+<td>plxAdminEditCategoriesUpdate</td>
+<td>class.plx.admin.php</td>
+<td>editCategories()</td>
+<td>Update : mise à jour</td>
+</tr>
+<tr>
+<td>plxAdminEditCategoriesXml</td>
+<td>class.plx.admin.php</td>
+<td>editCategories()</td>
+<td>Xml : mise en forme xml</td>
+</tr>
+<tr>
+<td>plxAdminEditCategory</td>
+<td>class.plx.admin.php</td>
+<td>editCategorie()</td>
+<td>Lecture des données xml dans le fichier categories.xml</td>
+</tr>
+<tr>
+<td>AdminCategory</td>
+<td>categorie.php</td>
+<td></td>
+<td>Ecran gérant les options d'une catégorie</td>
+</tr>
+<tr>
+<td>plxMotorGetCategories</td>
+<td>class.plx.motor.php</td>
+<td>getCategories()</td>
+<td>Lecture des données xml dans le fichier categories.xml</td>
+</tr>
+</tbody>
+</table>
+<h4 id="code-du-plugin">Code du plugin</h4>
+<pre><code>&lt;?php
+    class categories extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # Ajoute des hooks
+            $this-&gt;addHook('plxAdminEditCategoriesNew', 'plxAdminEditCategoriesNew');
+            $this-&gt;addHook('plxAdminEditCategoriesUpdate', 'plxAdminEditCategoriesUpdate');
+            $this-&gt;addHook('plxAdminEditCategoriesXml', 'plxAdminEditCategoriesXml');
+            $this-&gt;addHook('plxMotorGetCategories', 'plxMotorGetCategories');
+            $this-&gt;addHook('plxAdminEditCategory', 'plxAdminEditCategory');
+            $this-&gt;addHook('AdminCategory', 'AdminCategory');
+        }
+        public function plxAdminEditCategoriesNew() {
+            echo "&lt;?php \$this-&gt;aCats[\$content['new_catid']]['test']=''; ?&gt;";
+        }
+        public function plxAdminEditCategoriesUpdate() {
+            echo "&lt;?php \$this-&gt;aCats[\$cat_id]['test']=(isset(\$this-&gt;aCats[\$cat_id]['test'])?\$this-&gt;aCats[\$cat_id]['test']:'')?&gt;";
+        }
+        public function plxAdminEditCategoriesXml() {
+            echo "&lt;?php \$xml .= '&lt;test&gt;&lt;![CDATA['.plxUtils::cdataCheck(\$cat['test']).']]&gt;&lt;/test&gt;'; ?&gt;";
+        }
+        public function plxMotorGetCategories() {
+            echo "&lt;?php \$this-&gt;aCats[\$number]['test'] = isset(\$iTags['test'][\$i])?\$values[\$iTags['test'][\$i]]['value']:'';?&gt;";
+        }
+        public function plxAdminEditCategory() {
+            echo "&lt;?php \$this-&gt;aCats[\$content['id']]['test'] = trim(\$content['test']); ?&gt;";
+        }
+        public function AdminCategory() {
+            $string = &lt;&lt;&lt;END
+            &lt;?php
+                echo '&lt;p class="field"&gt;&lt;label for="id_test"&gt;Test&amp;nbsp;:&lt;/label&gt;&lt;/p&gt;';
+                plxUtils::printInput('test', plxUtils::strCheck(\$plxAdmin-&gt;aCats[\$id]['test']),'text', '10-255');
+            ?&gt;
+            END;
+            echo $string;
+        }
+    }
+?&gt;
+</code></pre>
+<p><strong>Détail du code</strong></p>
+<pre><code>public function AdminCategory () {
+    $string = &lt;&lt;&lt;END
+        &lt;?php
+          echo '&lt;p class="field"&gt;&lt;label for="id_test"&gt;Test&amp;nbsp;:&lt;/label&gt;&lt;/p&gt;';
+          plxUtils::printInput('test', plxUtils::strCheck(\$plxAdmin-&gt;aCats[\$id]['test']), 'text', '10-255');
+        ?&gt;
+    END;
+    echo $string;
+}
+</code></pre>
+<p>La méthode <em>AdminCategory()</em> permet d'afficher le nouveau champ sur l'écran des options de la catégorie “Rubrique 1”.</p>
+<p>La chaîne de caractère $string contient le code qui va être interprété lorsque la page options sera chargée. C'est pour cette raison qu'il est nécessaire de préciser les balises <em>php</em> au début et à la fin de <em>$string</em>.</p>
+<p>Notez l'alternative pour renseigner <em>$string</em> grâce à <em>END ... END;</em>. Notez également l'utilisation du caractère \ devant chaque variable comme par exemple devant <em>$plxAdmin-&gt;aCats</em> car ici il ne s'agit non pas d'une variable locale à la méthode <em>AdminCategory()</em>, mais d'une variable utilisée dans le fichier <em>categorie.php</em>.</p>
+<pre><code>public function plxAdminEditCategoriesNew () {
+    echo "&lt;?php \$this-&gt;aCats[\$content['new_catid']]['test']=''; ?&gt;";
+}
+</code></pre>
+<p>La méthode <em>plxAdminEditCategoriesNew()</em> injecte le code php devant être utilisé dans la fonction servant à renseigner le tableau <em>$this-&gt;aCats</em>. Encore une fois, nous utilisons les balises php car le code ne doit pas simplement être affiché, mais interprété par la fonction qui utilise le hook <em>plxAdminEditCategoriesNew</em>.</p>
+<p>De façon plus générale, nous déclarons le code tel qu’il serait écrit si nous modifions directement le code de la fonction <em>editCategories</em> du fichier <em>class.plx.admin.php</em>.</p>
+<p>Il ne reste plus qu'à écrire tout le code nécessaire pour gérer le nouveau champ <em>test</em> comme par exemple la méthode <em>plxAdminEditCategoriesXml()</em> qui formate la chaîne xml sauvegardée dans le fichier <em>categories.xml</em> dans le fichier <em>class.plx.admin.php</em> méthode <em>editCategories()</em>.</p>
+<h4 id="interrompre-une-fonction-de-pluxml">Interrompre une fonction de PluXml</h4>
+<p>Certains hooks acceptent de recevoir en retour de traitement une valeur afin d’interrompre l’exécution de la fonction appelante. Dans le code d'un plugin, pour arrêter l’exécution de la fonction de PluXml "hookée", il faut utiliser la syntaxe :</p>
+<pre><code>return true;
+</code></pre>
+<p>Un simple <em>return;</em> ne fonctionne pas, ceci est du à l'utilisation de la fonction <em>eval</em> servant à évaluer le code du plugin. Pour éviter que le code suivant l’instruction <em>eval</em> ne soit exécuté, il faut donc faire apparaître dans le plugin :</p>
+<pre><code>return true;
+</code></pre>
+<p>Exemple ::</p>
+<pre><code>public function plxMotorDemarrageBegin(){
+    $string = &lt;&lt;&lt;END
+        &lt;?php
+            if(\$this-&gt;mode=="galerie"){
+                \$this-&gt;template = 'galerie.php';
+                return true;
+            }
+        ?&gt;
+        END;
+    echo $string;
+}
+</code></pre>
+<p>Ici on injecte du code comme si on l'avait saisi au début de la méthode <em>Demarrage()</em> de la classe <em>plxMotor</em>. Si la condition du <em>if</em> est valide, on fait un <em>return true;</em> pour arrêter la suite du code de la méthode <em>Demarrage()</em>. Au niveau de la syntaxe, si un simple <em>return;</em> était utilisé, la suite du code serait quand même exécutée. Il faut donc bien mettre <em>return true;</em></p>
+<p>Tous les hooks n’acceptent pas de valeur de retour (voir tableau des hooks). En effet un hook qui est en fin d'une fonction de PluXml, n'a aucun intérêt à gérer une valeur de retour sur un <em>return</em>. Par exemple dans le fichier <em>class.plx.show.php</em> :</p>
+<pre><code>public function pageTitle() {
+    # Hook Plugins
+    if(eval($this-&gt;plxMotor-&gt;plxPlugins-&gt;callHook('plxShowPageTitle'))) return;
+    ...
+}
+</code></pre>
+<p>Ici le hook est au début de la méthode <em>pageTitle()</em>. Il peut donc être utile de ne pas exécuter la suite du code. On a donc une syntaxe avec un <em>if</em> qui va tester la valeur de retour envoyée par le plugin grâce à la ligne : <em>return true;</em>. Autre exemple dans <em>class.plx.admin.php</em> :</p>
+<pre><code>public function __construct($filename) {
+    parent::__construct($filename);
+    # Hook plugins
+    eval($this-&gt;plxPlugins-&gt;callHook('plxAdminConstruct'));
+}
+</code></pre>
+<p>Ici le hook est à la fin du constructeur de la class <em>plxAdmin</em>. Il n’y a plus de code après. Il est donc inutile de gérer une valeur de retour passée par <em>return true;</em> pour interrompre le code. Un appel à l’instruction if est gagné.</p>
+<h2 id="utiliser-les-hooks-predefinis-pour-les-themes">Utiliser les hooks prédéfinis pour les thèmes</h2>
+<p>Il existe deux hooks prédéfinis pour être utilisé dans les thèmes : <em>ThemeEndHead</em> et <em>ThemeEndBodyHook</em></p>
+<h3 id="themeendhead">ThemeEndHead</h3>
+<p>Le hook <em>ThemeEndHead</em> permet d’injecter du code dans la balise <em>head</em> dans la page du site coté visiteurs. Voilà un exemple qui ajoute dans la balise head l’appel du fichier javascript <em>fichier.js</em> :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # déclaration du hook
+            $this-&gt;addHook('ThemeEndHead', 'ThemeEndHead');
+        }
+        public function ThemeEndHead() {?&gt;
+            &lt;script type="text/javascript" src="fichier.js"&gt;&lt;/script&gt;
+            &lt;?php
+        }
+    }
+?&gt;
+</code></pre>
+<h3 id="hook-themeendbody">Hook ThemeEndBody</h3>
+<p>Le hook <em>ThemeEndBody</em> permet d’injecter du code dans la balise body dans la page du site coté visiteurs. Voilà un exemple qui ajoute dans la balise du code javascript :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # déclaration du hook
+            $this-&gt;addHook('ThemeEndHead', 'ThemeEndHead');
+        }
+        public function ThemeEndHead() {?&gt;
+            &lt;script type="text/javascript"&gt;
+                &lt;!—-
+                function myfunction(text) {
+                alert(text);
+                }
+                --&gt;
+            &lt;/script&gt;
+            &lt;?php
+        }
+    }
+?&gt;
+</code></pre>
+<h2 id="creer-ses-propres-hooks">Créer ses propres hooks</h2>
+<h3 id="hooks-utilisateur">Hooks utilisateur</h3>
+<p>Il est possible de définir ses propres noms de hooks et de les appeler dans les thèmes. Nous connaissons déjà la liste des hooks réservés au fonctionnement de PluXml, mais il est tout à fait possible de définir ses propres hooks.</p>
+<p>Voyons le cas suivant : nous souhaitons définir un hook qui agira dans le fichier <em>sidebar.php</em> du dossier theme. Nous appellerons ce hook <em>SidebarTest</em> afin de respecter la nomenclature des noms des hooks.</p>
+<p>Commençons par écrire notre plugin :</p>
+<pre><code>&lt;?php
+    class test extends plxPlugin {
+        public $var='Hook de la sidebar';
+        public function __construct($default_lang) {
+            # appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # déclaration du hook
+            $this-&gt;addHook('SidebarTest', 'SidebarTest');
+        }
+        public function SidebarTest() {
+            echo $this-&gt;var;
+        }
+    }
+?&gt;
+</code></pre>
+<p>Nous retrouvons ici tous les composants décris dans les paragraphes précédents. Il s’agit ici d’afficher uniquement le message "Hook
+de la sidebar", message définit dans la variable $var.</p>
+<p>Modifions maintenant le fichier <em>sidebar.php</em> du thème afin de placer l’appel de notre hook.</p>
+<pre><code>&lt;?php if(!defined('PLX_ROOT')) exit; ?&gt;
+&lt;div id="sidebar"&gt;
+    ...
+&lt;?php eval($plxShow-&gt;callHook('SidebarTest')) ?&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Nous utilisons ici la fonction <em>callHook</em> de <em>$plxShow</em> en passant en paramètre le nom du hook à traiter.</p>
+<h3 id="passage-de-parametres-a-un-hook">Passage de paramètres à un hook</h3>
+<p>Un hook peut être appelé en lui passant un ou plusieurs paramètres.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php eval($plxShow-&gt;callHook('MyHook', 'param1')) ?&gt;
+</code></pre>
+<p>Pour appeler un hook avec plusieurs paramètres, il faut les passer sous forme de tableau.</p>
+<pre><code>&lt;?php eval($plxShow-&gt;callHook('MyHook', array('param1', 'param2'))) ?&gt;
+</code></pre>
+<h3 id="declaration-du-hook-recevant-les-parametres">Déclaration du hook recevant les paramètres</h3>
+<p>Soit le hook 'MyHook' appelé avec 2 paramètres valant chacun 'azerty' et 'qwerty' :</p>
+<pre><code>&lt;?php eval($plxShow-&gt;callHook('MyHook', array('azerty', 'qwerty'))) ?&gt;
+&lt;?php
+    class test extends MyPlugin {
+        public function __construct($default_lang) {
+            # Appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # Déclaration des hooks
+            $this-&gt;addHook('MyHook', 'MyHookFunction');
+        }
+        public function MyHookFunction($params) {
+            echo $param[0];
+            echo $param[1];
+        }
+    }
+?&gt;
+</code></pre>
+<p>Lorsque le hook <em>MyHook</em> est appelé, la fonction MyHookFunction est exécutée. Le paramètre <em>$params</em> de la fonction <em>MyHookFunction</em> reçoit les deux paramètres sous forme de tableau. Ainsi <em>$params[0]</em> contient la valeur 'azerty' et <em>$param[1]</em> la valeur 'qwerty'</p>
+<p>Le hook MyHook affiche :</p>
+<pre><code>azerty
+qwerty
+</code></pre>
+<h3 id="valeur-de-retour-dun-hook">Valeur de retour d'un hook</h3>
+<p>Un hook peut retourner une valeur à la page appelante.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    $retour = $plxShow-&gt;callHook('MyHook');
+    echo $retour;
+?&gt;
+</code></pre>
+<div class="admonition danger">
+<p class="admonition-title">Important</p>
+<p>L'appel d'un hook renvoyant une valeur ne doit pas être fait avec la fonction eval.</p>
+</div>
+<p>La syntaxe suivante ne doit pas être utilisée :</p>
+<pre><code>&lt;?php $retour = eval($plxShow-&gt;callHook('MyHook')) ?&gt;
+</code></pre>
+<p>Il est possible de combiner valeur de retour et passage de paramètres.</p>
+<pre><code>&lt;?php $retour = $plxShow-&gt;callHook('MyHook', 'azerty') ?&gt;
+</code></pre>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    class test extends MyPlugin {
+        public function __construct($default_lang) {
+            # Appel du constructeur de la classe plxPlugin (obligatoire)
+            parent::__construct($default_lang);
+            # Déclaration des hooks
+            $this-&gt;addHook('MyHook', 'MyHookFunction');
+        }
+        public function MyHookFunction() {
+            return 'Brian is in the kitchen :)';
+        }
+?&gt;
+</code></pre>
+<p>La phrase 'Brian is in the kitchen :)' est renvoyée à la page appelante. L'instruction <em>echo $retour;</em> affichera cette phrase.</p>
+<h2 id="appeler-un-hook-a-partir-dune-page-statique">Appeler un hook à partir d’une page statique</h2>
+<p>Il est tout a fait possible d’appeler un hook à partir d’une page statique.</p>
+<p>Exemple :</p>
+<pre><code>&lt;?php
+    global $plxShow;
+    eval($plxShow-&gt;callHook('Static1Test'));
+?&gt;
+</code></pre>
+<p>Il faut dans un premier temps déclarer <em>$plxShow</em> en tant que variable globale.</p>
+<pre><code>global $plxShow;
+</code></pre>
+<p>Pour appeler un hook, nous utilisons la fonction <em>callHook</em> de <em>$plxShow</em> en passant en paramètre le nom du hook à traiter. Le passage de paramètres et valeur de retour sont autorisés.</p>
+<h2 id="liste-des-constantes">Liste des constantes</h2>
+<p>PluXml dispose de constante contenant des valeurs prédéfinies et ne pouvant pas être modifiées :</p>
+<ul>
+<li>PLX_ADMIN : Contient la valeur true si on est dans l’administration de PluXml</li>
+<li>PLX_AUTHPAGE : Contient la valeur true si on est sur la page d’identification core/admin/auth.php</li>
+<li>PLX_CHARSET : Contient le charset utilisé par PluXml (utf-8 par défaut)</li>
+<li>PLX_CONF : Contient le chemin par defaut du fichier parametres.xml (PLX_ROOT.'data/configuration/parametres.xml')</li>
+<li>PLX_CONFIG_PATH : Contient le chemin par défaut vers le dossier data/configuration/</li>
+<li>PLX_CORE : Contient l’emplacement du dossier core (PLX_ROOT.'core/')</li>
+<li>PLX_DEBUG : Contient la valeur true en phase de développement pour charger ou non les fichiers javascript minimisés de PluXml et afficher les messages d’erreurs détaillés</li>
+<li>PLX_FEED : Contient la valeur true si on est sur le script feed.php</li>
+<li>PLX_MICROTIME : Contient les données du timer d’exécution des scripts renvoyées par getMicrotime()</li>
+<li>PLX_PLUGINS : Contient l’emplacement du dossier plugins (plugins/)</li>
+<li>PLX_ROOT : Contient le chemin relatif vers la racine du site par rapport au fichier courant (par exemple ./ ou ./../)</li>
+<li>PLX_UPDATE : Contient l’emplacement du dossier de mise à jour (PLX_ROOT.'update/')</li>
+<li>PLX_UPDATER : Contient la valeur true si on est sur le script de mise à jour de PluXml</li>
+<li>PLX_VERSION : Contient le n° de version de PluXml</li>
+</ul>
+<h2 id="comprendre-le-nom-des-fichiers-xml-des-articles">Comprendre le nom des fichiers xml des articles</h2>
+<p>PluXml n’utilise pas de base de données. Le contenu des articles est stocké dans des fichiers xml. Si vous utilisez la configuration par défaut, ces fichiers sont enregistrés dans le dossier <em>data/articles/</em>. Chaque nom de fichier est composé de certaines informations propre à l’article.</p>
+<p>Exemple :</p>
+<p>_0001.002.001.201304251142.premier-article.xml</p>
+<p>Si nous détaillons le nom du fichier, nous avons:</p>
+<ul>
+<li>_ est un caractère optionnel. Il indique que l'article est en attente de validation.</li>
+<li>0001 est l'identifiant de l'article. Il peut aller jusqu'à 9999, donc 9999 articles.</li>
+<li>002 contient l'identifiant de la catégorie dans laquelle l'article est classé. Il peut avoir plusieurs identifiants séparés par des virgules (exemple 001,002). Ici l'article est donc classé dans la catégorie 002. Il n'y a pas de limite dans le nombre de catégories possibles, du moment qu'elles sont bien séparées par des virgules. Il est possible d'avoir également la valeur draft qui indique que l'article est un brouillon, ou la valeur home qui indique que l'article est publié dans la catégorie <em>Page d'accueil</em>. Il est donc tout a fait possible d'avoir 0001.001,002,draft.001.201304251142.premier-article.xml</li>
+<li>001 est l'identifiant de l'utilisateur qui a rédigé l'article.</li>
+<li>201304251142 est la date de publication de l'article. Cela peut être une date future. Cette date est de la forme AAAAMMJJHHMM où:<ul>
+<li>AAAA = année</li>
+<li>MM = mois</li>
+<li>JJ = jour</li>
+<li>HH = heure</li>
+<li>MM = minute</li>
+</ul>
+</li>
+<li>premier-article est l'url de l'article. On la retrouve dans : http://mondomaine.com/index.php?article1/premier-article</li>
+<li>xml est l'extension du fichier</li>
+</ul></div>
+                    <div class="col med-3 sml-hide med-show toc"><strong>Table des matières</strong>
+<ul class="menu vertical">
+    <li class="">
+      <a href="#creer-un-template">Créer un template</a>
+    </li>
+      <ul>
+        <li>
+          <a href="#fonction-templatecss">fonction templateCss()</a>
+        </li>
+
+      </ul>
+    <li class="">
+      <a href="#creer-un-theme">Créer un thème</a>
+    </li>
+      <ul>
+        <li>
+          <a href="#description-des-fichiers-composant-un-theme">Description des fichiers composant un thème</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#les-modes-daffichage">Les modes d’affichage</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#les-themes-adaptes-aux-mobiles">Les thèmes adaptés aux mobiles</a>
+        </li>
+
+      </ul>
+    <li class="">
+      <a href="#creer-un-plugin">Créer un plugin</a>
+    </li>
+      <ul>
+        <li>
+          <a href="#contenu-du-dossier-dun-plugin">Contenu du dossier d’un plugin</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#squelette-dun-plugin">Squelette d’un plugin</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#code-a-executer-a-lactivation-dun-plugin">Code à exécuter à l’activation d’un plugin</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#code-a-executer-a-la-desactivation-dun-plugin">Code à exécuter à la désactivation d’un plugin</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#code-a-executer-a-la-mise-a-jour-dun-plugin">Code à exécuter à la mise à jour d’un plugin</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#les-hooks">Les hooks</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#quest-ce-quun-hook">Qu'est-ce qu'un hook ?</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#appel-des-hooks">Appel des hooks</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#liste-des-hooks">Liste des hooks</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#creation-dun-hook">Création d’un hook</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#ajouter-un-hook">Ajouter un hook</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#fichier-infosxml">Fichier infos.xml</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#aide-et-configuration-dun-plugin">Aide et configuration d'un plugin</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#fichier-parametersxml">Fichier parameters.xml</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#fichiers-de-langue">Fichiers de langue</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#creer-un-ecran-de-configuration">Créer un écran de configuration</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#creation-de-lecran-de-configuration">Création de l'écran de configuration</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#formulaire-de-saisie">Formulaire de saisie</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#ajouter-un-bouton-dans-la-barre-daction">Ajouter un bouton dans la barre d’action</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#securite">Sécurité</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#creer-un-ecran-dadministration">Créer un écran d’administration</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#creation-de-lecran-dadministration">Création de l'écran d'administration</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#definir-les-droits-dacces">Définir les droits d’accès</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#personnaliser-le-menu-dadministration">Personnaliser le menu d'administration</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#modifier-le-comportement-de-pluxml">Modifier le comportement de PluXml</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#injecter-du-code">Injecter du code</a>
+            </li>
+              <ul>
+                <li>
+                  <a href="#liste-des-hooks-utilises">Liste des hooks utilisés :</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#code-du-plugin">Code du plugin</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#interrompre-une-fonction-de-pluxml">Interrompre une fonction de PluXml</a>
+                </li>
+              </ul>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#utiliser-les-hooks-predefinis-pour-les-themes">Utiliser les hooks prédéfinis pour les thèmes</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#themeendhead">ThemeEndHead</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#hook-themeendbody">Hook ThemeEndBody</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#creer-ses-propres-hooks">Créer ses propres hooks</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#hooks-utilisateur">Hooks utilisateur</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#passage-de-parametres-a-un-hook">Passage de paramètres à un hook</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#declaration-du-hook-recevant-les-parametres">Déclaration du hook recevant les paramètres</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#valeur-de-retour-dun-hook">Valeur de retour d'un hook</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#appeler-un-hook-a-partir-dune-page-statique">Appeler un hook à partir d’une page statique</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#liste-des-constantes">Liste des constantes</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#comprendre-le-nom-des-fichiers-xml-des-articles">Comprendre le nom des fichiers xml des articles</a>
+        </li>
+
+      </ul>
+</ul></div>
+                
+          </div>
+        </div>
+
+        <footer class="sml-12">
+            <hr>
+            <p>PluXml.org - Blog ou Cms à l'Xml !</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> and <a href="https://plucss.pluxml.org">PluCSS</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+
+    </body>
+</html>

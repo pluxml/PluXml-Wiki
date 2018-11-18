@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PluXml staff">
+        <link rel="canonical" href="https://www.pluxml.org/utiliser/utilisation/">
+        <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Utiliser - Documentation de PluXml</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/custom.css" rel="stylesheet">
+        <link href="../../css/plucss.css" rel="stylesheet">
+        <link href="../../css/plx-common.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+      <nav class="plx-nav">
+        <div class="container">
+          <div class="grid">
+            <div class="col sml-12 med-3">
+              <ul class="menu text-center">
+                <li class="logo"><a href="https://www.pluxml.org" title="PluXml"><img class="float-left" src="../../img/favicon/favicon-32x32.png"><strong>PluXml.org</strong></a></li>
+              </ul>
+            </div>
+            <div class="col sml-12 med-9 lrg-6">
+              <ul class="menu text-center">
+                <li><a href="https://wiki.pluxml.org" title="Documentation">Documentation</a></li>
+                <li><a href="https://ressources.pluxml.org" title="Ressources">Ressources</a></li>
+                <li><a href="https://forum.pluxml.org" title="Forum">Forum</a></li>
+                <li><a href="https://www.pluxml.org/blog" title="Blog">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col sml-hide med-hide lrg-3 lrg-show">
+              <ul class="menu text-right">
+                <li><a href="http://plucss.pluxml.org/" title="PluCSS">PluCSS</a></li>
+                <li><a href="http://visualwizard.pluxml.org/" title="Visual Wizard">Visual Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+
+        <div class="navbar" role="navigation">
+            <div class="container">
+
+                <div class="responsive-menu">
+                	<label for="Menu"></label>
+                	<input type="checkbox" id="Menu">
+                  <ul class="menu vertical expanded sml-show med-hide">
+                      <li class="">
+                        <a class="" href="../../installer/installation/">Installer</a>
+                      </li>
+                      <li class="">
+                        <a class="active" href="./">Utiliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../developper/developpement/">Développer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../divers/divers-autre/">Divers</a>
+                      </li>
+                  </ul>
+                </div>
+
+                <div class="navbar-collapse collapse sml-show med-show">
+                      <ul class="nav navbar-nav sml-hide med-show">
+                        <li>
+                            <a href="https://wiki.pluxml.org">Documentation de PluXml</a>
+                        </li>
+                      </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/pluxml/utiliser/utilisation.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="grid">
+                <div class="col med-2 sml-hide med-show">
+<ul class="menu vertical expanded">
+    <li class="">
+      <a class="" href="../../installer/installation/">Installer</a>
+    </li>
+    <li class="">
+      <a class="active" href="./">Utiliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../developper/developpement/">Développer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-officiels/">Plugins officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/plugins-non-officiels/">Plugins non officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../../divers/divers-autre/">Divers</a>
+    </li>
+</ul></div>
+                
+                
+                    <div class="col med-7" role="main">
+
+<h1 id="les-articles">Les articles</h1>
+<h2 id="liste-des-articles">Liste des articles</h2>
+<p>La page Articles liste tous vos articles, qu’ils soient en cours de rédaction, publiés, brouillons, ou en attente de validation.</p>
+<p><img alt="liste des articles" src="../img/liste-articles.jpg" /></p>
+<h3 id="articles-publies">Articles publiés</h3>
+<p>Vos articles en ligne et publiés. Vous pouvez les modifier, les classer et les retravailler si besoin.</p>
+<h3 id="brouillons">Brouillons</h3>
+<p>Vos articles en cours de rédaction. Ces articles ne sont pas encore en ligne et sont des brouillons. Ce statut passera à Publié après la mise en ligne de l’article. À tout moment il est possible de le repasser hors ligne en rouvrant cet article et en cliquant sur Mettre hors ligne. Le statut repassera alors à Brouillon.</p>
+<h3 id="articles-en-attente-de-validation">Articles en attente de validation</h3>
+<p>Ce sont les articles en attente de validation. Ils sont prêts pour être publiés mais nécessitent l’intervention d’un autre utilisateur pour une relecture. La modération des articles par des profils <em>Rédacteur</em> et <em>Éditeur</em> s’active dans les paramètres de PluXml.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Paramétrage de PluXml</p>
+<p>Voir la section : les Comptes utilisateurs</p>
+</div>
+<h3 id="filtrer-la-liste-des-articles">Filtrer la liste des articles</h3>
+<p>Vous pouvez filtrer les articles apparaissant dans la liste en fonction des rubriques pour faciliter ainsi la recherche et la gestion de vos articles.</p>
+<h3 id="supprimer-un-article">Supprimer un article</h3>
+<p>Pour supprimer un article, sélectionnez-le (ou les articles que vous souhaitez supprimer), en cochant les cases à cocher correspondantes. Dans la liste déroulante Pour la sélection, sélectionnez <em>Supprimer</em> et cliquez sur le bouton Ok.</p>
+<h3 id="rechercher-dans-les-articles">Rechercher dans les articles</h3>
+<p>Vous disposez d’un moteur de recherche pour retrouver facilement un article. Saisissez dans la zone de recherche le numéro de l’article (identifiant) ou le mot à rechercher dans le titre, puis cliquez sur le bouton Rechercher.</p>
+<h3 id="gerer-un-article">Gérer un article</h3>
+<p>Une fois connecté au panneau d’administration, l’ensemble des articles rédigés ou en cours de rédaction, sont listés dans la section Articles. Lors de la première installation, un premier article est créé pour permettre de se familiariser avec les outils d’édition. Cet article peut être modifié en cliquant sur son titre : <em>Premier article</em>.</p>
+<p>Pour rédiger un nouvel article, cliquez sur le lien <em>Nouvel article</em> dans la barre des menus dans le panneau d’administration. La page d’édition d'un article est composée de deux parties principales : la partie centrale qui contient les formulaires pour rédiger le contenu de l'article et une partie à droite qui liste les options.</p>
+<h4 id="barre-daction">Barre d’action</h4>
+<p><strong>Bouton Aperçu</strong></p>
+<p>Le bouton Aperçu permet de visualiser l'article en cours de rédaction coté visiteur du site, sans que l'article ne soit publié. Il permet de contrôler les modifications d'un article avant de le mettre en ligne.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Comptes utilisateurs</p>
+</div>
+<p><strong>Bouton Enregistrer</strong></p>
+<p>Le bouton <em>Enregistrer</em> permet d’enregistrer les modifications effectuées sur l’article en cours de rédaction ou de modification.</p>
+<p><strong>Bouton Mettre hors ligne et Enregistrer comme brouillon</strong></p>
+<p>Lorsqu’un article est publié, il est possible de ne plus l’afficher dans la partie publique du site sans pour autant le supprimer dans le cas par exemple où l’on veut faire une mise à jour. En cliquant sur le bouton Mettre hors ligne, l’article est toujours disponible dans la partie administration mais son état passe de publié à brouillon. Le bouton Mettre hors ligne est changé en Enregistrer brouillon. Lors de la rédaction d’un nouvel article, il n’y a pas de bouton Mettre hors ligne mais directement le bouton <em>Enregistrer</em> brouillon.</p>
+<p><strong>Bouton Publier un article</strong>
+Pour un nouvel article ou pour les articles à l’état de brouillon, il est possible de les publier, c’est-à-dire de les rendre visibles dans la partie publique du site. Cette publication se fait simplement en cliquant sur le bouton <em>Publier</em>. Lorsqu’un article est publié, ce bouton n’est plus disponible. Il est remplacé par le bouton <em>Enregistrer</em> qui permet de publier toute modification immédiatement, sans avoir besoin de mettre l'article en brouillon.</p>
+<p><strong>Bouton Supprimer</strong></p>
+<p>Le bouton <em>Supprimer</em> permet de supprimer l’article. Une fenêtre de validation demandera de confirmer l’action. Si l’action est confirmée, elle est irréversible : l’article ne pourra pas être récupéré.</p>
+<h4 id="la-partie-centrale-redaction-ou-modification-dun-article">La partie centrale : rédaction ou modification d'un article</h4>
+<p><strong>Le titre</strong></p>
+<p>Le premier champ de saisie concerne le titre de l’article. Notez que si le titre est omis lors de l’enregistrement, PluXml en génèrera un dont l’intitulé sera <em>Nouvel article</em>. Ce titre pourra être modifié par la suite, de même que l’URL construite automatiquement par le système (voir le paragraphe Options).</p>
+<p><strong>Le corps de l’article</strong></p>
+<p>Votre article se décompose en deux parties.</p>
+<ul>
+<li>Le chapô (facultatif) : correspond à l’accroche de votre article. Cliquez sur le lien <em>Afficher</em> pour visualiser le champ qui vous permettra d’écrire les premières lignes de votre article. Ces dernières apparaîtront sur la page d’accueil de votre site suivies d'un lien <em>Lire la suite...</em></li>
+<li>Le contenu : le corps de l’article.</li>
+</ul>
+<p>Si le chapô n’est pas renseigné, le contenu de l’article sera affiché en entier sur la page d’accueil. Cliquez sur le lien <em>Afficher</em> pour faire apparaitre la zone de saisie du chapô. Le texte du chapô et du contenu est au format html, c’est-à-dire que si vous souhaitez le mettre en forme, vous pourrez utiliser les balises du langage html. Si vous n'êtes pas familier avec le langage html, il existe plusieurs plugins qui vous permettront d'enrichir ces formulaires avec un éditeur WYSIWYG.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Plugins</p>
+</div>
+<p><strong>Lien de l’article</strong></p>
+<p>En bas de l’éditeur, se trouve l’URL finale que l’article possédera quand il sera en ligne. Au niveau de la section Lien de l’article, le lien Voir permet à tout moment d’afficher l’article dans le navigateur.</p>
+<p><strong>Image d’accroche</strong></p>
+<p>Cette option facultative vous permet d’ajouter une image d’illustration à l’article. En cliquant sur l’icône « + », vous pourrez sélectionner une image dans le Gestionnaire de médias. Le titre de l’image (facultatif) sera visible au survol de l’image avec la souris. Le texte alternatif de l’image (facultatif) est le texte affiché à la place de l’image si celle-ci n’existe pas ou plus sur le serveur.</p>
+<h4 id="la-partie-de-droite-les-options-dun-article">La partie de droite : les options d’un article</h4>
+<p><strong>État</strong></p>
+<p>Lors de la rédaction d'un nouvel article, le statut affiché de l'article est Brouillon. Il passera à l’état Publié dès qu’il aura été mis en ligne.</p>
+<p><strong>Auteur</strong></p>
+<p>Par défaut, c’est le nom de l’utilisateur en cours qui apparaît mais il est possible de le modifier s’il y a plusieurs membres et si les droits de l'utilisateur connecté à la zone d'administration le permettent. Pour changer l'auteur de l'article, sélectionnez-le dans la liste déroulante <em>Auteur</em></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Comptes utilisateurs</p>
+</div>
+<p><strong>Date de publication</strong></p>
+<p>Par défaut, lors de la rédaction d’un nouvel article, la date de publication correspond à la date de rédaction de l'article. Il est possible de choisir la date et l’heure de publication de l’article en renseignant ces champs ou en cliquant sur l’icône calendrier pour choisir automatiquement la date courante.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Paramétrage de PluXml</p>
+</div>
+<p>Il est possible de mettre une date future afin de planifier la date de publication de l'article. Tant que la date n'est pas atteinte, l'article n'est pas visible sur la partie publique du site.</p>
+<p><strong>Date de création</strong></p>
+<p>La date de création est renseignée par défaut. Elle peut être modifiée.</p>
+<p><strong>Date de modification</strong></p>
+<p>La date de création est renseignée par défaut. Elle peut être modifiée. Elle est actualisée à chaque enregistrement de l’article après une création ou une modification</p>
+<p><strong>Emplacements (catégories)</strong></p>
+<p>Ce sont les catégories dans lesquelles l'article peut être classé. Il en existe plusieurs en natif : <em>Non classé</em>, <em>Page d'accueil</em> et <em>Rubrique 1</em>. Elles peuvent être modifiées et d’autres ajoutées.</p>
+<p>Un article peut être associé à aucune catégorie, à une ou à plusieurs. Il suffit de cocher les cases souhaitées.</p>
+<p><strong>Nouvelle catégorie</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Catégories</p>
+</div>
+<p><strong>Mots clés</strong></p>
+<p>Séparez les mots clés avec des virgules. Avec le thème par défaut les mots clés (ou tags) apparaîtront sous vos articles et dans le nuage de mot clés. Ils attireront l’attention de vos lecteurs et les redirigeront vers toutes les pages comportant les tags en question. Ces tags ne sont pas utilisés par les moteurs de recherches mais uniquement par votre site.</p>
+<p><strong>Autoriser les commentaires</strong></p>
+<p>Vous pouvez autoriser le système de commentaires pour l'article. Pour qu'il soit effectif, il faut que la publication des commentaires soit autorisée dans les paramètres généraux du site.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Paramétrage de PluXml</p>
+<p>Voir la section : Les Commentaires</p>
+</div>
+<p><strong>Url</strong></p>
+<p>C'est l'URL par laquelle l'article est accessible. Par défaut, Pluxml remplira ce champ automatiquement à partir du titre de l'article. Cette URL peut être modifiée. Elle doit être unique.</p>
+<p><strong>Template</strong></p>
+<p>L'affichage du contenu de tous les articles coté visiteur se base sur le fichier article.php disponible dans le dossier du thème utilisé. Il est possible de personnaliser l'affichage de chaque article en utilisant un fichier template. Sélectionnez le fichier template à utiliser dans la liste déroulante template.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Templates</p>
+</div>
+<p><strong>Contenu balise title (option)</strong></p>
+<p>Ce champ permet de définir le contenu de la balise <em>\&lt;title></em> de la page html de l'article. Par défaut la balise <em>\&lt;title></em> est renseignée à partir du titre de l'article.</p>
+<p><strong>Contenu balise meta "description" (option)</strong></p>
+<p>Ce champ permet de définir le contenu de la balise <description> de la page html de l'article. Il permet de définir la description de votre article. Cette information est utilisée par les moteurs de recherche.</p>
+<p><strong>Contenu balise meta "keywords" (option)</strong></p>
+<p>Ce champ permet de définir le contenu de la balise <keywords> de la page html de l'article. Séparez les mots clés par des virgules. Ils sont utilisés par les moteurs de recherche pour référencer les articles.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Commentaires</p>
+</div>
+<p>En dessous du lien <em>Gérer les commentaires</em> sont affichés les nombres de commentaires en ligne et hors ligne rattaché à l’article.</p>
+<h2 id="les-commentaires">Les commentaires</h2>
+<p>Les commentaires peuvent être modifiés, supprimés ou mis hors ligne, depuis l’interface d’administration de PluXml via le menu Commentaire. L’administrateur peut agir sur les commentaires via deux écrans : <em>Liste des commentaires</em> et <em>Edition d’un commentaire</em>.</p>
+<h3 id="autoriser-ou-interdire-les-commentaires">Autoriser ou interdire les commentaires</h3>
+<p>Par défaut, les commentaires postés par les internautes sont publiés automatiquement. Toutefois, l’administrateur du site peut interdire leur publication soit globalement sur l’ensemble du site, soit unitairement par article. À noter la présence d’une option pour modérer un commentaire à sa création.</p>
+<p><strong>Pour tous les articles</strong></p>
+<p>Pour interdire les commentaires, il faut se rendre sur l’interface d’administration de PluXml, puis dans <em>Paramètres &gt; Configuration de base</em> :</p>
+<p>Sélectionnez <em>Non</em> à la ligne <em>Autoriser les commentaires</em>. Cliquez sur le bouton <em>Modifier</em> la configuration de base pour enregistrer le nouveau réglage.</p>
+<p>L’interdiction globale supprime la possibilité de créer un commentaire pour tous les articles du site. Cependant, cette option n’efface pas ceux préalablement publiés.</p>
+<p>Pour les autoriser, reprendre la même procédure en sélectionnant <em>Oui</em> à la ligne <em>Autoriser</em> les
+commentaires.</p>
+<p><strong>Pour un article spécifique</strong></p>
+<p>L’autorisation ou l’interdiction de commentaires peuvent être gérées article par article. Pour interdire les commentaires sur un article spécifique, se rendre sur l’interface d’administration de PluXml, puis cliquer sur le menu <em>Articles</em>. Éditez l’article (lien Éditer). Sélectionnez <em>Non</em> pour le paramètre Autoriser les commentaires. Cliquez sur le bouton <em>Enregistrer</em>, <em>Publier</em> ou <em>Enregistrer le brouillon</em> selon l’état de l’article afin d'enregistrer le nouveau réglage.</p>
+<p>Le paramètre <em>Autoriser les commentaires</em> n’apparaît pas si les commentaires sont globalement interdits.</p>
+<p>Pour autoriser les commentaires sur un article, reprendre la même procédure en sélectionnant <em>Oui</em> pour le paramètre Autoriser les commentaires.</p>
+<p><strong>Modérer les commentaires à leur création</strong></p>
+<p>PluXml offre la possibilité de modérer les commentaires à leur création. Cela signifie que chaque commentaire doit être validé par l’administrateur du site pour être publié. Pour activer la modération des commentaires à leur création, il faut se rendre sur l'interface
+d'administration de PluXml, menu <em>Paramètres</em>, sous-menu <em>Configuration de base</em>.</p>
+<p>Sélectionnez <em>Oui</em> à la ligne <em>Modérer les commentaires à la création</em>. Cliquer sur le bouton Modifier la configuration de base afin d'enregistrer le nouveau réglage.</p>
+<p>Lorsque la modération des commentaires à leurs créations est activée, chaque commentaire créé, est consultable dans le menu Commentaires de l’interface d’administration de PluXml. Pour le mettre en ligne, lire la section <em>Commentaires en ligne</em> ci-dessous.</p>
+<h3 id="liste-des-commentaires">Liste des commentaires</h3>
+<p>Cet écran présente les commentaires sous forme d’un tableau à 4 colonnes :</p>
+<ul>
+<li>Date : date de création du commentaire.</li>
+<li>Message : texte du commentaire accompagné de son statut (en ligne ou hors ligne).</li>
+<li>Auteur : auteur du commentaire.</li>
+<li>Action : actions d'administration disponibles pour ce commentaire</li>
+<li>Répondre : renvoie vers l'écran de réponse au commentaire.</li>
+<li>Éditer : modifier le commentaire.</li>
+<li>Article : renvoie vers l'écran de modification de l’article attaché au commentaire.</li>
+</ul>
+<p><img alt="liste des commentaires" src="../img/liste-commentaires.jpg" /></p>
+<p>Une liste de choix déroulante Pour la sélection... est accessible en haut de l’interface. L’action choisie dans cette liste sera appliquée à chaque message coché, après un clic sur le bouton Ok. Les actions disponibles sont :</p>
+<ul>
+<li>Mettre en ligne</li>
+<li>Mettre hors ligne</li>
+<li>Supprimer</li>
+</ul>
+<p>Deux liens en bas de page permettent de s’abonner aux flux RSS des commentaires hors ligne et en-ligne. Ces deux flux sont privés, ils permettent à l’administrateur de suivre la publication de commentaires sur son site et d’entrer directement dans le menu l’administration de PluXml pour arriver sur l’écran <em>Édition d’un commentaire</em>.</p>
+<h3 id="edition-dun-commentaire">Édition d’un commentaire</h3>
+<p>Éditez le commentaire en cliquant sur le lien Éditer, situé à droite du commentaire dans la colonne <em>Action</em>. La page <em>Édition d’un commentaire</em> s’affiche.</p>
+<p><img alt="ecrire un commentaire" src="../img/ecrire-commentaires.jpg" /></p>
+<p>Plusieurs actions sont mises à disposition de l’administrateur via une série de boutons placés en bas de page. Les actions disponibles dépendent du statut du commentaire édité. Actions disponibles pour un commentaire en ligne :</p>
+<ul>
+<li>Suppression</li>
+<li>Mise hors ligne</li>
+<li>Réponse au commentaire</li>
+<li>Mise à jour</li>
+</ul>
+<p>Actions disponibles pour un commentaire hors ligne</p>
+<ul>
+<li>Suppression</li>
+<li>Mise en ligne</li>
+<li>Mise à jour</li>
+</ul>
+<p><strong>Commentaires en ligne</strong></p>
+<p>Par défaut, un commentaire créé est au statut <em>En ligne</em> (si l’option Modérer les commentaires à la création n’est pas activée). Par conséquent, il sera affiché sur le site en partie publique après l'article concerné.</p>
+<p>Pour mettre en ligne un commentaire, il faut agir via l’interface d’administration des commentaires sur l’action Mettre en ligne de l’écran Liste des commentaires ou sur le bouton Valider la publication de l’écran Édition d’un commentaire.</p>
+<p><strong>Commentaires hors ligne</strong></p>
+<p>L’interface d'administration de PluXml permet d’identifier rapidement le nombre de commentaires hors ligne. Le nombre de commentaire
+hors ligne est affiché en blanc sur fond rouge à droite du menu <em>Commentaires</em>.</p>
+<p><img alt="commentaires hors ligne" src="../img/commentaires-horsligne.jpg" /></p>
+<p>Un commentaire est hors ligne s’il a été modéré par l’administrateur ou si la publication dès la création a été désactivée par l’administrateur (option Modérer les commentaires à la création activée).</p>
+<p>Pour mettre hors ligne un commentaire, il faut agir via l’interface d’administration des commentaires sur l’action Mettre hors en ligne
+de l’écran Liste des commentaires ou sur le bouton Mettre hors ligne de l’écran Édition d’un commentaire.</p>
+<p><strong>Modifier un commentaires</strong></p>
+<p>Tout commentaire peut être modifié, qu’il soit en ligne ou hors ligne, via l’écran Edition d’un commentaire. Ce dernier permet la modification des champs Date et heure de publication, Auteur, Site, E-mail et Commentaire (le contenu du message).</p>
+<p>Pour un commentaire en ligne, toute modification apportée à l’un de ces champs sera publiée en cliquant sur le bouton Mettre à jour. Le texte est au format html, c’est-à-dire que si vous souhaitez le mettre en forme, vous pourrez utiliser les balises du langage html. Si vous n'êtes pas familier avec le langage html, il existe plusieurs plugins qui vous permettront d'enrichir ces formulaires avec un éditeur WYSIWYG.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Plugins</p>
+</div>
+<p>Pour un commentaire hors ligne, la modification apportée sera enregistrée en cliquant sur le bouton <em>Mettre à jour</em>. Vous pouvez enregistrer et publier le commentaire en même temps en cliquant sur le bouton Valider la publication.</p>
+<h3 id="repondre-a-un-commentaire">Répondre à un commentaire</h3>
+<p>L’administrateur peut répondre à un commentaire en cliquant sur le lien Répondre, depuis l’écran Liste des commentaires ou en cliquant sur Répondre à ce commentaire depuis l’écran <em>Édition d’un commentaire</em>.</p>
+<p><img alt="répondre à un commentaires" src="../img/repondre-commentaire.jpg" /></p>
+<p>Cette page est divisée en deux parties :</p>
+<ul>
+<li>Rédiger un commentaire : l e champ Informations permet de répondre. Le code HTML déjà présent affiche la date et le nom de l’auteur du commentaire à qui on répond.</li>
+<li>Commentaires de cet article : affichage ante-chronologique des commentaires attachés à l’article.</li>
+</ul>
+<p>Pour répondre, saisir du texte dans le champ Informations puis cliquez sur le bouton Enregistrer. La réponse est alors immédiatement publiée. Le texte est au format html, c’est-à-dire que si vous souhaitez le mettre en forme, vous pourrez utiliser les balises du langage html. Si vous n’êtes pas familier avec le langage HTML, il existe plusieurs plugins qui vous permettront d’enrichir ces formulaires avec un éditeur WYSIWYG.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Plugins</p>
+</div>
+<h3 id="supprimer-un-commentaire">Supprimer un commentaire</h3>
+<p>Tout commentaire peut être supprimé, qu’il soit en ligne ou hors ligne, via les deux écrans d’administration des commentaires (Liste des commentaires et Édition d’un commentaire).</p>
+<p>Liste des commentaires :</p>
+<ul>
+<li>Cocher le commentaire à supprimer.</li>
+<li>Sélectionner l’action <em>Supprimer</em> dans la liste déroulante <em>Pour la sélection...</em></li>
+<li>Cliquer sur le bouton <em>Ok</em></li>
+</ul>
+<p>Le commentaire est immédiatement supprimé, sans demande de confirmation.</p>
+<p>Édition d’un commentaire :</p>
+<ul>
+<li>Cliquer sur le bouton <em>Supprimer</em>.</li>
+<li>Une fenêtre demande la confirmation de suppression</li>
+<li>Cliquer sur <em>Ok</em> pour supprimer définitivement le commentaire.</li>
+</ul>
+<h3 id="flux-rss-des-commentaires">Flux RSS des commentaires</h3>
+<p>Accessibles depuis l’administration à l’écran Liste des commentaires, ces flux RSS, permettent aux utilisateurs du site, de suivre la publication de nouveaux commentaires.</p>
+<p>Les utilisateurs ayant les droits suffisants peuvent accéder directement depuis ces flux, aux écrans de modérations des commentaires, grâce à un lien présent dans le flux RSS.</p>
+<h2 id="pages-statiques">Pages statiques</h2>
+<h3 id="creer-une-nouvelle-page-statique">Créer une nouvelle page statique</h3>
+<p>Pour créer une page statique, cliquez sur le menu Pages statiques. Par la suite, cette page recensera l’ensemble des pages statiques que vous aurez rédigées. En face de Nouvelle page, renseignez le titre de la page que vous souhaitez créer, puis cliquez sur Modifier la liste des pages statiques (à ce stade, il n’est pas encore nécessaire de remplir les autres champs).</p>
+<p><img alt="lister les pages statiques" src="../img/liste-pagesstatiques.jpg" /></p>
+<p>Lorsque cela sera fait, votre page s’ajoutera dans le tableau listant vos pages, mais celle-ci n’est pas encore active. Pour éditer le contenu de cette page, cliquez sur le lien Éditer dans la colonne Action situé sur la ligne de la page que vous avez créée précédemment.</p>
+<p>À ce stade, vous pouvez commencer à rédiger le contenu de votre page. Lorsque cela sera fait, cliquez sur le bouton Enregistrez cette page statique. Votre page est maintenant créée, mais elle n’est pas encore en ligne.</p>
+<h3 id="proprietes-des-pages-statiques">Propriétés des pages statiques</h3>
+<p><strong>Page d’accueil</strong></p>
+<p>PluXml vous offre la possibilité de placer une page spécifique en page d’accueil. Pour cela, cliquez sur le menu Page statiques, et dans la colonne Page d’accueil, cochez la ligne correspondant à la page que vous souhaitez placer en page d’accueil. Pour valider votre changement, cliquez sur le bouton <em>Modifier la liste des pages statiques</em>.</p>
+<p><strong>Groupe de pages statiques</strong></p>
+<p>Si certaines de vos pages statiques font partie d’une même thématique, vous avez la possibilité de les organiser en groupes. Pour cela, cliquez sur le menu Pages statiques et dans la colonne Groupe saisissez le nom du groupe souhaité pour chacune de vos pages. Pour valider vos changements, cliquez sur le bouton Modifier la liste des pages statiques.</p>
+<p><strong>Changer l’URL d’une page statique</strong></p>
+<p>Lorsque vous créez une page statique, PluXml génère automatiquement une URL basée sur le titre que vous avez choisi. Pour modifier l’URL d’une page statique, cliquez sur le menu Pages statiques, et dans la colonne URL, modifiez l’adresse URL sur la ligne correspondant à la page que vous souhaitez modifier.</p>
+<p>Il faudra respecter le formalisme imposé par le protocole HTTP, afin d’être sûr que cette adresse soit prise en compte dans tous les cas. Elle ne devra contenir ni accent, ni caractères spéciaux (&amp;, €, !, ...), ni espace. Dans le doute, il est préférable de laisser PluXml la générer automatiquement.</p>
+<p><strong>Activer ou désactiver une page statiques</strong></p>
+<p>Pour activer ou désactiver une page statique (mettre en ligne ou hors ligne une de vos pages), cliquez sur le menu Pages statiques, et repérez la colonne nommée Active. Sur la ligne correspondant à la page que vous souhaitez, choisissez Oui ou Non à l’aide du menu déroulant pour sélectionner la mise en ligne ou hors ligne de votre page. Pour valider votre changement, cliquez sur le bouton Modifier la liste des pages statiques.</p>
+<p><strong>Tri des pages statiques</strong></p>
+<p>PluXml classe vos pages par numéro. Modifiez l’ordre de vos pages en cliquant sur le menu Pages statiques, puis repérez la colonne nommée Ordre. Saisissez un chiffre sur la ligne correspondant à la page que vous souhaitez modifier, puis cliquez sur Modifier la liste des pages statiques pour valider vos changements.</p>
+<p><strong>Masquer une page statique dans la barre des menus</strong></p>
+<p>Par défaut, PluXml affiche l’ensemble de vos pages sur le menu de navigation de votre site. Vous avez la possibilité d’exclure des pages de ce menu sans pour autant les mettre hors ligne. Pour cela, cliquez sur le menu Pages statiques, et dans la colonne nommée Menu, sélectionnez Afficher ou Masquer sur la ligne correspondant à la page que vous souhaitez modifier. Pour valider votre
+changement, cliquez sur le bouton Modifier la liste des pages statiques.</p>
+<h3 id="rediger-le-contenu-dune-page-statique">Rédiger le contenu d’une page statique</h3>
+<p>Pour rédiger une page statique, cliquez sur le menu Page statiques, repérez la colonne nommée Action, et sur la ligne correspondant à la page que vous souhaitez remplir, cliquez sur le lien Éditer. Saisissez le contenu de votre page, puis cliquez sur le bouton Enregistrer cette page statique pour valider vos changements.</p>
+<p><img alt="liste des commentaires" src="../img/ecrire-pagestatique.jpg" /></p>
+<h3 id="options-des-pages-statiques">Options des pages statiques</h3>
+<p><strong>Template</strong></p>
+<p>Vous avez la possibilité de choisir une mise en page pour votre page statique (en fonction du thème). Pour choisir votre template, éditez votre page, puis en bas, sélectionnez une mise en page à l’aide du menu déroulant dans la partie nommé Template. Pour finir, cliquez sur le bouton Enregistrer cette page statique pour valider vos changements.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Templates</p>
+</div>
+<p>Si vous n’êtes pas familier avec le langage HTML, il existe plusieurs plugins qui vous permettront d’enrichir ces formulaires avec un éditeur WYSIWYG.</p>
+<p><strong>Balises title et meta</strong></p>
+<p>PluXml vous offre la possibilité de choisir vos balises title et méta pour chacune de vos pages. Si vous choisissez de ne pas personnaliser ces balises, PluXml utilisera celle que vous avez choisie dans les paramètres généraux du site.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Paramétrage de PluXml</p>
+</div>
+<p>Pour éditer vos balises title et méta pour chacune de vos pages, éditez la page voulue, puis saisissez les champs nommés Contenu balise title (option), Contenu de la balise meta « description » pour cette page statique (option) et Contenu de la balise meta « keywords » pour cette page statique (option). Pour finir, cliquez sur le bouton Enregistrer cette page statique pour valider vos
+changements.</p>
+<p>Notez que ces champs sont importants pour le référencement de votre page sur les moteurs de recherche.</p>
+<p><strong>Date de création et de modification</strong></p>
+<p>Les dates de création et de modification de la page sont renseignées automatiquement par PluXml, mais elles peuvent être changées manuellement si besoin.</p>
+<h3 id="supprimer-une-page-statique">Supprimer une page statique</h3>
+<p>Pour supprimer une page statique, cliquez sur le menu Pages statiques, repérez la colonne nommée Identifiant, et cochez la case sur la ligne ou les lignes des pages correspondantes à celles que vous souhaitez supprimer. Pour valider la suppression, cliquez sur le bouton Modifier la liste des pages statiques.</p>
+<h2 id="les-categories">Les Catégories</h2>
+<h3 id="creer-une-nouvelle-categorie">Créer une nouvelle catégorie</h3>
+<p>Pour créer une catégorie relative à un ou plusieurs articles, vous pouvez utiliser le gestionnaire de catégories. Pour commencer, cliquez sur le menu Catégories et en face de Nouvelle catégorie, saisissez le nom de votre catégorie (les autres champs ne sont pas nécessaires à ce stade). Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.</p>
+<p><img alt="liste des catégories" src="../img/liste-categories.jpg" /></p>
+<h3 id="proprietes-dune-categorie">Propriétés d’une catégorie</h3>
+<p><strong>Changer l’URL d’une catégorie</strong></p>
+<p>Vous avez la possibilité de modifier l’adresse URL de chaque catégorie : pour cela, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, puis dans la colonne nommée Url, saisissez son adresse URL.</p>
+<p>Si vous souhaitez malgré tout la modifier, il faudra respecter le formalisme imposé par le protocole HTTP, afin d’être sûr que cette adresse soit prise en compte dans tous les cas. Elle ne devra contenir ni accent, ni caractères spéciaux (&amp;, €, !, ...), ni espace. Dans le doute, il est préférable de laisser PluXml la générer automatiquement.</p>
+<p><strong>Activer ou désactiver une catégorie</strong></p>
+<p>Pour activer ou désactiver une catégorie, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et dans la colonne nommée Active, utiliser le menu déroulant pour choisir votre statut (Oui ou Non). Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider la modification.</p>
+<p><strong>Tri des articles classés dans une catégorie</strong></p>
+<p>Vous disposez de trois modes de tri pour trier les articles dans les catégories : date décroissante, date croissante, ou par ordre alphabétique (en fonction du titre). Pour modifier ce paramètre, cliquez sur le menu Catégorie, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et dans la colonne nommée Tri des articles, sélectionnez-le menu déroulant pour faire votre choix. Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.</p>
+<p><strong>Nombre d’articles par page</strong></p>
+<p>Pour définir les nombre d'articles affichés par page, cliquez sur le menu Catégorie, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et, dans la colonne nommée Nb art/page, insérez une valeur numérique de votre choix (par exemple 5). Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.</p>
+<p><strong>Tri des catégories</strong></p>
+<p>Les catégories peuvent être classées dans l’ordre que vous souhaitez. Pour cela, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et, dans la colonne nommée Ordre, saisissez un chiffre (le chiffre 1 indique que cette catégorie sera en première position et ainsi de suite). Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.</p>
+<p><strong>Masquer une catégorie dans la barre des menus</strong></p>
+<p>PluXml dispose d’un menu de navigation où vous pouvez afficher la liste des catégories. Pour cela, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et, dans la colonne nommée Menu, utilisez-le menu déroulant pour faire votre choix (Afficher ou Masquer). Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.</p>
+<h3 id="options-des-categories">Options des catégories</h3>
+<p><img alt="éditer une catégorie" src="../img/editer-categorie.jpg" /></p>
+<p><strong>Afficher les articles d’une catégorie sur la page d’accueil</strong></p>
+<p>PluXml vous offre la possibilité de placer les articles d’une catégorie en page d’accueil. Pour cela, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, puis cliquez sur le lien Options. Dans le menu déroulant Afficher les articles de cette catégorie sur la page d’accueil, choisissez la valeur Oui ou Non.</p>
+<p>Pour valider vos changements, cliquez sur le bouton Mettre à jour cette catégorie.</p>
+<p><strong>Description</strong></p>
+<p>Pour ajouter une description à chacune des catégories, cliquez sur le menu Catégorie, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, puis cliquez sur le lien Options. Saisissez une description pour la catégorie dans la zone Description. Pour valider vos changements, cliquez sur le bouton Mettre à jour cette catégorie.</p>
+<p><strong>Template</strong></p>
+<p>Pour attribuer un template à une catégorie, cliquez sur le menu Catégorie, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, puis cliquez sur le lien Options. Dans le menu déroulant Template, sélectionnez la mise en page de votre choix. Pour valider vos changements, cliquez sur le bouton Mettre à jour cette catégorie.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Voir la section : Les Templates</p>
+</div>
+<p><strong>Balises title et meta</strong></p>
+<p>Pour paramétrer les balises title et méta de chacune des catégories, cliquez sur le menu Catégorie, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, puis cliquez sur le lien Options.</p>
+<p>Saisissez dans les champs suivant les valeurs souhaitées :</p>
+<ul>
+<li>Contenu balise title (option)</li>
+<li>Contenu de la balise meta « description » pour cette catégorie (option)</li>
+<li>Contenu de la balise meta « description » pour cette catégorie (option)</li>
+</ul>
+<p>Si vous laissez ces champs vides, PluXml utilisera le contenu de vos balises définies par défaut dans les paramètres de base du site.
+Pour valider vos changements, cliquez sur le bouton Mettre à jour cette catégorie. Ces champs sont importants pour le référencement sur les moteurs de recherches.</p>
+<h2 id="gestionnaire-de-medias">Gestionnaire de médias</h2>
+<p>Le gestionnaire de médias permet de gérer les images et les documents stockés sur votre site. Cet écran est accessible en cliquant sur le lien Médias du menu principal de la zone d'administration.</p>
+<p><img alt="gestionnaire de médias" src="../img/medias.jpg" /></p>
+<h3 id="ajouter-des-fichiers">Ajouter des fichiers</h3>
+<p>Le bouton Ajouter Fichiers vous permet d'envoyer des fichiers sur votre site. La taille maximale des images dépend de la configuration du serveur. Les formats d’images que vous pouvez utiliser avec PluXml sont : gif, jpg, jpeg, bmp et png.</p>
+<h3 id="copier-vers-le-presse-papier">Copier vers le presse papier</h3>
+<p>Le bouton « Copier le lien dans le presse papier » vous permet de copier l’URL du fichier vous permettant d’y accéder directement.</p>
+<p><img alt="copier un média" src="../img/medias-copier.jpg" /></p>
+<h3 id="renommer-un-fichier">Renommer un fichier</h3>
+<p>Le bouton « Renommer » vous permet de renommer un fichier.</p>
+<p><img alt="renommer un média" src="../img/medias-renommer.jpg" /></p>
+<h3 id="redimensionner-les-images">Redimensionner les images</h3>
+<p>PluXml peut redimensionner vos images automatiquement. Il suffit de choisir une taille par défaut dans la liste ou bien de spécifier un format personnalisé. Le redimensionnement ne rogne pas sur les images, les proportions sont conservées.</p>
+<h3 id="creer-des-miniatures">Créer des miniatures</h3>
+<p>PluXml peut créer automatiquement une miniature des images envoyées. La création de miniatures respecte les proportions de l’image d’origine.</p>
+<h3 id="documents">Documents</h3>
+<p>La liste des fichiers autorisés pouvant être envoyés sur le site est :</p>
+<p>7z|aiff|asf|avi|csv|doc|docx|epub|fla|flv|gz|gzip|m4a|m4v|mid|mov|mp3|mp4|mpc|mpeg|mp
+g|ods|odt|odp|ogg|pdf|ppt|pptx|pxd|qt|ram|rar|rm|rmi|rmvb|rtf|swf|sxc|sxw|tar|tgz|txt|vtt|
+wav|webm|wma|wmv|xcf|xls|xlsx|zip.</p>
+<h3 id="creer-un-dossier">Créer un dossier</h3>
+<p>Pour créer un dossier dans l'emplacement en cours de visualisation, saisissez le nom d'un dossier dans le champ Nouveau dossier et cliquez le bouton Créer.</p>
+<h3 id="changer-de-dossier">Changer de dossier</h3>
+<p>Pour visualiser le contenu d'un dossier ou changer d'emplacement, sélectionnez dans la liste déroulante Dossier le nom du dossier et cliquez sur le bouton Ok</p>
+<h3 id="trier-laffichage-des-fichiers">Trier l’affichage des fichiers</h3>
+<p>Le tableau affichant le contenu de votre répertoire, et réparti ainsi :</p>
+<ul>
+<li>Nom du fichier : le nom de votre fichier</li>
+<li>Extension : le format du fichier (.jpg, .zip, etc)</li>
+<li>Taille : la taille kilo-octet du fichier</li>
+<li>Dimensions : la résolution de l'image (par exemple, 800x600)</li>
+<li>Date : la date d’ajout du fichier sur le serveur</li>
+</ul>
+<p>Cliquez sur l’un des titres de colonnes, pour changer le tri des fichiers.</p>
+<h3 id="deplacer-des-fichiers">Déplacer des fichiers</h3>
+<p>Sélectionnez un fichier en cochant la case correspondante. Sélectionnez le dossier de destination dans la liste déroulante Dossier. Dans la liste déroulante Pour la sélection sélectionnez la valeur Déplacer. Cliquez sur Ok pour effectuer le déplacement de l’image.</p>
+<h3 id="supprimer-des-fichiers">Supprimer des fichiers</h3>
+<p>Sélectionnez un fichier en cochant la case correspondante. Dans la liste déroulante Pour la sélection, sélectionnez la valeur Supprimer. Cliquez sur Ok pour effectuer la suppression de l’image.</p>
+<h3 id="recreer-les-miniatures">Recréer les miniatures</h3>
+<p>Si vous souhaitez créer ou recréer une ou plusieurs miniatures des images, sélectionnez les images en cochant la case correspondante des images, dans le déroulant Pour la sélection sélectionnez <em>Recréer des miniatures</em>. Cliquez sur <em>Ok</em> pour démarrer la création des miniatures.</p>
+<p>Les miniatures créées ont les dimensions paramétrées dans l’administration de PluXml à partir de l’écran Options d’affichage. Par défaut ces dimensions sont de 200 pixels en largeur et de 100 pixels de hauteur.</p></div>
+                    <div class="col med-3 sml-hide med-show toc"><strong>Table des matières</strong>
+<ul class="menu vertical">
+    <li class="">
+      <a href="#les-articles">Les articles</a>
+    </li>
+      <ul>
+        <li>
+          <a href="#liste-des-articles">Liste des articles</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#articles-publies">Articles publiés</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#brouillons">Brouillons</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#articles-en-attente-de-validation">Articles en attente de validation</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#filtrer-la-liste-des-articles">Filtrer la liste des articles</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#supprimer-un-article">Supprimer un article</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#rechercher-dans-les-articles">Rechercher dans les articles</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#gerer-un-article">Gérer un article</a>
+            </li>
+              <ul>
+                <li>
+                  <a href="#barre-daction">Barre d’action</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#la-partie-centrale-redaction-ou-modification-dun-article">La partie centrale : rédaction ou modification d'un article</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#la-partie-de-droite-les-options-dun-article">La partie de droite : les options d’un article</a>
+                </li>
+              </ul>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#les-commentaires">Les commentaires</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#autoriser-ou-interdire-les-commentaires">Autoriser ou interdire les commentaires</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#liste-des-commentaires">Liste des commentaires</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#edition-dun-commentaire">Édition d’un commentaire</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#repondre-a-un-commentaire">Répondre à un commentaire</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#supprimer-un-commentaire">Supprimer un commentaire</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#flux-rss-des-commentaires">Flux RSS des commentaires</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#pages-statiques">Pages statiques</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#creer-une-nouvelle-page-statique">Créer une nouvelle page statique</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#proprietes-des-pages-statiques">Propriétés des pages statiques</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#rediger-le-contenu-dune-page-statique">Rédiger le contenu d’une page statique</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#options-des-pages-statiques">Options des pages statiques</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#supprimer-une-page-statique">Supprimer une page statique</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#les-categories">Les Catégories</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#creer-une-nouvelle-categorie">Créer une nouvelle catégorie</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#proprietes-dune-categorie">Propriétés d’une catégorie</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#options-des-categories">Options des catégories</a>
+            </li>
+          </ul>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#gestionnaire-de-medias">Gestionnaire de médias</a>
+        </li>
+          <ul>
+            <li>
+              <a href="#ajouter-des-fichiers">Ajouter des fichiers</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#copier-vers-le-presse-papier">Copier vers le presse papier</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#renommer-un-fichier">Renommer un fichier</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#redimensionner-les-images">Redimensionner les images</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#creer-des-miniatures">Créer des miniatures</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#documents">Documents</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#creer-un-dossier">Créer un dossier</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#changer-de-dossier">Changer de dossier</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#trier-laffichage-des-fichiers">Trier l’affichage des fichiers</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#deplacer-des-fichiers">Déplacer des fichiers</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#supprimer-des-fichiers">Supprimer des fichiers</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#recreer-les-miniatures">Recréer les miniatures</a>
+            </li>
+          </ul>
+
+      </ul>
+</ul></div>
+                
+          </div>
+        </div>
+
+        <footer class="sml-12">
+            <hr>
+            <p>PluXml.org - Blog ou Cms à l'Xml !</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> and <a href="https://plucss.pluxml.org">PluCSS</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+
+    </body>
+</html>

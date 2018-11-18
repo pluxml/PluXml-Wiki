@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PluXml staff">
+        <link rel="canonical" href="https://www.pluxml.org/divers/plugins-non-officiels/">
+        <link rel="apple-touch-icon" sizes="57x57" href="../../img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../../img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../../img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../../img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../../img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../../img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../../img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../../img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../../img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../../img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="../../img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../../img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <title>Plugins non officiels - Documentation de PluXml</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link href="../../css/custom.css" rel="stylesheet">
+        <link href="../../css/plucss.css" rel="stylesheet">
+        <link href="../../css/plx-common.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+      <nav class="plx-nav">
+        <div class="container">
+          <div class="grid">
+            <div class="col sml-12 med-3">
+              <ul class="menu text-center">
+                <li class="logo"><a href="https://www.pluxml.org" title="PluXml"><img class="float-left" src="../../img/favicon/favicon-32x32.png"><strong>PluXml.org</strong></a></li>
+              </ul>
+            </div>
+            <div class="col sml-12 med-9 lrg-6">
+              <ul class="menu text-center">
+                <li><a href="https://wiki.pluxml.org" title="Documentation">Documentation</a></li>
+                <li><a href="https://ressources.pluxml.org" title="Ressources">Ressources</a></li>
+                <li><a href="https://forum.pluxml.org" title="Forum">Forum</a></li>
+                <li><a href="https://www.pluxml.org/blog" title="Blog">Blog</a></li>
+              </ul>
+            </div>
+            <div class="col sml-hide med-hide lrg-3 lrg-show">
+              <ul class="menu text-right">
+                <li><a href="http://plucss.pluxml.org/" title="PluCSS">PluCSS</a></li>
+                <li><a href="http://visualwizard.pluxml.org/" title="Visual Wizard">Visual Wizard</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="wrapper">
+
+        <div class="navbar" role="navigation">
+            <div class="container">
+
+                <div class="responsive-menu">
+                	<label for="Menu"></label>
+                	<input type="checkbox" id="Menu">
+                  <ul class="menu vertical expanded sml-show med-hide">
+                      <li class="">
+                        <a class="" href="../../installer/installation/">Installer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../developper/developpement/">Développer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../plugins-officiels/">Plugins officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="active" href="./">Plugins non officiels</a>
+                      </li>
+                      <li class="">
+                        <a class="" href="../divers-autre/">Divers</a>
+                      </li>
+                  </ul>
+                </div>
+
+                <div class="navbar-collapse collapse sml-show med-show">
+                      <ul class="nav navbar-nav sml-hide med-show">
+                        <li>
+                            <a href="https://wiki.pluxml.org">Documentation de PluXml</a>
+                        </li>
+                      </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li>
+                                <a href="https://github.com/pluxml/divers/plugins-non-officiels.md"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="grid">
+                <div class="col med-2 sml-hide med-show">
+<ul class="menu vertical expanded">
+    <li class="">
+      <a class="" href="../../installer/installation/">Installer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../utiliser/utilisation/">Utiliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../personnaliser/personnalisation/">Personnaliser</a>
+    </li>
+    <li class="">
+      <a class="" href="../../developper/developpement/">Développer</a>
+    </li>
+    <li class="">
+      <a class="" href="../../contribuer/contribuer/">Contribuer</a>
+    </li>
+    <li class="">
+      <a class="" href="../plugins-officiels/">Plugins officiels</a>
+    </li>
+    <li class="">
+      <a class="active" href="./">Plugins non officiels</a>
+    </li>
+    <li class="">
+      <a class="" href="../divers-autre/">Divers</a>
+    </li>
+</ul></div>
+                
+                
+                    <div class="col med-7" role="main">
+
+<h1 id="plugins-non-officiels">Plugins non officiels</h1>
+<p>Une liste des contributions à PluXml.</p>
+<p>Ces plugins ne sont pas officiels, c'est à dire qu'ils ne sont pas développés ni maintenus par l'équipe de PluXml. Vous les installez donc en connaissance de cause.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour les plugins hébergés sur <strong>Github</strong>, il faut renommer le dossier contenu dans l'archive en supprimant le <em>-master</em> ajouté automatiquement par github, pour ne garder que le nom du plugin. Ainsi, pour le plugin "exemple", l'archive téléchargée sur github engendrera le dossier "exemple-master", qu'il faudra renommer en "exemple" pour que le plugin soit pris en compte par PluXml.</p>
+</div>
+<h2 id="constructeur-de-pages">Constructeur de pages</h2>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5896"><strong>Visual Wizard</strong></a> : Constructeur de pages entièrement en drag &amp; drop.</p>
+<h2 id="administration">Administration</h2>
+<p><a href="https://forum.pluxml.org/viewtopic.php?id=6321"><strong>plxAdminBar</strong></a> : Affiche une top-bar coté public sur votre site qui donne accès aux pages d'admin si vous êtes connecté.</p>
+<h2 id="editeurs">Éditeurs</h2>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4136"><strong>spxTynimce</strong></a> : éditeur wysiwyg basé sur Tinymce + gestionnaire de fichier</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4532"><strong>TinyMCE</strong></a> : Un autre plugin basé sur Tinymce - Utilise le gestionnaire de médias de Pluxml. Charge jQuery si besoin. Charge par défaut la librairie tinymce.min.js à travers le réseau CDN. Avec plugin externe pour utiliser Codemirror (coloration syntaxique). Liste des plugins de Tinymce actifs et options personnalisables selon le profil utilisateur (5 profils).</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5404"><strong>TinyEditor</strong></a> : Petit éditeur léger, sans bibliothèque externe, utilise le gestionnaire de médias de Pluxml. Répond à la plupart des besoins.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4513"><strong>Codemirror</strong></a> : éditeur de code basé sur Codemirror.
+Pour ceux qui veulent éditer leurs pages statiques et leurs templates en maîtrisant le code. Avec coloration syntaxique, auto-complétion et folding.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=6088"><strong>kzAce</strong></a> : Éditeur de code basé sur Ace avec le plugin Emmet pour la complétion de code HTML, CSS</p>
+<p><a href="https://forum.pluxml.org/viewtopic.php?id=5805"><strong>WymEditor</strong></a> : Éditeur de texte WYSIWYM</p>
+<h2 id="suite-et-projet-spx">Suite et projet SPX</h2>
+<p><a href="http://secretsitebox.fr/site/index.php?categorie2/pluxml-plugins"><strong>spx plugins</strong></a> : Suite de plugins</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4934"><strong>spxplugindownloader</strong></a> : Téléchargement de plugins de différents dépots (pluxopolis, spx...)</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4994"><strong>spxwmenu</strong></a> : Gestion et administration de menus</p>
+<p><a href="http://secretsitebox.fr/siteprojetspx/"><strong>projet spx</strong></a> : Le projet SPX version 4 ; ensemble de plugins homogènes afin de pousser le cms pluxml hors de ses limites (portfolio, newsletter, simplecart, shorcodes...)</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4286"><strong>spxshortcodes</strong></a> : Raccourcis pour inclure dans une page des fonctions pré-programmées (thème ou plugin).</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4678"><strong>spxdatas</strong></a> : gestion et administration de données</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=39639"><strong>spxwunslider</strong></a> : slider administratrable responsive design</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4706"><strong>spxwpolaroid</strong></a> : Diffusion de Galerie Polaroïds</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4725"><strong>spxprism</strong></a> : coloration syntaxique du code (prism.js)</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4154"><strong>spxlightbox</strong></a> : lightbox avec swipebox, prettyphoto, zoombox</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5571"><strong>spxwsimplegallery</strong></a> : Gestion et affichage de galeries responsive design</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5235"><strong>spxwresponsiveslide</strong></a> : Slider responsive administrable</p>
+<h2 id="securite">Sécurité</h2>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=37268"><strong>captchaImage</strong></a> : Une révision du plugin officiel plxCapchaImage.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3673"><strong>adhesion</strong></a> : Privatiser des catégories, des pages statiques ou des articles et les rendre accessibles (par mot de pase) pour les personnes qui se sont inscrites sur le site.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2902"><strong>lockArticles</strong></a> : Permet de mettre un mot de passe aux articles, aux pages statiques ou aux catégories.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3323"><strong>plxAuth</strong></a> : Ajouter un formulaire de connexion côté public de PluXml. Une fois connecté l'utilisateur a accès directement à la page de son profil et un lien pour se déconnecter.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3050"><strong>auth</strong></a> : Bloquer l'accès à l'administration après 3 tentatives</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3380"><strong>AutoSave</strong></a> : Récupérer les données de son article en cas de déconnexion.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2312"><strong>plxContentBackup</strong></a> : Sauvegarder automatiquement son dossier "data" et se l'envoyer par mail.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3050"><strong>commentaires</strong></a> Autoriser ou non les commentaires par articles</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4611"><strong>commentAuthorOK</strong></a> Valider automatiquement les commentaires émis par une liste de personnes</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3461"><strong>honeypot</strong></a> : Anti-spam avec Honeypot.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2925"><strong>admin_users_right's</strong></a> :  Gérer finement les droits des utilisateurs par catégories d'articles</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=6243"><strong>kzOtPHP</strong></a> : Gère la double authentification avec le protocole TOTP (code PIN). Nécessite d'installer sur un smartphone un logiciel pour générer le code PIN à 6 chiffres.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=6308"><strong>kzU2F</strong></a> : Gère la double authentification avec le protocole FIDO-U2F. Nécessite de posséder une clé de sécurité USB.</p>
+<h2 id="gestionedition-du-contenu">Gestion/Edition du contenu</h2>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=38947"><strong>plxmenu</strong></a> : Ce plugin crée automatiquement un menu, à partir de la liste des articles d'une catégorie.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=6175"><strong>menu</strong></a> : Plugin pour la gestion du menu sur 3 niveaux en mode glisser-déposer.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=38939"><strong>HrefDownload</strong></a> : Permet d'associer un téléchargement de fichier grâce un bouton placé dans un article.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=6276"><strong>kzDownload</strong></a> : Crypte le lien pour télécharger des fichiers. Permet de créer un tableau de fichiers à télécharger. Suivi statistique par semaine. Affiche le résultat par un graphique au format SVG.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=37437"><strong>Csv2Table</strong></a> : Si un lien <a href=".."> pointe vers un fichier CSV, alors ce lien sera transformé en tableau html pour afficher le contenu du fichier.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=38006"><strong>myPager</strong></a> : Un plugin qui affiche la pagination sur la page publique des articles.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=38007"><strong>lesFables</strong></a> : Permet de générer les pages à partir des 240 Fables de la Fontaine.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=37165"><strong>asyntaxhighlighter</strong></a> : Coloration syntaxique basé sur GeSHi et utilisant spxshortcodes.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2597"><strong>syntaxhighlighter</strong></a> :    Coloration syntaxique dans les articles (à partir d'une balise pre)                                         </p>
+<p><a href="http://www.wxproject.com/article9/shjs"><strong>SHJS</strong></a> :    Coloration syntaxique en Javascript avec SHJS</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=42030#p42030"><strong>champArt</strong></a>  : Créer des champ personnalisés pour vos articles       </p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5304"><strong>chamPlus</strong></a> : Permet d'ajouter des champs aux articles et aux pages statiques, type texte, bloc de texte ou média</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3122"><strong>plxTextReplace</strong></a> : Utiliser BBCode pour rédiger des articles et des pages statiques</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2445"><strong>plxDescription</strong></a> : Afficher un texte à l'endroit de votre choix. Ce texte est modifiable par un formulaire dans la partie administration.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3626"><strong>vignette</strong></a> : Ajouter facilement une image d'illustration à vos articles ou pages statiques.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2574"><strong>plxOrnament</strong></a> : Ajouter un champ à un article pour y inclure une image d'illustration.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3699"><strong>xml2txt</strong></a> :  Exporter la base XML au format TXT</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3842"><strong>markitup</strong></a> : Utilitaire permettant d'utiliser différents type de parseurs. Par défaut, on peut en utiliser deux : le html et le markdown. D'autres parseurs peuvent être utilisés assez facilement.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=31217"><strong>LocalScrool</strong></a> : Permet d'ajouter automatiquement un effet de défilement vertical animé sur toutes les ancres nommées de votre site.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3916"><strong>FitVids</strong></a> : Adapte vos vidéos en fonction de la résolution d'écran utilisé (Responsive Design)</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4128"><strong>TinyNav</strong></a> : Votre menu de navigation en Responsive Design</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5553"><strong>BannersQuotes</strong></a> : Ce plugin permet de gérer une régie publicitaire de bannières ou de citations.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4780"><strong>Prism</strong></a> : Coloration syntaxique de vos codes source</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=31398"><strong>infiniteAjaxScroll</strong></a> : Remplace la pagination par du scroll infini.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=31423"><strong>plxQuickSearch</strong></a> : Filtrer les données des pages de l'administration au fur et à mesure de ce qui est entré dans le champ de recherche.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2598"><strong>Editarea</strong></a> : Permet de coloriser le code saisi dans les formulaires d'édition des pages statiques (il faut avoir au préalable désactiver les autres éditeurs de texte comme ckeditor).</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4605"><strong>forceArtPos</strong></a> : Permet de passer outre le positionnement des articles par date de création pour forcer le positionnement d'un article.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5563"><strong>SuggestAvecImage</strong></a> : Suggestion d'articles avec images.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5604"><strong>DonsPayPal</strong></a> : Affichage un bouton PayPal pour effectuer un don.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5615"><strong>NewArtsComs</strong></a> : Afficher une mention pendant 7 jours pour les nouveaux articles ou/et commentaires et même les mises à jour des articles.</p>
+<h2 id="slideshow-galeries-lightbox">Slideshow, galeries, lightbox</h2>
+<p><a href="http://nextum.fr/projets"><strong>OwlSlider</strong></a> : Afficher dans la sidebar un slider en utilisant jQuery.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2588"><strong>plxYoxView</strong></a> :   Afficher une image dans un cadre à la façon d'un fancybox.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3162"><strong>plxZoomBox</strong></a> : Une lightbox créée à partir du plugin plxYoxView de FlipFlip.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4154"><strong>spxlightbox</strong></a> : Lightbox avec swipebox, prettyphoto, zoombox.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4515&amp;p=1"><strong>ColorBox</strong></a> : Affiche une photo à partir de sa miniature. Utilise la bibliothèque Colorbox. Crée un diaporama à partir d'une série de miniatures d'image ou de photos hébergées chez Flickr à partir de son flux RSS.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3086"><strong>staticGaleries</strong></a> : Créer et gérer des galeries d'images.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2877"><strong>artGalerie</strong></a> : Permet d'afficher simplement  une galerie d'images dans vos articles ou vos pages statiques.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2942"><strong>plxCaroufredsel</strong></a> :  Afficher un diaporama dans le corps d'un article, des articles de la page d'accueil ou d'une page statique.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2551"><strong>plxCoinSlider</strong></a> : Un slideshow basé sur le script jquery CoinSlider.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3359"><strong>slide-pluxml</strong></a> : Un slideshow avec texte basé sur s3slider.</p>
+<p><a href="https://github.com/jerrywham-pluxml5-2/vegas"><strong>vegas</strong></a> : Adaptation du script de Jay Salvat à Pluxml, permettant d'afficher un fond de page changeant sur un site.                   </p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5575"><strong>PagePeel</strong></a> : Ce plugin permet de « corner » ou « plier » une page web, puis de dérouler le coin quand on passe la souris dessus. Utilisant un script JS et du CSS simplement.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=6252"><strong>kzGallery</strong></a> : Crée automatiquement une galerie photos à partir d'un dossier d'images. N'utilise pas de hook personnalisé. Fonctionne avec les articles et les pages statiques. Plusieurs galeries possibles par page.</p>
+<h2 id="statistiques-et-logs">Statistiques et Logs</h2>
+<p><a href="http://blogaddict.fr/index.php?article12/simplestat-une-alternative-a-google-analytics-pour-pluxml"><strong>SimpleStat</strong></a> : Statistiques intégrées à pluXML, sans base de données ni appel à service externe.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2710"><strong>plxPiwik</strong></a> : Intégrer le blog à Piwik.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3497"><strong>logAuth</strong></a> : Tracez les connexions au panneau d'administration.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2709"><strong>plxTwitterInfos</strong></a> : Afficher son nombre de followers et de tweets.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3964"><strong>AjaxRating</strong></a> : Afficher une barre étoilée pour donner une note au contenu d'un article</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5587"><strong>Counters</strong></a> : Ce plugin permet de gérer l'affichage de compteurs de visites.</p>
+<h2 id="social">Social</h2>
+<p><a href="http://nextum.fr/projets"><strong>ShareCount</strong></a> : Popularité de votre site sur les réseaux sociaux</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=38985"><strong>GuestBook</strong></a> : Un livre d'or avec gestion complète des messages.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=38960"><strong>commentAuthorOK</strong></a> : Ce plugin permet d'ajouter une liste blanche de personnes dont les commentaires sont automatiquement validés.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2937"><strong>hamGravatar</strong></a> : Utiliser Gravatar pour le dépôt de commentaires.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3358"><strong>gutuma</strong></a> : Envoyer des newsletters grâce à Gutuma.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2573"><strong>plxgoogleplusone</strong></a> : Ajouter un bouton Google+.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3214"><strong>plugins_shoutbox_ajax_basic</strong></a> : Ajouter une Shoutbox.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3684"><strong>AutoTweet</strong></a> : Tweeter automatiquement la mise en ligne de nouveaux articles.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3702"><strong>jumpLang</strong></a> : Changer la langue de son thème (grâce au dossier lang).</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5607"><strong>ShareSocialButtons</strong></a> : Afficher les boutons des principaux réseaux sociaux comme Google+, Facebook, Twitter, LinkedIn etc... Vous avez la possibilité de choisir plusieurs thèmes pour les boutons et les ordonner.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5295"><strong>Share_me</strong></a> : Ajoute les boutons pour les réseaux sociaux (Twitter, Facebook, ...) pour le partage des articles et des pages statiques en s'appuyant sur le protocole Opengraph. N'utilise pas Jquery ! Icônes au format svg.</p>
+<p><a href="https://github.com/jerrywham-pluxml5-2/openStreetMaps"><strong>OpenStreetMaps</strong></a> : Permet d'afficher une carte openStreet selon les coordonnées ou les codes postaux d'un fichier de référence. Peut être utilisé en synergie avec le plugin adhésion.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3050"><strong>commentaires</strong></a> : Permet, si l'on a autorisé les commentaires dans tous les articles, de modifier la valeur du sélecteur d'autorisation des commentaires. Cela permet d'autoriser sciemment les commentaires article par article.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5996"><strong>plxMiniTchat</strong></a> : Ajoute un service de tchat pour votre PluXml.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5223"><strong>plxMySocialNetwork</strong></a> : affiche les boutons des principaux réseaux sociaux (Facebook, Twitter, Google+1). Liens et affichage personnalisables.</p>
+<p><a href="https://forum.pluxml.org/viewtopic.php?id=6320"><strong>MaxiContact</strong></a> : Gère un formulaire de contact à personnaliser et qui sauve ses messages.</p>
+<h2 id="maintenance">Maintenance</h2>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4228"><strong>maintenance</strong></a> : Outil permettant d'afficher une page de maintenance aux visiteurs et le site à l'administrateur. Nécessite un serveur apache acceptant la redirection et les fichiers htaccess.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=34402#p34402"><strong>plxDebugToolBar</strong></a> : Outil d'aide pour les développeurs (debugage).</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4952"><strong>cssNoCache</strong></a> : Outil permettant de désactiver les caches css, utile exclusivement aux développeurs et aux intégrateurs souhaitant tester le css.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5875"><strong>users_csv</strong></a> : Import et Export des utilisateurs au format CSV.</p>
+<h2 id="divers">Divers</h2>
+<p><a href="https://forum.pluxml.org/viewtopic.php?id=5806"><strong>plxGoogleSnippetPreview</strong></a>  : prévoir les SERP rérérencés dans GG</p>
+<p><a href="http://nextum.fr/projets"><strong>MyTeam</strong></a> : Afficher et gestion d'une page équipe</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4812"><strong>AdvancedSearch</strong></a> : Permet d'insérer un champ de recherche et de doter pluXML d'une page de recherche avancée multicritères (en AJAX)</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5256"><strong>FontAwesome</strong></a> : Ajouter Font-Awesome 4.4.0 (police d'icônes) à votre thème PluXml</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4817"><strong>caTag</strong></a> : Pour regrouper ses tags par catégorie</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=39104"><strong>cryptMyPluxml</strong></a> : Permet de poster des messages à la manière de zerobin.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=39105"><strong>pickyPasteInPluxml</strong></a> : Permet d'envoyer un mail contenant un lien vers un zerobin.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=38944"><strong>test</strong></a> : Pour apprendre à créer un plugin, à partir d'un exemple simple ou pour faire des tests, comme le nom du plugin l'indique.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=37257"><strong>Phpinfo</strong></a> : Ajoute un bouton dans le menu de l'administrateur et qui exécute dans une fenêtre séparée la célèbre fonction phpinfo().</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=37594"><strong>Datepicker</strong></a> : Calendrier pour choisir la date de publication de votre article</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=37918"><strong>Html5Uploader</strong></a>: Dans le gestionnaire de médias, vous allez pouvoir utiliser le Drag and Drop (DnD) ou glissez-déposez.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=37601"><strong>PingMySitemap</strong></a> : Permet d'envoyer automatiquement le sitemap de votre site dès qu'un nouvel article est publié.</p>
+<p><a href="http://www.samare.net/article6/tagcloud-vos-mots-clefs-dans-les-nuages"><strong>tagCloud</strong></a> :    Nuage de mots clés (NB : une fonctionnalité similaire a été intégrée par défaut à la version 5.1.7 de PluXml)</p>
+<p><a href="http://www.samare.net/article5/filariane-informez-l-internaute-de-l-endroit-ou-il-se-trouve"><strong>filAriane</strong></a> :  Ajouter un fil d'ariane.</p>
+<p><a href="http://www.samare.net/article3/artps-affichez-les-liens-suivants-precedents"><strong>artPS</strong></a> : Afficher sous forme de liens, les articles précédents et suivants en bas de l'article en cours.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2936"><strong>blogroll</strong></a> : Blogroll (gestionnaire de liens).</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=31406"><strong>blogroll + favicons</strong></a> : Blogroll (gestionnaire de liens) avec affichage des favicons.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=31394"><strong>RSSroll + favicons</strong></a> : Afficher le contenu d'un flux RSS.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3121"><strong>scroolToTop</strong></a> : Afficher dynamiquement un lien vers le haut de page.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2436"><strong>plxHumansTxt</strong></a> : Créer un fichier humans.txt</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2299"><strong>plxMooTools</strong></a> : Ajoute le code nécessaire à l'utilisation de la librairie MooTools</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=2950"><strong>plxGoogleMetaVerif</strong></a> :   Permet de renseigner la balise méta de google.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=3912"><strong>BoostMyPlux</strong></a> : Rend votre site encore plus rapide.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=31500"><strong>plxNbArt</strong></a> : Afficher le nombre d'articles publiés par l'auteur</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=31494"><strong>plxMinifyCache</strong></a> : Minifie et met en cache le code source</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?pid=34330"><strong>plxBibTex</strong></a> : Permet d'afficher une bibliographie à partir d'un fichier BibTex (.bib)</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4896"><strong>plnCalendrier</strong></a> : Permet de gérer et d'afficher un calendrier d'événements</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4966"><strong>plnAdminPluginIcon</strong></a> : Permet d'afficher une petite icône à côté des liens vers les pages d'administration dans la partie "admin"</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5262"><strong>staticPagination</strong></a> : Ajout d'une pagination dans les groupes de pages statiques.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5271"><strong>plxMyPagination</strong></a> : Améliore la pagination de pluXML (adaptation de plxMyPager) et ajoute une pagination dans les groupes de pages statiques (évolution du plugin staticPagination). Ce plugin requiert <a href="http://fontawesome.io/">Font Awesome</a> (vous pouvez utiliser le plugin <a href="http://forum.pluxml.org/viewtopic.php?id=5256">plxFontAwesome</a> pour l'ajouter à votre site).</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=6000"><strong>plxTranslator</strong></a> : Ce plugin permettra aux visiteurs de traduire votre site en 34 langues grâce à l'utilisation du service translate.google.com.</p>
+<h2 id="plugins-techniques">Plugins techniques</h2>
+<p>Un "plugin technique" est un plugin offrant des services à d'autres plugins. Il ne sert généralement à rien seul.</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=5020"><strong>plnStaticPages</strong></a> : Plugin technique à destination des développeurs et permettant d'implémenter aisément une fausse page statique. Concentrez-vous sur les fonctionnalités de votre plugin, pas sur la façon d'implémenter une page statique !</p>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4952"><strong>cssNoCache</strong></a> : Plugin technique à destination des développeurs, et permettant de désactiver le cache css des plugins. Utile pour tester ses css sans avoir à regénérer le cache à chaque modification.</p>
+<h2 id="ecommerce">eCommerce</h2>
+<p><a href="http://forum.pluxml.org/viewtopic.php?id=4854"><strong>plxMyShop</strong></a> : Permet d'ajouter une boutique virtuelle à Pluxml.</p>
+<h2 id="boutons-pour-la-plxtoolbar">Boutons pour la plxToolbar</h2>
+<p><a href="Youtube"><strong>Youtube</strong></a></p>
+<p><a href="Smilies"><strong>Smilies</strong></a></p>
+<p><a href="Color"><strong>Color</strong></a></p>
+<p><a href="Tab"><strong>Tab</strong></a></p>
+<p><a href="Lecteur de vidéos Flowplayer"><strong>Lecteur de vidéos Flowplayer</strong></a></p></div>
+                    <div class="col med-3 sml-hide med-show toc"><strong>Table des matières</strong>
+<ul class="menu vertical">
+    <li class="">
+      <a href="#plugins-non-officiels">Plugins non officiels</a>
+    </li>
+      <ul>
+        <li>
+          <a href="#constructeur-de-pages">Constructeur de pages</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#administration">Administration</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#editeurs">Éditeurs</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#suite-et-projet-spx">Suite et projet SPX</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#securite">Sécurité</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#gestionedition-du-contenu">Gestion/Edition du contenu</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#slideshow-galeries-lightbox">Slideshow, galeries, lightbox</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#statistiques-et-logs">Statistiques et Logs</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#social">Social</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#maintenance">Maintenance</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#divers">Divers</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#plugins-techniques">Plugins techniques</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#ecommerce">eCommerce</a>
+        </li>
+
+      </ul>
+      <ul>
+        <li>
+          <a href="#boutons-pour-la-plxtoolbar">Boutons pour la plxToolbar</a>
+        </li>
+
+      </ul>
+</ul></div>
+                
+          </div>
+        </div>
+
+        <footer class="sml-12">
+            <hr>
+            <p>PluXml.org - Blog ou Cms à l'Xml !</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a> and <a href="https://plucss.pluxml.org">PluCSS</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+      </div>
+
+    </body>
+</html>
