@@ -1009,7 +1009,7 @@ Voyons maintenant comment modifier le comportement d'une fonction de PluXml. Nou
 | plxAdminEditCategoriesNew | class.plx.admin.php | editCategories() | New : création |
 |plxAdminEditCategoriesUpdate | class.plx.admin.php | editCategories() | Update : mise à jour
 | plxAdminEditCategoriesXml | class.plx.admin.php | editCategories() | Xml : mise en forme xml
-| plxAdminEditCategory | class.plx.admin.php | editCategorie() | Lecture des données xml dans le fichier categories.xml
+| plxAdminEditCategorie | class.plx.admin.php | editCategorie() | Lecture des données xml dans le fichier categories.xml
 |AdminCategory | categorie.php |  | Ecran gérant les options d'une catégorie
 | plxMotorGetCategories | class.plx.motor.php | getCategories() | Lecture des données xml dans le fichier categories.xml
 
