@@ -23,7 +23,7 @@
 * Seanron's blog : webdeveloppement : [http://seanron.free.fr/](http://seanron.free.fr/)
 * Mon village : [http://bodieu.fr/](http://bodieu.fr/)
 * Photo Ciné Club Orléanais : [http://www.pccorleans.com](http://www.pccorleans.com)
-* Computing Froggy - Des histoires d'informatique : [http://computing.travellingfroggy.info](http://computing.travellingfroggy.infoz(http://computing.travellingfroggy.info)
+* Computing Froggy - Des histoires d'informatique : [http://computing.travellingfroggy.info](http://computing.travellingfroggy.infoz)
 * Flipflip : Blogoflip, Des tranches de ma vie entre deux fautes d'orthographe sans sel ni poivre : [http://blogoflip.fr](http://blogoflip.fr)
 * Vers les cimes - Mes pérégrinations vers le métier d'accompagnateur en montagne : [http://vers-les-cimes.fr](http://vers-les-cimes.fr)
 * Krocui.com - dessins : [http://www.krocui.com](http://www.krocui.com)
