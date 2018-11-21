@@ -4,7 +4,7 @@
 
 Liste de site utilisant PluXml.
 
-[Cliquer ici](sites-reaslises-avec-pluxml.md)
+[Cliquer ici](sites-realises-avec-pluxml.md)
 
 ## Sites dédiés à PluXml
 

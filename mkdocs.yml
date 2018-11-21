@@ -3,8 +3,9 @@ site_url: https://www.pluxml.org/
 site_description: Documentation de PluXml
 site_author: PluXml staff
 
-repo_url: https://github.com/pluxml
-edit_uri: https://github.com/pluxml
+repo_name: GitHub
+repo_url: 'https://github.com/pluxml/'
+edit_uri: https://github.com/pluxml/
 
 markdown_extensions:
     - admonition
