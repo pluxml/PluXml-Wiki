@@ -38,6 +38,7 @@
 * Le blog de Juan Sorroche : [http://blog.juansorroche.com](http://blog.juansorroche.com)
 * Ludicitude (divers petits jeux de société) : [http://ludicitude.fr](http://ludicitude.fr)
 * Gasp - projet musical : [https://gasp.tomekmusic.net/](https://gasp.tomekmusic.net/)
+* Frenchvadrouilleur - Blog photo voyages : [https://frenchvadrouilleur.fr](https://frenchvadrouilleur.fr)
 
 ## Sites institutionnels
 
