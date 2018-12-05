@@ -18,6 +18,12 @@ body::before {
   padding-top: 0px;
 }
 
+img {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
+
 .bs-sidebar.affix {
   position: relative;
 	top: inherit;
