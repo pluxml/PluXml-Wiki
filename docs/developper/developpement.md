@@ -549,10 +549,11 @@ __Description des balises__
 |--|--|--|
 | title | Titre du plugin | cdata |
 | author | Nom de l’auteur du plugin | cdata |
-| version | Numéro de version du plugin | strong |
-| date | Date de création ou de mise à jour du plugin | strong |
-| site | Site de l’auteur du plugin | strong |
+| version | Numéro de version du plugin | string |
+| date | Date de création ou de mise à jour du plugin | string |
+| site | Site de l’auteur du plugin | string |
 | description | Description du plugin  | cdata |
+| scope | Prend la valeur "admin" ou "site" et permet de charger le plugin uniquement dans le contexte indiqué. Si absent ou vide, le plugin sera chargé dans les deux cas. | string |
 
 <br>
 __Utilisation des données du fichier infos.xml__

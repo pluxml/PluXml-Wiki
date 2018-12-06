@@ -125,9 +125,13 @@ Si vous souhaitez sauvegarder uniquement les articles, les commentaires, les pag
 configuration du site et des plugins, une copie du répertoire /var/www/pluxml/data suffit.
 
 ## Lancer la mise à jour
-Assurez-vous d’avoir fait une sauvegarde de votre site avant de mettre à jour PluXml.
 
-Ensuite pour effectuer la mise à jour :
+!!! danger "Important"
+    Assurez-vous d’avoir fait une sauvegarde de votre site avant de mettre à jour PluXml (voir *Sauvegarder ses données*).
+
+![login](img/update.jpg)
+
+Suivre les étapes ci-dessous pour effectuer la mise à jour :
 
 - Télécharger la nouvelle version de PluXml sur pluxml.org.
 - Décompresser l'archive pluxml-lastest.zip précédemment téléchargée.

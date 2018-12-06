@@ -4,6 +4,8 @@ Dans le menu de gauche, cliquez sur Paramètres. Un sous-menu s’ouvre alors.
 
 ## Configuration de base
 
+![Configuration de base](img/options-base.jpg)
+
 __Titre du site__
 
 Ce champ facultatif permet de définir le titre du site.
@@ -50,6 +52,8 @@ Activée, cette fonction permettra à l’administrateur du site de publier (ou 
 
 ## Options d’affichage
 C’est ici que vous paramétrez l’affichage des pages sur votre site.
+
+![Options d'affichage](img/options-affichage.jpg)
 
 __Template de la page d'accueil__
 Permet de définir un template spécifique à la page d'accueil de votre site.
@@ -125,6 +129,8 @@ Vous pouvez ici rajouter un texte, une signature, un lien ou un slogan, qui sera
 
 ## Configuration avancée
 
+![Configuration avancée](img/options-avancees.jpg)
+
 __Activer la réécriture d’URL__
 
 La réécriture d’URL (ou URL rewrite en anglais) est un procédé qui donne de plus jolies adresses et qui est excellent pour les moteurs de recherche.
@@ -191,6 +197,8 @@ Pour valider le paramétrage de cette section, cliquez sur Modifier la configura
 ## Comptes utilisateurs
 PluXml est multi-utilisateurs, ce qui signifie que vous pouvez accueillir une communauté de membres ayant des droits d’utilisation et de gestion différents sur l’ensemble de votre site.
 
+![Comptes utilisateurs](img/utilisateurs.jpg)
+
 En cliquant sur *Paramètres > Comptes utilisateurs*, vous accédez à la page de gestion des utilisateurs, permettant d'ajouter et de modifier des utilisateurs sous 5 niveaux.
 
 __Les Administrateurs__ : ils ont tous les droits sur l’ensemble du site. L’administrateur par défaut est celui qui installe PluXml : ses droits ne peuvent pas être modifiés.
@@ -243,7 +251,11 @@ Dans la colonne *Options*, vous pouvez modifier la langue utilisée dans l’int
   N’oubliez pas de valider après les paramétrages de cette section en cliquant sur Mettre à jour cet utilisateur.
 
 ## Thèmes
-Depuis cette page vous pouvez choisir le thème à appliquer sur votre site. Pour cela, sélectionner le thème en cochant puis cliquez sur le bouton *Modifier les options d’affichage*.
+Depuis cette page vous pouvez choisir le thème à appliquer sur votre site.
+
+![thèmes](img/themes.jpg)
+
+Pour cela, sélectionner le thème en cochant puis cliquez sur le bouton *Modifier les options d’affichage*.
 
 Le lien *Éditer les fichiers du thème* permet de modifier le contenu des fichiers du thème sélectionné.
 
@@ -264,6 +276,8 @@ Pour installer un thème : décompressez l’archive du thème dans le dossier t
 
 ## Plugins
 Un plugin est un module qui vient ajouter une ou plusieurs fonctionnalités à votre site. Cette page fait la liste des différents plugins installés et vous permet notamment d’activer, de désactiver et de configurer vos plugins.
+
+![liste des plugins](img/plugins.jpg)
 
 ### Installer un plugin
 Pour installer un plugin :
@@ -312,6 +326,8 @@ Si vous souhaitez développer vos propres plugins, nous vous invitons à téléc
 ### Informations
 PluXml dispose d’un panneau d’informations vous permettant de vérifier certains points relatifs au bon fonctionnement de PluXml. Pour y accéder, cliquez sur le menu Paramètres, puis sur le menu Informations.
 
+![Informations](img/informations.jpg)
+
 Sur cette page vous pouvez voir :
 
 * Votre version de PluXml
@@ -326,6 +342,8 @@ En cas d'erreur ou de valeur non supportée, la ligne est affichée en rouge, si
 
 ## Éditer son profil
 Cliquez sur le lien Profil dans le menu principal de l’administration pour ouvrir cette page. Elle vous permet d’éditer votre profil personnel et de compléter celui-ci au besoin.
+
+![Éditer son profil](img/profil.jpg)
 
 ### Changer ses informations personnelles
 Vous pouvez éditer :
