@@ -347,7 +347,9 @@ Pour activer ou désactiver une page statique (mettre en ligne ou hors ligne une
 
 __Tri des pages statiques__
 
-PluXml classe vos pages par numéro. Modifiez l’ordre de vos pages en cliquant sur le menu Pages statiques, puis repérez la colonne nommée Ordre. Saisissez un chiffre sur la ligne correspondant à la page que vous souhaitez modifier, puis cliquez sur Modifier la liste des pages statiques pour valider vos changements.
+PluXml classe vos pages par numéro. Modifiez l’ordre de vos pages en cliquant sur le menu *Pages statiques*, puis repérez la colonne nommée *Ordre*. Saisissez un chiffre sur la ligne correspondant à la page que vous souhaitez modifier, puis cliquez sur Modifier la liste des pages statiques pour valider vos changements.
+
+Vous pouvez également changer l'ordre des pages statiques par *drag and drop*. Cliquez et maintenez le clic sur la page statique à déplacer, puis glissez celle-ci vers le haut ou le bas en fonction de la position que vous souhaitez lui donner.
 
 __Masquer une page statique dans la barre des menus__
 
@@ -413,7 +415,7 @@ Pour activer ou désactiver une catégorie, cliquez sur le menu Catégories, rep
 
 __Tri des articles classés dans une catégorie__
 
-Vous disposez de trois modes de tri pour trier les articles dans les catégories : date décroissante, date croissante, ou par ordre alphabétique (en fonction du titre). Pour modifier ce paramètre, cliquez sur le menu Catégorie, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et dans la colonne nommée Tri des articles, sélectionnez-le menu déroulant pour faire votre choix. Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.
+Vous disposez de quatre modes de tri pour trier les articles dans les catégories : date décroissante, date croissante, par ordre alphabétique (en fonction du titre) ou par ordre alphabétique inversé. Pour modifier ce paramètre, cliquez sur le menu Catégorie, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et dans la colonne nommée Tri des articles, sélectionnez-le menu déroulant pour faire votre choix. Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.
 
 __Nombre d’articles par page__
 
@@ -421,7 +423,9 @@ Pour définir les nombre d'articles affichés par page, cliquez sur le menu Cat�
 
 __Tri des catégories__
 
-Les catégories peuvent être classées dans l’ordre que vous souhaitez. Pour cela, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et, dans la colonne nommée Ordre, saisissez un chiffre (le chiffre 1 indique que cette catégorie sera en première position et ainsi de suite). Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.
+Les catégories peuvent être classées dans l’ordre que vous souhaitez. Pour cela, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier, et, dans la colonne nommée *Ordre*, saisissez un chiffre (le chiffre 1 indique que cette catégorie sera en première position et ainsi de suite). Pour finir, cliquez sur le bouton Modifier la liste des catégories pour valider votre changement.
+
+Vous pouvez également changer l'ordre des catégories par *drag and drop*. Cliquez et maintenez le clic sur la catégorie à déplacer, puis glissez celle-ci vers le haut ou le bas en fonction de la position que vous souhaitez lui donner.
 
 __Masquer une catégorie dans la barre des menus__
 

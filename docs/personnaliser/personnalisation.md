@@ -310,12 +310,24 @@ Certains plugins proposent une aide. Un lien nommé *Aide* apparaît dans la col
     Certains plugins nécessitent d’être paramétrés avant d’être activé. Pour rappel, essayez toujours un nouveau plugin sur un site de test. Assurez-vous que les plugins qui vous intéressent soient toujours maintenus et à jour avec la dernière version de PluXml.
 
 ### Ordre de chargement
-PluXml offre la possibilité de charger vos plugins dans un ordre précis : pour cela, cliquez sur le menu Paramètres, puis sur le menu Plugins, et repérez la colonne nommée Ordre de chargement. Sur la ligne correspondant au plugin que vous souhaitez modifier, saisissez une valeur numérique, puis cliquez sur le bouton Modifier la liste des plugins pour valider vos changements.
+PluXml offre la possibilité de charger vos plugins dans un ordre précis : pour cela, cliquez sur le menu *Paramètres*, puis sur le menu Plugins, et repérez la colonne nommée *Ordre de chargement*. Sur la ligne correspondant au plugin que vous souhaitez modifier, saisissez une valeur numérique, puis cliquez sur le bouton *Modifier* la liste des plugins pour valider vos changements.
+
+Vous pouvez également changer l'ordre de chargement des plugins par *drag and drop*. Cliquez et maintenez le clic sur le plugin à déplacer, puis glissez celui-ci vers le haut ou le bas en fonction de la position que vous souhaitez lui donner.
 
 Notez que pour certains plugins, il est nécessaire de les charger dans un ordre précis : pour en savoir plus, consultez la page Aide de votre plugin.
 
 !!! note
-    Conseil : chargez le plugin jQuery en premier.
+    Conseil : si besoin chargez le plugin jQuery en premier.
+
+### Chargement des plugins en fonction du contexte
+Certains plugins ne s'appliquant que sur l'admin de PluXml il n'est pas nécessaire de le charge sur le site accessible aux visiteurs. Inversement, un plugin qui ne s'applique que sur le site, n'a pas de nécessité à être chargé dans l'admin de PluXml.
+
+Cette option (*scope*) est définie par le développeur du plugin et est visible dans l'admin au niveau du nom du plugin. Les plugins dont le nom est sur fond bleu sont chargés uniquement dans l'administration. Les plugins dont le nom est sur fond vert sont chargés uniquement sur le site.
+
+Dans le cas d'un plugin dont le nom n'a aucune couleur de fond, alors il sera chargé sur l'administration et sur le site.
+
+!!! note
+    Voir la documentation du fichier [infos.xml](//wiki.pluxml.org/developper/developpement/#fichier-infosxml), qui permet de définir la variable *scope*.
 
 ### Supprimer un plugin
 Pour supprimer un plugin, cliquez sur le menu Paramètres, puis sur le menu Plugins, et repérez la ligne correspondant au plugin que vous souhaitez supprimer. Cochez la case devant le plugin, utilisez le menu déroulant nommé Pour la sélection et sélectionnez Supprimer. Cliquez sur le bouton Ok pour valider votre changement.
