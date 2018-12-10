@@ -310,9 +310,9 @@ Certains plugins proposent une aide. Un lien nommé *Aide* apparaît dans la col
     Certains plugins nécessitent d’être paramétrés avant d’être activé. Pour rappel, essayez toujours un nouveau plugin sur un site de test. Assurez-vous que les plugins qui vous intéressent soient toujours maintenus et à jour avec la dernière version de PluXml.
 
 ### Ordre de chargement
-PluXml offre la possibilité de charger vos plugins dans un ordre précis : pour cela, cliquez sur le menu *Paramètres*, puis sur le menu Plugins, et repérez la colonne nommée *Ordre de chargement*. Sur la ligne correspondant au plugin que vous souhaitez modifier, saisissez une valeur numérique, puis cliquez sur le bouton *Modifier* la liste des plugins pour valider vos changements.
+PluXml offre la possibilité de charger vos plugins dans un ordre précis : pour cela, cliquez sur le menu *Paramètres*, puis sur le menu Plugins, et repérez la colonne nommée *Ordre de chargement*. Sur la ligne correspondant au plugin que vous souhaitez modifier, saisissez une valeur numérique, puis cliquez sur le bouton *Modifier la liste des plugins* pour valider vos changements.
 
-Vous pouvez également changer l'ordre de chargement des plugins par *drag and drop*. Cliquez et maintenez le clic sur le plugin à déplacer, puis glissez celui-ci vers le haut ou le bas en fonction de la position que vous souhaitez lui donner.
+Vous pouvez également changer l'ordre de chargement des plugins par *drag and drop*. Cliquez et maintenez le clic sur le plugin à déplacer, glissez celui-ci vers le haut ou le bas en fonction de la position que vous souhaitez lui donner, puis cliquez sur le bouton *Modifier la liste des plugins* pour valider vos changements.
 
 Notez que pour certains plugins, il est nécessaire de les charger dans un ordre précis : pour en savoir plus, consultez la page Aide de votre plugin.
 
