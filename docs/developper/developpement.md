@@ -541,7 +541,7 @@ Exemple :
         <date>01/12/2010</date>
         <site>http://pluxml.org</site>
         <description><![CDATA[Plugin de test pour PluXml]]></description>
-        <scope>Admin</scope>
+        <scope>admin</scope>
     </document>
 
 __Description des balises__
