@@ -88,7 +88,7 @@ Un plugin est composé de plusieurs fichiers : certains sont obligatoires, d’a
 | admin.php | Fichier utilisé dans l’administration de PluXml. Contient l’interface pour les utilisateurs accédant à l’administration de PluXml pour utiliser le plugin.| optionnel |
 | config.php | Fichier utilisé dans l’administration de PluXml. Contient l’interface pour les administrateurs pour configurer et paramétrer le plugin. | optionnel |
 | icon.png | Image identifiant le plugin et affichée sur l’écran de gestion des plugins (Menu Paramètres > Plugins). Formats autorisés : jpg, gif, png. Taille de l’image : 48 x 48 pixels | optionnel |
-| infos.xml | Fichier xml contenant les informations sur le plugin : Titre, Auteur, N° de version, Date du plugin, Site de l’auteur, Description du plugin | obligatoire |
+| infos.xml | Fichier xml contenant les informations sur le plugin : Titre, Auteur, N° de version, Date du plugin, Site de l’auteur, Description du plugin, Scope | obligatoire |
 | parameters.xml | Fichier xml contenant le paramétrage servant au fonctionnement du plugin. Depuis la version 5.1.7 de PluXml, le fichier parameters.xml est stocké dans le dossier data/configuration/plugins/| optionnel |
 | plugin.php | Fichier core du plugin. Le nom du fichier doit être le même que celui du répertoire dans lequel il est stocké, écrit avec la même orthographe en respectant les majuscules et minuscules. | obligatoire |
 
@@ -541,6 +541,7 @@ Exemple :
         <date>01/12/2010</date>
         <site>http://pluxml.org</site>
         <description><![CDATA[Plugin de test pour PluXml]]></description>
+        <scope>Admin</scope>
     </document>
 
 __Description des balises__
