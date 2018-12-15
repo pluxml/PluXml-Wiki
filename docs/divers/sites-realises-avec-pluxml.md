@@ -45,6 +45,6 @@
 * SCASB - Les Cyclos de l'AS Ballainvilliers [http://www.scasb.org](http://www.scasb.org)
 * Association des Usagers du Transport AUto-Train [http://autaut.fr](http://autaut.fr)
 * Association des Attachés de Recherche Clinique en onco-Hématologie : [http://www.aarch.fr](http://www.aarch.fr)
-* Association pour la recherche clinique de Francheville - Périgueux (24) : http://www.aprcf.net
+* Association pour la recherche clinique de Francheville - Périgueux (24) : [http://www.aprcf.net](http://www.aprcf.net)
 * C-CIE (Centre de Commerce & d'Industrie Européen) : [http://c-cie.eu/](http://www.aarch.fr)
 * Club d'Échecs du Bassin d'Annonay [http://echecs-annonay.fr](http://www.aarch.fr)
