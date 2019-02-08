@@ -2,7 +2,7 @@
 
 ## Sites professionnels
 
-* Option Médiation (69) : [http://www.optionmediation.fr/](http://www.optionmediation.fr/)
+* Option Médiation (69) : [https://www.optionmediation.fr/](https://www.optionmediation.fr/)
 * Psd-HTML.fr : [http://psd-html.fr/](http://psd-html.fr/)
 * JMR IMMOBILIER : [http://www.jmr-immobilier.fr/](http://www.jmr-immobilier.fr/)
 * Gymnastique Volontaire Poitiers la Gibauderie : [http://www.gym-gibauderie-poitiers.org](http://www.gym-gibauderie-poitiers.org)
@@ -14,6 +14,7 @@
 * Denis Cloutier : [http://dc57.ddns.net/](http://dc57.ddns.net/)
 * Facturation paramédicale : [http://www.facturationparamedicale.com/](http://www.facturationparamedicale.com/)
 * Art et tradition de la pierre : [http://www.art-tradition-pierre.com/](http://www.art-tradition-pierre.com/)
+* Les Médusés de Gorgopolitis : [https://www.les-meduses.fr/] (https://www.les-meduses.fr/)
 
 ## Sites personnels
 
