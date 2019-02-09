@@ -14,7 +14,7 @@
 * Denis Cloutier : [http://dc57.ddns.net/](http://dc57.ddns.net/)
 * Facturation paramédicale : [http://www.facturationparamedicale.com/](http://www.facturationparamedicale.com/)
 * Art et tradition de la pierre : [http://www.art-tradition-pierre.com/](http://www.art-tradition-pierre.com/)
-* Les Médusés de Gorgopolitis : [https://www.les-meduses.fr/] (https://www.les-meduses.fr/)
+* Les Médusés de Gorgopolitis : [https://www.les-meduses.fr/](https://www.les-meduses.fr/)
 
 ## Sites personnels
 
