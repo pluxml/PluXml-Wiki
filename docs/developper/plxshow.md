@@ -286,6 +286,26 @@ __Exemples__
 
     <?php $plxShow->artTitle() ?>
     <?php $plxShow->artTitle('link') ?>
+    
+## function artThumbnail
+
+__Usage__
+
+    <?php $plxShow->artThumbnail('$format', $echo); ?>
+
+__Détails des paramètres__
+
+* __$format__ (string) (optionnel) : format du texte pour chaque tag ; valeurs par défauts : `<a href="#img_url"><img class="art_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>` ; valeurs possibles :
+    *  img_url : l'URL de l'image d'accroche
+    *  img_thumb_url : l'URL de la miniature de l'image d'accroche
+    *  img_title : Titre de l'image d'accroche
+    *  img_alt : Texte alternatif d'affichage de l'image d'accroche
+* __$echo__ (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors l'image ne sera pas affiché
+
+__Exemples__
+
+    <?php $plxShow->artThumbnail() ?>
+    <?php $plxShow->artThumbnail('<a href="#img_url"><img class="art_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>', true) ?>
 
 ## function artUrl
 
