@@ -1,3 +1,6 @@
+!!! note
+    Documentation de plxShow : [cliquer ici](plxshow.md).
+
 # Créer un template
 Pour créer un template, éditez un nouveau fichier php dans le dossier de votre thème Le nom d'un template est normalisé :
 
@@ -20,8 +23,6 @@ Assurez-vous que le code ci-dessous existe entre les balises \<head\> ... \</hea
     <?php $plxShow->templaceCss(); ?>
 
 # Créer un thème
-
-Documentation de plxShow : [cliquer ici](plxshow.md).
 
 ## Description des fichiers composant un thème
 Chaque thème est composé de plusieurs fichiers utiles au design et au bon fonctionnement de celui-ci. Voici la liste des fichiers présents dans un thème (pour une meilleure compréhension, nous nous baserons sur le thème par défaut de PluXml).
