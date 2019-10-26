@@ -895,26 +895,27 @@ Voici la liste des termes :
 
 __Usage__
 
-    <?php $plxShow->lastArtList('$format',$max,$cat_id,'$ending') ?>
+    <?php $plxShow->lastArtList('$format',$max,$cat_id,'$ending',$sort) ?>
 
 __Détails des paramètres__
 
 * __$format__ (string) (optionnel) : format du texte pour chaque article ; valeurs possibles :
-    *  art_id : affiche l'ID de l'article
-    *  art_url : affiche l'URL de l'article
-    *  art_status : affiche le status de l'article (active / noactive)
-    *  art_author : affiche l'auteur de l'article
-    *  art_title : affiche le titre de l'article
-    *  art_chapo : affiche le chapô de l'article
-    *  art_content : affiche un extrait du contenu de l'article
-    *  art_content(num) : affiche un extrait du contenu de l'article en précisant le nom de caractère affichés
-    *  art_date : affiche la date de publication de l'article au format court (jj/mm/aaaa)
-    *  art_hour : affiche l'heure de publication de l'article au format court (hh:mm)
-    *  cat_list : affiche les catégories auxquelles appartient l'article sous forme d'un lien
-    *  art_nbcoms : affiche le nombre de commentaires pour chaque article
+    art_id : affiche l'ID de l'article
+    art_url : affiche l'URL de l'article
+    art_status : affiche le status de l'article (active / noactive)
+    art_author : affiche l'auteur de l'article
+    art_title : affiche le titre de l'article
+    art_chapo : affiche le chapô de l'article
+    art_content : affiche un extrait du contenu de l'article
+    art_content(num) : affiche un extrait du contenu de l'article en précisant le nom de caractère affichés
+    art_date : affiche la date de publication de l'article au format court (jj/mm/aaaa)
+    art_hour : affiche l'heure de publication de l'article au format court (hh:mm)
+    cat_list : affiche les catégories auxquelles appartient l'article sous forme d'un lien
+    art_nbcoms : affiche le nombre de commentaires pour chaque article
 * __$max__ (integer) (optionnel) : nombre d'article à afficher ; valeur par defaut : 5
 * __$cat_id__ (integer) (optionnel) : limiter l'affiche des articles à une catégorie précise
 * __$ending__ (string) (optionnel) : texte à ajouter en fin de ligne ; *Note* : ne semble pas fonctionner
+* __$sort__ (string) (optionnel) : ordre de trie. Valeur possible sort|rsort|alpha|random
 
 __Exemple__
 
