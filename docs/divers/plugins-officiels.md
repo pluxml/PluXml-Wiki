@@ -2,6 +2,9 @@
 
 Voici une liste des plugins officiels de PluXml.
 
+!!! note
+    Pour les plugins hébergés sur __Github__, il faut renommer le dossier contenu dans l'archive en supprimant le *"-master"* ajouté automatiquement par Github, pour ne garder que le nom du plugin. Ainsi, pour le plugin "exemple", l'archive téléchargée sur github engendrera le dossier "exemple-master", qu'il faudra renommer en "exemple" pour que le plugin soit pris en compte par PluXml.
+
 ## Editeurs
 
 [__CKeditor__](http://forum.pluxml.org/viewtopic.php?id=3394) : éditeur wysiwyg + gestionnaires de fichiers

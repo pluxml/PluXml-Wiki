@@ -5,7 +5,7 @@ Une liste des contributions à PluXml.
 Ces plugins ne sont pas officiels, c'est à dire qu'ils ne sont pas développés ni maintenus par l'équipe de PluXml. Vous les installez donc en connaissance de cause.
 
 !!! note
-    Pour les plugins hébergés sur __Github__, il faut renommer le dossier contenu dans l'archive en supprimant le *-master* ajouté automatiquement par github, pour ne garder que le nom du plugin. Ainsi, pour le plugin "exemple", l'archive téléchargée sur github engendrera le dossier "exemple-master", qu'il faudra renommer en "exemple" pour que le plugin soit pris en compte par PluXml.
+    Pour les plugins hébergés sur __Github__, il faut renommer le dossier contenu dans l'archive en supprimant le *"-master"* ajouté automatiquement par Github, pour ne garder que le nom du plugin. Ainsi, pour le plugin "exemple", l'archive téléchargée sur github engendrera le dossier "exemple-master", qu'il faudra renommer en "exemple" pour que le plugin soit pris en compte par PluXml.
 
 ## Constructeur de pages
 
