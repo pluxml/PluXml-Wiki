@@ -8,18 +8,11 @@ Voici une liste des plugins officiels de PluXml.
 
 __plxToolbar__ : Barre d'outils pour la saisie du code html dans les articles
 
-* Dernière version : [cliquer ici](https://github.com/Pluxopolis/plxtoolbar/releases)
-* Anciennes versions :
-    - Pour PluXml 5.4 : [plxtoolbar 1.3](http://telechargements.pluxml.org/plugins/official/plxtoolbar.1.3.zip) (des addons sont disponibles [ici](http://wiki.pluxml.org/index.php?page=Plugins+non+officiels])
+* [Télécharger](https://github.com/Pluxopolis/plxtoolbar/releases)
 
 __plxEditor__ : éditeur wysiwyg avec gestionnaire de fichiers.
 
-* Dernière version : [cliquer ici](https://github.com/Pluxopolis/plxEditor/releases)
-* Anciennes versions :
-    - pour PluXml 5.4 : [__plxEditor 1.4.1__](http://telechargements.pluxml.org/plugins/official/plxeditor.1.4.1.zip)
-    - pour PluXml 5.3 : [__plxEditor 1.2__](http://telechargements.pluxml.org/plugins/official/plxeditor.1.2.zip)
-
-
+* [Télécharger](https://github.com/Pluxopolis/plxEditor/releases)
 
 ## Social										
 [__plxMyMailComment__](http://forum.pluxml.org/viewtopic.php?id=2740) : envoyer un mail quand un nouveau commentaire est posté
