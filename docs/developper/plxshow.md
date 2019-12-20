@@ -190,12 +190,15 @@ Formatage avancé avec des caractères libres :
 
 __Usage__
 
-    <?php $plxShow->artFeed('$type',$categorie) ?>
+    <?php $plxShow->artFeed('$type',$categorie,'$format') ?>
 
 __Détails des paramètres__
 
 * __$type__ (obsolete)
 * __$categorie__ (integer) (optionnel) : identifiant (ID sans les 0) d'une catégorie
+* __$format__ (string) (optionnel) : format du lien ; valeurs possibles :
+    *  feedUrl : url du flux RSS
+    *  feedName : nom du flux RSS
 
 __Exemples__
 
@@ -205,7 +208,7 @@ Flux RSS des articles de tout le site :
 
 Flux RSS des articles de la catégorie 1 :
 
-    <?php $plxShow->artFeed('',1) ?>
+    <?php $plxShow->artFeed('',1, '<a href="#feedUrl" title="#feedTitle">#feedName</a>') ?>
 
 *Note* : les guillemets simples vides ('') sont obligatoires quand on précise une catégorie, à cause du paramètre obsolete __$type__
 
@@ -486,14 +489,6 @@ __Exemples__
     <?php $plxShow->catName() ?>
     <?php $plxShow->catName('link') ?>
 
-
-
-
-
-
-
-
-
 ## function catThumbnail
 
 __Usage__
@@ -513,29 +508,6 @@ __Exemples__
 
     <?php $plxShow->catThumbnail() ?>
     <?php $plxShow->catThumbnail('<a href="#img_url"><img class="cat_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>', true) ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## function catUrl
 
@@ -661,17 +633,20 @@ __Exemples__
 
 __Usage__
 
-    <?php $plxShow->comFeed('$type',$article) ?>
+    <?php $plxShow->comFeed('$type',$article,'$format') ?>
 
 __Détails des paramètres__
 
 * __$type__ (string) (OBSOLETE - requis, vide) : type de flux
 * __$article__ (integer) (optionnel) : identifiant (sans les 0) d'un article
+* __$format__ (string) (optionnel) : format du lien ; valeurs possibles :
+    *  feedUrl : url du flux RSS
+    *  feedName : nom du flux RSS
 
 __Exemple__
 
     <?php $plxShow->comFeed() ?>
-    <?php $plxShow->comFeed('',3) ?>
+    <?php $plxShow->comFeed('',3,'<a href="#feedUrl" title="#feedTitle">#feedName</a>') ?>
 
 *Note* : les guillemets simples sont obligatoires quand on précise l'ID de l'article en raison du paramètre $type obsolète
 
@@ -1371,6 +1346,28 @@ aucun
 __Exemple__
 
     <?php $plxShow->subTitle() ?>
+
+## function tagFeed
+
+__Usage__
+
+    <?php $plxShow->tagFeed('$type', '$tag', '$format') ?>
+
+__Détails des paramètres__
+
+* __$type__ (string) (OBSOLETE - requis, vide) : type de flux
+* __$tag__ (string) (optionnel) : le mot clé
+* __$format__ (string) (optionnel) : format du lien ; valeurs possibles :
+    *  feedUrl : url du flux RSS
+    *  feedTitle : valeur de la constante L_ARTFEED_RSS_TAG
+    *  feedName : valeur de la constante L_ARTFEED_RSS_TAG
+
+__Exemple__
+
+    <?php $plxShow->tagFeed() ?>
+    <?php $plxShow->tagFeed('','pluxml','<a href="#feedUrl" title="#feedTitle">#feedName</a>') ?>
+
+*Note* : les guillemets simples sont obligatoires quand on précise l'ID de l'article en raison du paramètre $type obsolète
 
 ## function tagList
 
