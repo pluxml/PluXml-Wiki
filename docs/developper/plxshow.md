@@ -486,6 +486,57 @@ __Exemples__
     <?php $plxShow->catName() ?>
     <?php $plxShow->catName('link') ?>
 
+
+
+
+
+
+
+
+
+## function catThumbnail
+
+__Usage__
+
+    <?php $plxShow->catThumbnail('$format', $echo); ?>
+
+__Détails des paramètres__
+
+* __$format__ (string) (optionnel) : format du texte pour chaque tag ; valeurs possibles :
+    *  img_url : l'URL de l'image d'accroche
+    *  img_thumb_url : l'URL de la miniature de l'image d'accroche
+    *  img_title : Titre de l'image d'accroche
+    *  img_alt : Texte alternatif d'affichage de l'image d'accroche
+* __$echo__ (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors l'image ne sera pas affichée
+
+__Exemples__
+
+    <?php $plxShow->catThumbnail() ?>
+    <?php $plxShow->catThumbnail('<a href="#img_url"><img class="cat_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>', true) ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## function catUrl
 
 __Usage__
