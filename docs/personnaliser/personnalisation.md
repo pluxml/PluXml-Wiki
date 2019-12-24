@@ -194,6 +194,11 @@ Emplacement du fichier css utilisateurs permettant de modifier l’apparence de 
 
 Pour valider le paramétrage de cette section, cliquez sur Modifier la configuration avancée.
 
+__Envoi d'e-mails__
+
+Cette section permer de configurer l'envoi des e-mails par PluXml. Plusieurs méthodes sont disponibles.
+
+
 ## Comptes utilisateurs
 PluXml est multi-utilisateurs, ce qui signifie que vous pouvez accueillir une communauté de membres ayant des droits d’utilisation et de gestion différents sur l’ensemble de votre site.
 
