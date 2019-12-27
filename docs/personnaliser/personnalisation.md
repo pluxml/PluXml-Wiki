@@ -215,7 +215,7 @@ Cette section permer de configurer l'envoi des e-mails par PluXml. Plusieurs mé
 
 !!! note "Compatibilité et génération du token AOUTH2"
     * PluXml est compatible avec le protocole OAUTH2, mais permet de générer des tokens uniquement pour le service GMAIL de Google. 
-    * L'ID client et le code secret, doivent être créés depuis le fournisseur de service [Google Cloud Plateform](cloud.google.com). Le champ "URL de redirection autorisée", doit contenir l'URL de votre site suivi de "/core/admin/get_oauth_token.php" (voir capture d'écran ci-dessous).
+    * L'ID client et le code secret, doivent être créés depuis le fournisseur de service [Google Cloud Plateform](https://cloud.google.com). Le champ "URL de redirection autorisée", doit contenir l'URL de votre site suivi de "/core/admin/get_oauth_token.php" (voir capture d'écran ci-dessous).
     * Une fois l'ID client et le code secret renseignés dans l'administration de PluXml, cliquez sur le bouton "*Modifier la configuration avancée*" pour enregistrer, puis cliquer sur le bouton "*Générer un token*" en bas de page.
     
     ![Configuration avancée](img/options-avancees-oauth2.jpg)
