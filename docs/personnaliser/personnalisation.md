@@ -208,7 +208,7 @@ Cette section permer de configurer l'envoi des e-mails par PluXml. Plusieurs mé
     * __Port SMTP__ : numéro du port de l'hôte SMTP (par défaut : 465)
     * __Chiffrement SMTP__ : protocole de chiffrement à utiliser (SSL, TLS ou aucun)
 * __SMTP OAUTH2__ : utilisation d'un service externe (compatible uniquement avec GMAIL).
-    * __Adresse e-mail__ : l'adresse utilisé sur le service OAUTH2 (exemple : pluxml@gmail.com)
+    * __Adresse e-mail__ : l'adresse utilisée sur le service OAUTH2 (exemple : pluxml@gmail.com)
     * __ID Client__ : identifiant client sur le service OAUTH2 (exemple : 664335625964-uha1vkt20qcvooug81ubjkkgfagktj5d.apps.googleusercontent.com)
     * __Code secret du client__ : la clé du client sur le service OAUTH2 (exemple : PrsvKp6aprKdnN9seeCoC8-x)
     * __Token__ : token d'authentifiation sur le service OAUTH2 (exemple : )
