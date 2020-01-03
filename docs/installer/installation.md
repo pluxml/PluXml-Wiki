@@ -157,7 +157,8 @@ Le login de connexion et le mot de passe sont ceux que vous avez définis lors d
 
 # Réinitialiser le mot de passe admin
 
-La procédure suivante, vous permettra de réinitialiser votre mot de passe admin, dans le cas ou la procédure "mot de passe" oublié via l'envoi d'un e-mail n'a pas fonctionné.
+!!! note
+    La procédure suivante, vous permettra de réinitialiser votre mot de passe admin, dans le cas ou la procédure "mot de passe" oublié via l'envoi d'un e-mail n'a pas fonctionné.
 
 __Récupérer un nouveau mot de passe__
 
