@@ -95,12 +95,15 @@ PluXml est disponible sous la forme d'un paquet Debian/Ubuntu, maintenu par la c
       - admin : les fichiers de l’administration
       - lang : les dix langues gérées par PluXml
       - lib : les fonctionnalités globales de PluXml
+      - templates : les templates utilisé par PluXml (exemple : mail de mot de passe oublié)
+      - vendor : librairies externes importées avec Composer (exemple : PHPMailer)
     - data : les paramètres, documents, images et autres
       - articles : contient tous les articles
       - commentaires : contient tous les commentaires
       - configuration : contient les divers fichiers de configuration de PluXml et des plugins
       - medias : contient les images ou autres documents envoyés par le gestionnaire de médias
       - statiques : contient toutes les pages statiques du site
+      - templates : contient des templates utilisables, par exemple, pour l'envoi d'e-mails (répertoire à créer si nécessaire)
     - plugins : contient la liste des plugins
     - readme : contient des fichiers d’information sur la licence de PluXml, les auteurs, et les derniers changements et évolutions
     - themes : le ou les thèmes du site
