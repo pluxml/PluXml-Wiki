@@ -274,7 +274,7 @@ __Options__
 Dans la colonne *Options*, vous pouvez modifier la langue utilisée dans l’interface d’administration de ce membre, son adresse e-mail et les informations le concernant.
 
 !!! danger "Important"
-  N’oubliez pas de valider après les paramétrages de cette section en cliquant sur Mettre à jour cet utilisateur.
+    N’oubliez pas de valider les modifications de cette section en cliquant sur le bouton *Mettre à jour cet utilisateur*.
 
 ## Thèmes
 Depuis cette page vous pouvez choisir le thème à appliquer sur votre site.
@@ -377,6 +377,8 @@ Sur cette page vous pouvez voir :
 * La disponibilité d’une mise à jour de PluXml
 
 En cas d'erreur ou de valeur non supportée, la ligne est affichée en rouge, sinon en vert.
+
+Le bouton *Envoyer un e-mail de test* permet de tester l'envoi des e-mails en se basant sur les paramètres définis dans la page *Configuration avancée*. 
 
 ## Éditer son profil
 Cliquez sur le lien Profil dans le menu principal de l’administration pour ouvrir cette page. Elle vous permet d’éditer votre profil personnel et de compléter celui-ci au besoin.
