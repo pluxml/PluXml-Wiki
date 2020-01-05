@@ -271,7 +271,7 @@ Cette liste peut être modifiée et complétée en fonction des évolutions de P
 /core/admin/categorie.php
 
     AdminCategoryPrepend
-    AdminCategoryTop>
+    AdminCategoryTop
     AdminCategory
     AdminCategoryFoot
 
