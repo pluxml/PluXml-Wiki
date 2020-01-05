@@ -33,6 +33,8 @@ Vous disposez d’un moteur de recherche pour retrouver facilement un article. S
 ### Gérer un article
 Une fois connecté au panneau d’administration, l’ensemble des articles rédigés ou en cours de rédaction, sont listés dans la section Articles. Lors de la première installation, un premier article est créé pour permettre de se familiariser avec les outils d’édition. Cet article peut être modifié en cliquant sur son titre : *Premier article*.
 
+![écrire un article](img/ecrire-article.jpg)
+
 Pour rédiger un nouvel article, cliquez sur le lien *Nouvel article* dans la barre des menus dans le panneau d’administration. La page d’édition d'un article est composée de deux parties principales : la partie centrale qui contient les formulaires pour rédiger le contenu de l'article et une partie à droite qui liste les options.
 
 #### Barre d’action
@@ -373,7 +375,6 @@ Vous avez la possibilité de choisir une mise en page pour votre page statique (
 
 Si vous n’êtes pas familier avec le langage HTML, il existe plusieurs plugins qui vous permettront d’enrichir ces formulaires avec un éditeur WYSIWYG.
 
-
 __Balises title et meta__
 
 PluXml vous offre la possibilité de choisir vos balises title et méta pour chacune de vos pages. Si vous choisissez de ne pas personnaliser ces balises, PluXml utilisera celle que vous avez choisie dans les paramètres généraux du site.
@@ -451,6 +452,10 @@ Pour attribuer un template à une catégorie, cliquez sur le menu Catégorie, re
 
 !!! note
     Voir la section : Les Templates
+
+__Image d’accroche__
+
+Cette option facultative vous permet d’ajouter une image d’illustration à la catégorie. En cliquant sur l’icône « + », vous pourrez sélectionner une image dans le Gestionnaire de médias. Le titre de l’image (facultatif) sera visible au survol de l’image avec la souris. Le texte alternatif de l’image (facultatif) est le texte affiché à la place de l’image si celle-ci n’existe pas ou plus sur le serveur.
 
 __Balises title et meta__
 

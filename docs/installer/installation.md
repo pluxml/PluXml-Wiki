@@ -3,7 +3,7 @@
 ## Pré-requis
 Que ce soit en local sur votre ordinateur ou sur internet, votre hébergement doit posséder les éléments suivants pour pouvoir utiliser PluXml :
 
-* PHP 5 ou supérieur
+* PHP 5.6 ou supérieur
 * Librairie GD pour la gestion des images
 * Fonction PHP d'envoi d'emails autorisée (non obligatoire)
 * Le module Apache *mod_rewrite* activé pour utiliser la réécriture d'url (non obligatoire)
@@ -95,12 +95,15 @@ PluXml est disponible sous la forme d'un paquet Debian/Ubuntu, maintenu par la c
       - admin : les fichiers de l’administration
       - lang : les dix langues gérées par PluXml
       - lib : les fonctionnalités globales de PluXml
+      - templates : les templates utilisé par PluXml (exemple : mail de mot de passe oublié)
+      - vendor : librairies externes importées avec Composer (exemple : PHPMailer)
     - data : les paramètres, documents, images et autres
       - articles : contient tous les articles
       - commentaires : contient tous les commentaires
       - configuration : contient les divers fichiers de configuration de PluXml et des plugins
       - medias : contient les images ou autres documents envoyés par le gestionnaire de médias
       - statiques : contient toutes les pages statiques du site
+      - templates : contient des templates utilisables, par exemple, pour l'envoi d'e-mails (répertoire à créer si nécessaire)
     - plugins : contient la liste des plugins
     - readme : contient des fichiers d’information sur la licence de PluXml, les auteurs, et les derniers changements et évolutions
     - themes : le ou les thèmes du site
@@ -154,7 +157,8 @@ Le login de connexion et le mot de passe sont ceux que vous avez définis lors d
 
 # Réinitialiser le mot de passe admin
 
-La procédure suivante, vous permettra de réinitialiser votre mot de passe admin.
+!!! note
+    La procédure suivante, vous permettra de réinitialiser votre mot de passe admin, dans le cas ou la procédure "mot de passe" oublié via l'envoi d'un e-mail n'a pas fonctionné.
 
 __Récupérer un nouveau mot de passe__
 

@@ -260,11 +260,18 @@ Cette liste peut être modifiée et complétée en fonction des évolutions de P
     AdminAuthTop
     AdminAuth
     AdminAuthEndBody
+    AdminAuthBegin
+    AdminAuthTopLostPassword
+    AdminAuthLostPassword
+    AdminAuthTopChangePassword
+    AdminAuthChangePassword
+    AdminAuthTopChangePasswordError
+    AdminAuthChangePasswordError
 
 /core/admin/categorie.php
 
     AdminCategoryPrepend
-    AdminCategoryTop>
+    AdminCategoryTop
     AdminCategory
     AdminCategoryFoot
 
@@ -286,7 +293,7 @@ Cette liste peut être modifiée et complétée en fonction des évolutions de P
     AdminCommentsPrepend
     AdminCommentsTop
     AdminCommentsPagination
-    AdminCommentsFoot/core/admin/comment_new.php
+    AdminCommentsFoot
     AdminCommentNewPrepend
     AdminCommentNewTop
     AdminCommentNew

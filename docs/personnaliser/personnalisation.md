@@ -131,6 +131,8 @@ Vous pouvez ici rajouter un texte, une signature, un lien ou un slogan, qui sera
 
 ![Configuration avancée](img/options-avancees.jpg)
 
+### Fonctionnement du site
+
 __Activer la réécriture d’URL__
 
 La réécriture d’URL (ou URL rewrite en anglais) est un procédé qui donne de plus jolies adresses et qui est excellent pour les moteurs de recherche.
@@ -194,6 +196,30 @@ Emplacement du fichier css utilisateurs permettant de modifier l’apparence de 
 
 Pour valider le paramétrage de cette section, cliquez sur Modifier la configuration avancée.
 
+### Envoi d'e-mails
+
+Cette section permer de configurer l'envoi des e-mails par PluXml. Plusieurs méthodes sont disponibles :
+
+* __sendmail__ : utilisation de la configuration locale de l'hébergeur ou du serveur (EXIM4, par exemple). Aucun paramétrage à réaliser dans l'administration de PluXml.
+* __SMTP simple__ : utilisation d'un serveur externe (OVH, Gandi, par exemple). 
+    * __Hôte SMTP__ : nom du serveur SMTP (exemple : ssl0.ovh.net)
+    * __Nom d'utilisateur SMTP__ : nom de l'utilisateur sur l'hôte SMTP (exemple : pluxml@monserveursmtp.com)
+    * __Mot de passe SMTP__ : mot de passe de l'utilisateur sur l'hôte SMTP 
+    * __Port SMTP__ : numéro du port de l'hôte SMTP (par défaut : 465)
+    * __Chiffrement SMTP__ : protocole de chiffrement à utiliser (SSL, TLS ou aucun)
+* __SMTP OAUTH2__ : utilisation d'un service externe (compatible uniquement avec GMAIL).
+    * __Adresse e-mail__ : l'adresse utilisée sur le service OAUTH2 (exemple : pluxml@gmail.com)
+    * __ID Client__ : identifiant client sur le service OAUTH2 (exemple : 664335625964-uha1vkt20qcvooug81ubjkkgfagktj5d.apps.googleusercontent.com)
+    * __Code secret du client__ : la clé du client sur le service OAUTH2 (exemple : PrsvKp6aprKdnN9seeCoC8-x)
+    * __Token__ : token d'authentifiation sur le service OAUTH2 (exemple : )
+
+!!! note "Compatibilité et génération du token AOUTH2"
+    * PluXml est compatible avec le protocole OAUTH2, mais permet de générer des tokens uniquement pour le service GMAIL de Google. 
+    * L'ID client et le code secret, doivent être créés depuis le fournisseur de service [Google Cloud Plateform](https://cloud.google.com). Le champ "URL de redirection autorisée", doit contenir l'URL de votre site suivi de "/core/admin/get_oauth_token.php" (voir capture d'écran ci-dessous).
+    * Une fois l'ID client et le code secret renseignés dans l'administration de PluXml, cliquez sur le bouton "*Modifier la configuration avancée*" pour enregistrer, puis cliquer sur le bouton "*Générer un token*" en bas de page.
+    
+    ![Configuration avancée](img/options-avancees-oauth2.jpg)
+
 ## Comptes utilisateurs
 PluXml est multi-utilisateurs, ce qui signifie que vous pouvez accueillir une communauté de membres ayant des droits d’utilisation et de gestion différents sur l’ensemble de votre site.
 
@@ -248,7 +274,7 @@ __Options__
 Dans la colonne *Options*, vous pouvez modifier la langue utilisée dans l’interface d’administration de ce membre, son adresse e-mail et les informations le concernant.
 
 !!! danger "Important"
-  N’oubliez pas de valider après les paramétrages de cette section en cliquant sur Mettre à jour cet utilisateur.
+    N’oubliez pas de valider les modifications de cette section en cliquant sur le bouton *Mettre à jour cet utilisateur*.
 
 ## Thèmes
 Depuis cette page vous pouvez choisir le thème à appliquer sur votre site.
@@ -351,6 +377,8 @@ Sur cette page vous pouvez voir :
 * La disponibilité d’une mise à jour de PluXml
 
 En cas d'erreur ou de valeur non supportée, la ligne est affichée en rouge, sinon en vert.
+
+Le bouton *Envoyer un e-mail de test* permet de tester l'envoi des e-mails en se basant sur les paramètres définis dans la page *Configuration avancée*. 
 
 ## Éditer son profil
 Cliquez sur le lien Profil dans le menu principal de l’administration pour ouvrir cette page. Elle vous permet d’éditer votre profil personnel et de compléter celui-ci au besoin.
