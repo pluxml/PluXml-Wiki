@@ -6,7 +6,7 @@ Built with MkDocs.
 
 MkDocs installation using pip (Python package manager) is recommended to have the lastest MkDocs version.
 
-[pip installation](https://pip.readthedocs.io/en/stable/installing/) (python is required).
+[Pip installation](https://pip.readthedocs.io/en/stable/installing/) (python is required) :
 
 ```
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
