@@ -1,0 +1,30 @@
+<strong>Table des matières</strong>
+<ul class="menu vertical">
+  {%- for toc_item in page.toc %}
+    <li class="">
+      <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+    </li>
+    {%- for toc_item in toc_item.children %}
+      <ul>
+        <li>
+          <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+        </li>
+        {%- for toc_item in toc_item.children %}
+          <ul>
+            <li>
+              <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+            </li>
+            {%- for toc_item in toc_item.children %}
+              <ul>
+                <li>
+                  <a href="{{ toc_item.url }}">{{ toc_item.title }}</a>
+                </li>
+              </ul>
+            {%- endfor %}
+          </ul>
+        {%- endfor %}
+
+      </ul>
+    {%- endfor %}
+  {%- endfor %}
+</ul>
