@@ -1,6 +1,6 @@
-# Get involved
+# How to contribute
 
-There are many ways you can get involved into the PluXml project :
+There are many ways you can contribute into the PluXml project :
 
 ## Themes
 
