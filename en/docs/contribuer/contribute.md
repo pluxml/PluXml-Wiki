@@ -1,6 +1,6 @@
 # How to contribute
 
-There are many ways you can contribute into the PluXml project :
+There are many ways you can contribute into the PluXml project:
 
 ## Themes
 
@@ -12,7 +12,7 @@ You can develop and share a plugin for PluXml. In order to help you, we have mad
 
 A list of existing plugins is available [on the forum (link for french)](http://forum.pluxml.org/viewtopic.php?id=2534&p=1), or in the documentation : [official plugins (link for french)](https://wiki.pluxml.org/divers/plugins-officiels/), [unofficial plugins (link for french)](https://wiki.pluxml.org/divers/plugins-non-officiels/).
 
-See also : [The documentation to create a plugin (link for french)](https://wiki.pluxml.org/developper/developpement/#creer-un-plugin)
+See also: [The documentation to create a plugin (link for french)](https://wiki.pluxml.org/developper/developpement/#creer-un-plugin)
 
 ## Wiki
 
@@ -25,4 +25,4 @@ You can help new users and share your experience on the [forum (link for french)
 
 ## Support us
 
-Support PluXml financially : [here (link for french)](https://www.pluxml.org/nous-soutenir.html).
+Support PluXml financially: [here (link for french)](https://www.pluxml.org/nous-soutenir.html).
