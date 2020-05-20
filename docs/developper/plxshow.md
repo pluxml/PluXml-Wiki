@@ -304,6 +304,7 @@ __Détails des paramètres__
     *  img_title : Titre de l'image d'accroche
     *  img_alt : Texte alternatif d'affichage de l'image d'accroche
 * __$echo__ (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors l'image ne sera pas affiché
+* __$article__ (boolean) (optionnel) : valeurs possibles : true / false. Par défait la valeur est false. Si la valeur est true, alors au clic sur l'image PluXml redirige vers l'article et non vers l'image.
 
 __Exemples__
 
