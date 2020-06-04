@@ -1375,6 +1375,7 @@ __Exemple__
 __Usage__
 
     <?php $plxShow->tagList('$format',$max) ?>
+    <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>', '10', 'alpha') ?>
 
 __Détails des paramètres__
 
@@ -1384,11 +1385,13 @@ __Détails des paramètres__
     *  tag_name : nom du tag
     *  nb_art : nombre d'article dans ce tag
 * __$format__ (integer) (optionnel) : nombre max de tags à afficher
-
+* __$format__ (string) (optionnel) : tri des tags (random, alpha, '' = tri par popularité)
+   
 __Exemples__
 
     <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>') ?>
     <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name (#nb_art)</a></li>,3') ?>
+    <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>', '10', 'alpha') ?>
 
 ## function tagName
 
