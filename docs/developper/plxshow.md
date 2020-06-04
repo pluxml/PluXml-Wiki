@@ -1374,7 +1374,7 @@ __Exemple__
 
 __Usage__
 
-    <?php $plxShow->tagList('$format',$max) ?>
+    <?php $plxShow->tagList('$format',$max,'$order') ?>
 
 __Détails des paramètres__
 
@@ -1383,7 +1383,7 @@ __Détails des paramètres__
     *  tag_url : URL du tag
     *  tag_name : nom du tag
     *  nb_art : nombre d'article dans ce tag
-* __$format__ (integer) (optionnel) : nombre max de tags à afficher
+* __$max__ (integer) (optionnel) : nombre max de tags à afficher
 
 __Exemples__
 
