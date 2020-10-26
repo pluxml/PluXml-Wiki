@@ -1,26 +1,27 @@
 # Documentation
 
-Cette section vous accompagnera tout au long de votre utilisation de PluXml. Vous y trouverez le guide d'utilisateur, le guide développeur et un ensemble d'aides et d'astuces.
+This section will guide you through your use of PluXml. There you will find the user guide, the developer guide, and a set of tips.
 
-__[Installer](installer/installation.md)__
+__[Install](install/installation.md)__
 
-Installation ou mettre à jour PluXml sur un serveur mutualisé ou dédié.
+Install or update PluXml on a shared or dedicated server.
 
-__[Utiliser](utiliser/utilisation.md)__
+__[Usage](usage/usage.md)__
 
-Documentation destinées aux utilisateurs de PluXml. Rédiger et configurer un site sous PluXml.
+Documentation for PluXml users. Write and configure a website under PluXml.
 
-__[Développer](developper/developpement.md)__
+__[Develop](develop/develop.md)__
 
-Créer un thème, un plugin ou modifier le coeur de PluXml.
+Create a theme, a plugin or modify the core of PluXml.
 
-__[Personnaliser](personnaliser/personnalisation.md)__
+__[Customize](customize/customization.md)__
 
-Ajouter un thème ou des plugins. Astuces diverses.
+Add a theme or plugins. Various tips.
 
-## Besoin d'aide ?
-Disponible pour toute information complémentaire ou pour demander de l'aide, le forum est accessible à cette adresse :  [forum.pluxml.org](https://forum.pluxml.org)
+## Need help ?
 
-## Comment contribuer ?
+Available for any further information or to request help, the forum is accessible at this address: [forum.pluxml.org] (https://forum.pluxml.org).
 
-Il est possible de contribuer à PluXml de plusieurs manières, que vous soyez développeurs ou utilisateur. [Cliquer ici](contribuer/contribuer/) pour en savoir plus.
+## How to contribute ?
+
+There are many ways you can contribute to PluXml, whether you are a developer or a user : [how to contribute](contribute/contribute.md).

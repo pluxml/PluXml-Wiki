@@ -14,11 +14,11 @@ theme:
     custom_dir: custom_theme/
 
 nav:
-- Installer: installer/installation.md
-- Utiliser: utiliser/utilisation.md
-- Personnaliser: personnaliser/personnalisation.md
-- Développer: developper/developpement.md
+- Install: install/installation.md
+- Usage: usage/usage.md
+- Customize: customize/customization.md
+- Develop: develop/develop.md
 - Contribute: contribute/contribute.md
 - Plugins officiels: divers/plugins-officiels.md
 - Plugins non officiels: divers/plugins-non-officiels.md
-- Divers: divers/divers-autre.md
+- Miscellaneous: miscellaneous/miscellaneous-other.md
