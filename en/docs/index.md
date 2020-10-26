@@ -20,7 +20,7 @@ Add a theme or plugins. Various tips.
 
 ## Need help ?
 
-Available for any further information or to request help, the forum is accessible at this address: [forum.pluxml.org] (https://forum.pluxml.org).
+Available for any further information or to request help, the forum is accessible at this address: [forum.pluxml.org](https://forum.pluxml.org).
 
 ## How to contribute ?
 
