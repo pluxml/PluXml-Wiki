@@ -1,420 +1,433 @@
-# Personnalisation et paramétrage de PluXml
-Une des premières choses à faire après la première connexion à la zone d'administration est de renseigner les paramètres de base.
-Dans le menu de gauche, cliquez sur Paramètres. Un sous-menu s’ouvre alors.
+# PluXml customization and configuration
+One of the first thing to do after your first administration panel access is to set the basics parameters.
+On the left menu, click on "Parameters", a sub-menu will be displayed
 
-## Configuration de base
+## Basic configuration
 
-![Configuration de base](img/options-base.jpg)
+![Basic configuration](img/options-base.jpg)
 
-__Titre du site__
+__Site title__
 
-Ce champ facultatif permet de définir le titre du site.
+This field is optional and allows you to edit your website title.
 
-__Sous-titre/description du site__
+__Subtitle / Site description__
 
-Ce champ facultatif permet de renseigner un sous-titre au site comme une brève description ou un slogan.
+This field is optional and allows you to edit the subtitle or your website short description.
 
-__Contenu de la balise meta « description » du site (optionnel)__
+__Content of "description" meta tag (optional)__
 
-Une description du site destinée aux moteurs de recherche.
+A description for the website to be used by search engines (SEO).
 
-__Contenu de la balise meta « keywords » du site (optionnel)__
+__Content of "keywords" meta tag (optional)__
 
-Des keywords (ou mots clés) destinés aux moteurs de recherche. Ces mots clés concernent votre site de manière générale. À ne pas confondre avec les mots clés spécifiques à chaque page ou article.
+A keywords list separated by commas for search engines. These keywords are used globaly for your website. There are not relative to a specific page or article.
 
-__Langue par défaut du site__
+__Default site language__
 
-Langue par défaut utilisée dans l'administration du site ou si vous utilisez un thème multi-langues.
+The default language used in the administation panel and on your website site public view.
 
-__Fuseau horaire__
+__Time Zone__
 
-Fuseau horaire pour prendre en compte le décalage date/heure en fonction du pays.
+The time zone used to display correct dates and times for your country.
 
-__Autoriser les commentaires__
+__Allow comments__
 
-* Non : les commentaires sont désactivés sur l'ensemble site. Le formulaire de rédaction des commentaires n’apparaît pas.
-* Oui : les commentaires sont autorisés sur tous les articles.
+* No : comments are disabled for the whole website. The comment form will not be displayed.
+* Yes : comments are allowed for all articles.
 
-__Modérer les commentaires à la création__
+__Moderate comments when created__
 
-* Non : Tous les nouveaux commentaires sont publiés automatiquement.
-* Oui : Avant d’être publiés, les commentaires doivent être validés par un utilisateur disposant des droits suffisants.
-
-!!! note
-    Voir la section : Les Comptes utilisateurs
-
-__Modérer les articles pour les profils Rédacteur et Éditeur__
-
-Activée, cette fonction permettra à l’administrateur du site de publier (ou non) les articles proposés par les rédacteurs.
+* No : All new comments are automaticaly published.
+* Yes : Before being published, comments les commentaires doivent être validésmust be validated by a user with sufficient rights.
 
 !!! note
-    Voir la section : Les Comptes utilisateurs
+    See : User accounts
 
-## Options d’affichage
-C’est ici que vous paramétrez l’affichage des pages sur votre site.
+__Moderate articles for Editor and Publisher profiles__
 
-![Options d'affichage](img/options-affichage.jpg)
-
-__Template de la page d'accueil__
-Permet de définir un template spécifique à la page d'accueil de votre site.
+This feature allow the Administrator to publish or not articles written by Editor or Writer users.
 
 !!! note
-    Voir la section : Les Templates
+    See : User accounts
 
-__Tri des articles__
+__Display RSS feeds__
 
-Par défaut à l’affichage, les articles apparaissent par ordre chronologique, vous pouvez les afficher par date croissante, date décroissante ou bien par ordre alphabétique.
+Display or not the rss feed link on your website public view.
 
-__Nombre d’articles affichés par page__
+## Display settings
+This is where you can configure the pages display on your website.
 
-Indiquez le nombre d’articles à afficher par page.
+![Display settings](img/options-affichage.jpg)
 
-__Nombre d'articles affichés par page dans les mots clés__
-
-Indiquez le nombre d’articles à afficher par page d’un mot clé.
-
-__Nombre d’articles affichés par page dans les archives__
-
-Indiquez le nombre d’articles à afficher par page dans les archives.
-
-__Nombre d’articles affichés par page dans l’administration__
-
-Indiquez le nombre d’articles à afficher par page dans l’administration de PluXml.
-
-__Tri des commentaires__
-
-Tri des commentaires par date croissante ou décroissante.
-
-__Nombre de commentaires affichés par page dans l’administration__
-
-Permet de définir le nombre de commentaires à afficher par page dans la section Commentaires de l’administration de PluXml.
-
-__Afficher les catégories sans articles__
-
-Par défaut le nom des catégories qui ne contiennent pas d'articles n'est pas affiché sur la partie publique du site. Pour afficher dans tous les cas le nom des catégories, sélectionnez la valeur *Oui* dans la liste déroulante.
+__Template of the homepage__
+Allows you to define a specific template for your homepage (root of the public view).
 
 !!! note
-    Voir la section : Les Catégories
+    See : Templates
 
-__Taille des images et des miniatures (largeur x hauteur)__
+__Sorting articles__
 
-Lors de l'envoi d'images sur votre site à partir du gestionnaire de médias, une miniature de l'image peut être créée. Parmi les valeurs proposées vous pouvez définir ici un réglage personnel en définissant une largeur et une hauteur. Ce paramétrage sera affiché dans le gestionnaire de médias.
+By default, the articles appear in chronological order, you can display them by ascending date, descending date or in alphabetical order.
+
+__Articles per page__
+
+Indicate the number of articles to display per page.
+
+__Articles per page in tags__
+
+Indicate the number of articles to display on a keyword page.
+
+__Articles per page in archives__
+
+Indicate the number of articles to display on an archive page.
+
+__Articles per page in administration__
+
+Indicate the number of articles to display per page in the administration panel.
+
+__Sorting comments__
+
+Sort comments by ascending or descending date.
+
+__Comments per page in administraton__
+
+Allows you to define the number of comments to display per page in the Comments section of the administration panel.
+
+__Display categories without article__
+
+By default, categories that do not contain articles are not displayed on the website public view. To display empty categories, select the value *Yes* in the drop-down list.
 
 !!! note
-    Voir la section : Gestionnaire de médias
+    See : Categories
 
-__Créer miniatures__
+__Images and thumbnails size (width x height)__
 
-Si réglé sur *Oui*, le système créera automatiquement des miniatures lors de l'envoi d’images avec le gestionnaire de médias.
+When uploading an image to your site from the media manager, a thumbnail can be created. Among the proposed size values you can define a personal size here by defining a width and a height. This setting will be displayed in the media manager.
 
 !!! note
-    Voir la section : Gestionnaire de médias
+    See : Media manager
 
-__Nombre d’articles/commentaires affichés sur les fils RSS__
+__Create thumbnails__
 
-Permet de définir le nombre d’articles et de commentaires dans les flux RSS que propose votre site.
+If set to *Yes*, the system will automatically create thumbnails when sending images with the media manager.
 
-__Afficher uniquement le chapô dans les flux RSS des articles__
-
-Permet de n'afficher que le contenu du chapô de vos articles dans les flux RSS proposés par votre site.
 !!! note
-    Voir la section : Les Articles
+    See : Media manager
 
-__Texte à ajouter comme signature au bas de chaque flux RSS des articles__
+__N° of Articles or comments in the Rss feed__
 
-Vous pouvez ici rajouter un texte, une signature, un lien ou un slogan, qui sera affiché à la fin de chaque article dans les flux RSS que propose votre site.
+Allows you to define the number of articles and comments in the RSS feeds offered by your website.
+
+__Only display headlines in the Rss article feed__
+
+Allows you to display only your articles headlines in the RSS feeds offered by your website.
+
+!!! note
+    See : Articles
+
+__Signature used in the end of every Rss feed's article__
+
+Here you can add a text, a signature, a link, which will be displayed at the end of each article in the RSS feeds offered by your site.
 
 !!! danger "Important"
-    N’oubliez pas de valider après les paramétrages de cette section en cliquant sur *Modifier les options d’affichage*.
+    Do not forget to validate after doing changes in this section by clicking on *Save display settings*.
 
-## Configuration avancée
+## Advanced configuration
 
 ![Configuration avancée](img/options-avancees.jpg)
 
-### Fonctionnement du site
+### Website operating
 
-__Activer la réécriture d’URL__
+__Enable url rewriting__
 
-La réécriture d’URL (ou URL rewrite en anglais) est un procédé qui donne de plus jolies adresses et qui est excellent pour les moteurs de recherche.
+URL rewriting is a process that results in nicer addresses and is great for search engines.
 
-Au lieu d’avoir : http://monsite.net/index.php?artice23/ma-page
+Instead of having : http://website.net/index.php?artice23/my-page
 
-Vous aurez : http://monsite.net/artice23/ma-page
+You will have : http://monsite.net/artice23/ma-page
 
-Il faut au préalable que la réécriture d’URL soit activée sur votre serveur ou sur votre hébergement. Si cette fonctionnalité n'est pas disponible sur votre hébergeur, laissez l’option sur *Non*.
+You must first have URL rewriting enabled on your server or on your hosting. If this feature is not available on your web host, leave the setting to *No*.
 
-__Activer la compression GZIP__
+__Enable GZIP compression__
 
-Passé à *Oui* cette option permet de compresser les pages et d’économiser de la bande passante, rendant le site plus rapide. Cependant, cela augmente la charge du processeur de la machine qui héberge votre site.
+When changed to *Yes* this setting will compress pages and save bandwidth, making the site faster. However, this increases the CPU load on the machine that hosts your website.
 
-__Activer le captcha antispam__
+__Enable password recovery__
 
-Permet d'afficher un captcha basique pour sécuriser l’envoi de commentaires sur vos articles. Il est important, pour éviter le spam, de mettre à *Oui* cette option.
+This setting allow the password recovery link to be displayed on the login screen.
 
-__Utiliser un dossier images et documents différent pour chaque utilisateur__
+__Enable anti spam-capcha__
 
-Si vous êtes le seul à travailler dans l’administration de votre site, vous pouvez laisser cette option à *Non*. En revanche, si vous prévoyez d'être plusieurs à intervenir sur le site, il est avantageux d’utiliser cette option pour que chaque utilisateur dispose d'un espace réservé pour gérer ses images.
+Allows you to display a basic captcha to secure comments on your articles. It is important, to avoid spam, to set this setting to *Yes*.
 
-__Clé d’administration (URL privées)__
+__Use separate medias folders for every writer__
 
-Laissez par défaut ou videz le champ pour régénérer la clé. Cette clé est utilisée dans le lien des flux RSS pour protéger l'accès à l’administration des commentaires en ligne et hors ligne.
+If you are the only one working in the administration of your site, you can leave this option to *No*. On the other hand, if you plan to be several to work on the website, it is advantageous to use this option so that each user has a reserved space to manage their medias.
 
-__Emplacement des fichiers de configuration (dossier)__
+__Administration key (private URLs)__
 
-Emplacement des fichiers de configuration : par défaut data/configuration/.
+Leave by default or empty the field to regenerate the key. This key is used in the link of RSS feeds to protect administration access from online and offline comments.
 
-__Emplacement des articles (dossier)__
+__Configuration files (folder) location__
 
-Emplacement du dossier stockant les fichiers des articles : par défaut data/articles/
+Location of configuration files: default data/configuration/.
 
-__Emplacement des commentaires (dossier)__
+__Articles (folder) location__
 
-Emplacement du dossier stockant les fichiers des commentaires : par défaut data/commentaires/
+Location of folder storing articles files: default data/articles/
 
-__Emplacement des pages statiques (dossier)__
+__Comments (folder) location__
 
-Emplacement du dossier stockant les fichiers des pages statiques : par défaut /data/statiques/
+Location of the folder storing comments files: default data/commentaires/
 
-__Emplacement des médias (dossier)__
+__Static page (folder) location__
 
-Emplacement du dossier stockant les images ou autres documents utilisateurs : par défaut /data/medias/
+Location of the folder storing static pages files: default /data/statiques/
 
-__Emplacement des thèmes (dossier)__
+__Medias (folder) location__
 
-Emplacement du dossier stockant les thèmes du site : par défaut /themes/
+Location of the folder storing images or other user documents: by default /data/medias/
 
-__Emplacement des plugins (dossier)__
+__Themes (folder) location__
 
-Emplacement du dossier stockant les plugins : par défaut /plugins/
+Location of the folder storing themes: by default /themes/
 
-__Emplacement et nom du fichier css personnel pour la personnalisation de l’interface d’administration (option)__
+__Plugins (folder) location__
 
-Emplacement du fichier css utilisateurs permettant de modifier l’apparence de l’interface d’administration. Exemple : data/admin-theme.css
+Location of the folder storing plugins: by default /plugins/
+
+__Location and name of custom css file of the administration area (optional)__
+
+Location of the users css file to modify the appearance of the administration panel. Example: data/admin-theme.css
 
 !!! danger "Important"
-    Ne pas oublier de mettre un / (slash) à la fin des chemins des dossiers.
+    Don't forget to put a / (slash) at the end of the folder paths.
 
-Pour valider le paramétrage de cette section, cliquez sur Modifier la configuration avancée.
+To validate the settings in this section, click *Save advanced configuration* button.
 
-### Envoi d'e-mails
+### Email sending
 
-Cette section permer de configurer l'envoi des e-mails par PluXml. Plusieurs méthodes sont disponibles :
+This section allows you to configure the sending of emails by PluXml. Several methods are available:
 
-* __sendmail__ : utilisation de la configuration locale de l'hébergeur ou du serveur (EXIM4, par exemple). Aucun paramétrage à réaliser dans l'administration de PluXml.
-* __SMTP simple__ : utilisation d'un serveur externe (OVH, Gandi, par exemple). 
-    * __Hôte SMTP__ : nom du serveur SMTP (exemple : ssl0.ovh.net)
-    * __Nom d'utilisateur SMTP__ : nom de l'utilisateur sur l'hôte SMTP (exemple : pluxml@monserveursmtp.com)
-    * __Mot de passe SMTP__ : mot de passe de l'utilisateur sur l'hôte SMTP 
-    * __Port SMTP__ : numéro du port de l'hôte SMTP (par défaut : 465)
-    * __Chiffrement SMTP__ : protocole de chiffrement à utiliser (SSL, TLS ou aucun)
-* __SMTP OAUTH2__ : utilisation d'un service externe (compatible uniquement avec GMAIL).
-    * __Adresse e-mail__ : l'adresse utilisée sur le service OAUTH2 (exemple : pluxml@gmail.com)
-    * __ID Client__ : identifiant client sur le service OAUTH2 (exemple : 664335625964-uha1vkt20qcvooug81ubjkkgfagktj5d.apps.googleusercontent.com)
-    * __Code secret du client__ : la clé du client sur le service OAUTH2 (exemple : PrsvKp6aprKdnN9seeCoC8-x)
-    * __Token__ : token d'authentifiation sur le service OAUTH2 (exemple : )
+* __sendmail__ : use of the local configuration of the host or the server (EXIM4, for example). No configuration needed in the administration of PluXml.
+* __SMTP__ : use of an external server (OVH, Gandi, for example).
+    * __SMTP hostname__ : SMTP server name (example: ssl0.ovh.net)
+    * __SMTP username__ : user name on the SMTP host (example: pluxml@smtpserver.com)
+    * __SMTP password__ : user password on SMTP host
+    * __SMTP port__ : SMTP host port number (default: 465)
+    * __SMTP encryption__ : encryption protocol to use (SSL, TLS or none)
+* __SMTP OAUTH2__ : use of an external service (compatible only with GMAIL).
+    * __Email address__ : the address used on the OAUTH2 service (example: pluxml@gmail.com)
+    * __Client ID__ : customer identifier on the OAUTH2 service (example:664335625964-uha1vkt20qcvooug81ubjkkgfagktj5d.apps.googleusercontent.com)
+    * __client secret key__ : the customer's key on the OAUTH2 service (example: PrsvKp6aprKdnN9seeCoC8-x)
+    * __Token__ : authentication token on the OAUTH2 service
 
-!!! note "Compatibilité et génération du token AOUTH2"
-    * PluXml est compatible avec le protocole OAUTH2, mais permet de générer des tokens uniquement pour le service GMAIL de Google. 
-    * L'ID client et le code secret, doivent être créés depuis le fournisseur de service [Google Cloud Plateform](https://cloud.google.com). Le champ "URL de redirection autorisée", doit contenir l'URL de votre site suivi de "/core/admin/get_oauth_token.php" (voir capture d'écran ci-dessous).
-    * Une fois l'ID client et le code secret renseignés dans l'administration de PluXml, cliquez sur le bouton "*Modifier la configuration avancée*" pour enregistrer, puis cliquer sur le bouton "*Générer un token*" en bas de page.
+!!! note "Compatibility and generation of the OAUTH2 token"
+    * PluXml is compatible with the OAUTH2 protocol, but allows tokens to be generated only for Google GMAIL service.
+    * The client ID and the secret code, must be created from the service provider [Google Cloud Platform](https://cloud.google.com). The "Authorized redirect URL" field should contain the URL of your site followed by "/core/admin/get_oauth_token.php" (see screenshot below).
+    * Once the client ID and the secret key have been entered in the PluXml administration panel, click on the "*Modify the advanced configuration*" button to save, then click on the "*Generate a token*" button at the bottom of the page.
     
     ![Configuration avancée](img/options-avancees-oauth2.jpg)
 
-## Comptes utilisateurs
-PluXml est multi-utilisateurs, ce qui signifie que vous pouvez accueillir une communauté de membres ayant des droits d’utilisation et de gestion différents sur l’ensemble de votre site.
+## User accounts
+PluXml is multi-user, which means you can host a community of members with different use and management rights across your site.
 
-![Comptes utilisateurs](img/utilisateurs.jpg)
+![User accounts](img/utilisateurs.jpg)
 
-En cliquant sur *Paramètres > Comptes utilisateurs*, vous accédez à la page de gestion des utilisateurs, permettant d'ajouter et de modifier des utilisateurs sous 5 niveaux.
+By clicking on *Parameters > User accounts*, you access the user management page, allowing you to add and modify users under 5 levels.
 
-__Les Administrateurs__ : ils ont tous les droits sur l’ensemble du site. L’administrateur par défaut est celui qui installe PluXml : ses droits ne peuvent pas être modifiés.
+__Administrator__ : they have all rights to the entire site. The default administrator is the one who installs PluXml: his rights cannot be changed.
 
-__Les Gestionnaires__ : ils ont quasiment les mêmes droits que l’administrateur sauf qu’ils ne peuvent pas modifier les paramètres de PluXml. Certains accès à la configuration des plugins ne sont pas autorisés (en fonction des plugins).
+__Manager__ : they have almost the same rights as the administrator except that they cannot modify the settings of PluXml. Some access to plugins configuration is not authorized (depending on the plugins).
 
-__Les Modérateurs__ : ils ont les mêmes droits que les éditeurs et ont aussi accès aux commentaires qu’ils peuvent modérer.
+__Moderator__ : they have the same rights as editors and also have access to comments they can moderate.
 
-__Les Éditeurs__ : ils peuvent accéder à la liste des articles, ajouter des articles, gérer les catégories et les médias.
+__Editor__ : they can access the articles list, add articles, manage categories and medias.
 
-__Les Rédacteurs__ : ils peuvent accéder à la liste de ses articles, ajouter des articles et des médias.
+__Writor__ : they can access the article list, add articles and media.
 
-L’édition des articles sera modérée ou non par un utilisateur ayant des droits plus avancés (Administrateur, Gestionnaire, Modérateur) selon le paramétrage de PluXml. La modération des articles des rédacteurs s’active par l’administrateur dans *Paramètres/configuration de base* puis il faut passer à *Oui* le champ *Modérer les articles pour les profils Rédacteur et Éditeur*.
+Article publishing will be moderated or not by a user with more advanced rights (Administrator, Manager, Moderator) depending on the settings. The article moderation can be activated by the administrator in *Settings > basic configuration*, then it is necessary to pass to *Yes* the setting *Moderate the articles for the Writer and Editor profiles*.
 
-Tous les utilisateurs peuvent modifier leur profil.
+All users can edit their profile.
 
-|  | Articles | Catégories | Commentaires | Pages statiques | Paramètres |  
+|  | Articles | Categories | Comments | Static Pages | Settings |  
 |--|--|--|--|--|--|
-| Administrateur | X | X | X | X | X |
+| Administrator | X | X | X | X | X |
 | Manager | X | X | X | X |  |
-| Modérateur | X | X | X |  |  |
-| Éditeur | X | X |  |  |  |
-| Rédacteur | X |  |  |  |  |
+| Moderator | X | X | X |  |  |
+| Editor | X | X |  |  |  |
+| Writer | X |  |  |  |  |
 
-*Vue d’ensemble des droits accordés aux différents profils*
+*Overview of the rights granted to the different profiles*
 
-Dans la colonne Profils, définissez le statut que vous donnez à un utilisateur (administrateur, gestionnaire, modérateur, ...).
+On the *User accounts* page, you can edit the user rights by changing is profile (administrator, manager, moderator, ...).
 
-__Changer le mot de passe d’un utilisateur__
+__Change the user password__
 
-Le champ *Mot de passe* permet de modifier le mot de passe d'un utilisateur s’il venait à le perdre par exemple. La couleur du champ indique le niveau de sécurité du mot de passe.
+The *Password* field allows you to change a user's password if they lose it, for example. The color of the field indicates the password security level.
 
-* Rouge : Niveau de sécurité faible
-* Jaune : Niveau de sécurité moyen
-* Vert : Niveau de sécurité fort
+* Red : weak security level
+* Yellow : medium security level
+* Green : strong security level
 
-__Supprimer un utilisateur__
+__Delete a user__
 
-L’utilisateur peut être supprimé en cochant sa case dans la colonne N° d’utilisateur puis en sélectionnant Supprimer dans la liste déroulante Pour la sélection et en validant en cliquant sur le bouton OK.
+The user can be deleted by checking the box in the *User number* column, then selecting *Delete* from the drop-down list and confirming by clicking on the *OK* button.
 
-__Activer ou désactiver un profil utilisateur__
+__Activate or deactivate a user account__
 
-La colonne « Actif » vous permet d’activer ou de désactiver un compte utilisateur.
+The *Active* column allows you to activate or deactivate a user account.
+
+!!! danger "Important"
+    Do not forget to validate the changes in this section by clicking on the *Modify the users's list* button.
 
 __Options__
 
-Dans la colonne *Options*, vous pouvez modifier la langue utilisée dans l’interface d’administration de ce membre, son adresse e-mail et les informations le concernant.
+In the *Options* column, you can change the language used in the administration interface for this member, his email address and information about him.
 
 !!! danger "Important"
-    N’oubliez pas de valider les modifications de cette section en cliquant sur le bouton *Mettre à jour cet utilisateur*.
+    Do not forget to validate the changes in this section by clicking on the *Update this user* button.
 
-## Thèmes
-Depuis cette page vous pouvez choisir le thème à appliquer sur votre site.
+## Themes
+From this page you can choose the theme to use on your website.
 
-![thèmes](img/themes.jpg)
+![themes](img/themes.jpg)
 
-Pour cela, sélectionner le thème en cochant puis cliquez sur le bouton *Modifier les options d’affichage*.
+To do this, select the theme by checking and then click on the *Change Theme* button.
 
-Le lien *Éditer les fichiers du thème* permet de modifier le contenu des fichiers du thème sélectionné.
+The *Edit theme files* button allows you to modify the content of the selected theme files.
 
-Le thème par défaut livré avec PluXml defaut est codé en HTML5 et est Responsive Design, c’est-à-dire que l'affichage s'adapte à la taille des écrans, y compris celle des tablettes et des smartphones. Il est parfait pour débuter car facilement modifiable pour le personnaliser.
+The default theme delivered with default PluXml is coded in HTML5 and is Responsive Design, the display adapts to the size of screens, including tablets and smartphones. It is perfect for beginners because it can be easily modified to personalize it.
 
-Le thème en cours d’utilisation est toujours affiché en début de liste et est entouré d’un cadre bleu.
+The theme in use is always displayed at the top of the list and is surrounded by a blue frame.
 
 !!! note
-    Télécharger d’autres thèmes sur ressources.pluxml.org. Le site PluXml.org vous propose une bibliothèque de thèmes que vous pouvez télécharger et adapter selon vos besoins. Les utilisateurs proposent aussi une multitude de thèmes sur le forum de PluXml.org dans la section *Vos créations (forum.pluxml.org)*.
+    Download more themes from ressources.pluxml.org. The PluXml.org site offers a library of themes that you can download and adapt to suit your needs. Users also offer a multitude of themes on the PluXml.org forum in the *Your creations (forum.pluxml.org)* section.
 
 !!! danger "Important
-PluXml étant en perpétuelle évolution, certains thèmes un peu anciens ne sont plus compatibles avec la dernière version que vous venez de télécharger (sauf adaptations toujours possibles). Nous vous recommandons de tester vos thèmes sur un PluXml de « test ».
+    Since PluXml is constantly evolving, some older themes are no longer compatible with the latest version you just downloaded (adaptations are still possible). We recommend that you test your themes on a test instance of PluXml.
 
-Pour installer un thème : décompressez l’archive du thème dans le dossier theme qui se trouve à la racine de votre PluXml.
+To install a theme: unzip the theme archive in the theme folder located at the root of your PluXml.
+
 !!! note
-    Voir la section : L’Arborescence de PluXml
-    Voir la section : Les Thèmes
+    See : PluXml tree view
+    See : Themes
 
 ## Plugins
-Un plugin est un module qui vient ajouter une ou plusieurs fonctionnalités à votre site. Cette page fait la liste des différents plugins installés et vous permet notamment d’activer, de désactiver et de configurer vos plugins.
+A plugin is a module that adds one or more features to your website. This page lists the different plugins installed and allows you to activate, deactivate and configure your plugins.
 
-![liste des plugins](img/plugins.jpg)
+![Plugins list](img/plugins.jpg)
 
-### Installer un plugin
-Pour installer un plugin :
+### Install a plugin
+To install a plugin:
 
-* Rendez-vous sur ressources.pluxml.org
-* Puis au choix sur Plugins Officiels ou Plugins non officiels
-* Téléchargez le plugin de votre choix.
-* Décompressez le fichier .zip.
-* Déposez le dossier du plugin sur votre espace Web par FTP (ou autre méthode) dans le répertoire plugins de votre installation de PluXml.
+* Go to ressources.pluxml.org
+* Then your choice on Official or Unofficial Plugins
+* Download the plugin of your choice
+* Unzip the .zip file
+* Drop the plugin folder on your server by FTP (or other method) in the plugins directory of your PluXml installation.
 
-En plus des plugins officiels, la communauté vous propose ses propres plugins. Ils vous permettent d’étendre les fonctionnalités de PluXml.
+In addition to the official plugins, the community offers you its own plugins. They allow you to extend PluXml functionalities.
 
 !!! note
-    Voir la section Plugins du forum de PluXml : http://forum.pluxml.org
+    See the Plugins section of the PluXml forum: http://forum.pluxml.org
 
-### Activer ou désactiver un plugin.
-Après avoir placé le dossier de votre plugin dans le répertoire plugins de votre PluXml, il ne vous reste plus qu’à l’activer :
+### Activate or deactivate a plugin
+After placing your plugin folder in the plugins directory of your PluXml, all you have to do is to activate it:
 
-* Connectez-vous à l’administration de votre site, cliquez sur le menu Paramètres, puis sur le menu Plugins.
-* Cochez la case devant le plugin que vous souhaitez activer ou désactiver.
-* Dans le menu déroulant nommé Pour la sélection, sélectionnez Activer ou Désactiver
-* Cliquez sur le bouton Ok pour valider.
+* Log in to your site administration panel, click on the *Parameters* menu, then on the *Plugins* menu.
+* Check the box in front of the plugin you want to activate or deactivate.
+* From the drop-down menu named *Selected items...*, select *Enable* or *Disable*
+* Click on the *Ok* button to validate.
 
-### Écran de configuration
-Certains plugins disposent d’un écran de configuration vous permettant de paramétrer le plugin. Un lien nommé Configuration apparaît dans la colonne Action. Cliquez sur ce lien pour accéder à l'écran de configuration du plugin.
+### Plugin configuration page
+Some plugins have a configuration screen allowing you to configure the plugin. A link named *Configuration* appears in the *Action* column. Click on this link to access the plugin configuration screen.
 
-Certains plugins proposent une aide. Un lien nommé *Aide* apparaît dans la colonne Action.
+Some plugins offer help. A link named *Help* appears in the *Action* column.
 
 !!! danger "Important"
-    Certains plugins nécessitent d’être paramétrés avant d’être activé. Pour rappel, essayez toujours un nouveau plugin sur un site de test. Assurez-vous que les plugins qui vous intéressent soient toujours maintenus et à jour avec la dernière version de PluXml.
+    Some plugins need to be configured before being activated. As a reminder, always try a new plugin on a PluXml test instance. Make sure that the plugins you are interested in are always maintained and up to date with the latest PluXml version.
 
-### Ordre de chargement
-PluXml offre la possibilité de charger vos plugins dans un ordre précis : pour cela, cliquez sur le menu *Paramètres*, puis sur le menu Plugins, et repérez la colonne nommée *Ordre de chargement*. Sur la ligne correspondant au plugin que vous souhaitez modifier, saisissez une valeur numérique, puis cliquez sur le bouton *Modifier la liste des plugins* pour valider vos changements.
+### Loading order
+PluXml offers the possibility of loading your plugins in a specific order: to do this, click on the *Parameters* menu, then on the *Plugins* menu, and locate the column named *Loading order*. On the line corresponding to the plugin you want to modify, enter a numerical value, then click on the *Modify the plugins list* button to validate your changes.
 
-Vous pouvez également changer l'ordre de chargement des plugins par *drag and drop*. Cliquez et maintenez le clic sur le plugin à déplacer, glissez celui-ci vers le haut ou le bas en fonction de la position que vous souhaitez lui donner, puis cliquez sur le bouton *Modifier la liste des plugins* pour valider vos changements.
+You can also change the plugins loading order by *drag and drop*. Click and hold the click on the plugin to move, drag it up or down depending on the position you want to give it, then click on the *Modify the plugins list* button to validate your changes.
 
-Notez que pour certains plugins, il est nécessaire de les charger dans un ordre précis : pour en savoir plus, consultez la page Aide de votre plugin.
-
-!!! note
-    Conseil : si besoin chargez le plugin jQuery en premier.
-
-### Chargement des plugins en fonction du contexte
-Certains plugins ne s'appliquant que sur l'admin de PluXml il n'est pas nécessaire de le charge sur le site accessible aux visiteurs. Inversement, un plugin qui ne s'applique que sur le site, n'a pas de nécessité à être chargé dans l'admin de PluXml.
-
-Cette option (*scope*) est définie par le développeur du plugin et est visible dans l'admin au niveau du nom du plugin. Les plugins dont le nom est sur fond bleu sont chargés uniquement dans l'administration. Les plugins dont le nom est sur fond vert sont chargés uniquement sur le site.
-
-Dans le cas d'un plugin dont le nom n'a aucune couleur de fond, alors il sera chargé sur l'administration et sur le site.
+Note that for some plugins, it is necessary to load them in a specific order: for more information, see the *Help* page of your plugin.
 
 !!! note
-    Voir la documentation du fichier [infos.xml](//wiki.pluxml.org/developper/developpement/#fichier-infosxml), qui permet de définir la variable *scope*.
+    Tip: if necessary load the jQuery plugin first.
 
-### Supprimer un plugin
-Pour supprimer un plugin, cliquez sur le menu Paramètres, puis sur le menu Plugins, et repérez la ligne correspondant au plugin que vous souhaitez supprimer. Cochez la case devant le plugin, utilisez le menu déroulant nommé Pour la sélection et sélectionnez Supprimer. Cliquez sur le bouton Ok pour valider votre changement.
+### Loading plugins according to context
+Some plugins only apply to the PluXml administration panel, it is not necessary to load it on the website public view. On the other hand, a plugin that only applies to the website public view, does not need to be loaded in the PluXml administration panel.
 
-### Développer un plugin
-Si vous souhaitez développer vos propres plugins, nous vous invitons à télécharger *Le Guide Du Développeur* disponible sur la page Développer de la documentation de PluXml (https:///wiki.pluxml.org).
+This option (called the *scope*) is defined by the plugin developer and is visible in the admin at the plugin name level. The plugins whose name is on a blue background are loaded only in the administration panel. The plugins whose name is on a green background are loaded only on the site webpublic view.
+
+In the case of a plugin whose name has no background color, then it will be loaded on the administration panel and on the website public view.
+
+!!! note
+    See the documentation of [infos.xml](//wiki.pluxml.org/developper/developpement/#fichier-infosxml), which allows to define the attribute *scope*.
+
+### Remove a plugin
+To remove a plugin, click on the *Parameters* menu, then on the *Pluginsù menu, and locate the line corresponding to the plugin you want to remove. Check the box in front of the plugin, use the drop-down menu named *Selected items...* and select *Remove*. Click on the *Ok* button to validate your change.
+
+### Create your own plugin
+If you want to develop your own plugins, we invite you to download to see *The Developer's Guide* available on the *Develop* page of the PluXml documentation.
 
 ### Informations
-PluXml dispose d’un panneau d’informations vous permettant de vérifier certains points relatifs au bon fonctionnement de PluXml. Pour y accéder, cliquez sur le menu Paramètres, puis sur le menu Informations.
+PluXml has an information panel that allows you to check some points relating to the proper functioning of PluXml. To access it, click on the *Parameters* menu, then on the *Information* menu.
 
 ![Informations](img/informations.jpg)
 
-Sur cette page vous pouvez voir :
+On this page you can see:
 
-* Votre version de PluXml
-* Le type d’encodage des caractères
-* La version PHP de votre serveur et du serveur http utilisé (apache, nginx, ...)
-* Le nombre de catégories
-* Le nombre de pages statiques
-* Le nom du rédacteur en session
-* La disponibilité d’une mise à jour de PluXml
+* Your PluXml version
+* The type of character encoding
+* The PHP version of your server and the web server used (apache, nginx, ...)
+* The number of categories
+* The number of static pages
+* The name of the editor in session
+* The availability of an update to PluXml
 
-En cas d'erreur ou de valeur non supportée, la ligne est affichée en rouge, sinon en vert.
+In the event of an error or an unsupported value, the line is displayed in red, otherwise in green.
 
-Le bouton *Envoyer un e-mail de test* permet de tester l'envoi des e-mails en se basant sur les paramètres définis dans la page *Configuration avancée*. 
+The *Send a test e-mail* button allows you to test the sending of e-mails based on the settings defined in the *Advanced configuration* page. 
 
-## Éditer son profil
-Cliquez sur le lien Profil dans le menu principal de l’administration pour ouvrir cette page. Elle vous permet d’éditer votre profil personnel et de compléter celui-ci au besoin.
+## Edit your profile
+Click on the *Profile* link in the main administration menu to open this page. It allows you to edit your personal profile and complete it as needed.
 
-![Éditer son profil](img/profil.jpg)
+![Edit your profile](img/profil.jpg)
 
-### Changer ses informations personnelles
-Vous pouvez éditer :
+### Change your personal information
+You can edit:
 
-* Votre nom d’utilisateur : celui qui apparaît en ligne quand vous rédigez des articles ou quand vous réagissez à des commentaires. Attention : ce n’est pas votre identifiant de connexion qui ne peut être changé que par un Administrateur.
-* Votre adresse e-mail : Vous pouvez renseigner votre adresse e-mail ou la modifier.
-* La langue de l’interface administration : Vous pouvez changer la langue de votre interface d’administration (sans modifier la langue du site en ligne).
-* Vos informations : Cette partie est libre, vous pouvez rajouter toutes les informations que vous souhaitez. C’est en quelque sorte un espace « signature » qui permet de vous exprimer. Le contenu de cette zone pourra être affiché en signature des articles sur votre site, si le thème du site utilisé le permet.
+* Your username: the one that appears online when you write articles or when you react to comments. Please note: this is not your login ID which can only be changed by an Administrator.
+* Your e-mail address: You can enter your e-mail address or modify it.
+* The language of the administration panel: You can change the language of your administration interface (without changing the language of the online site).
+* Your information: This part is free, you can add all the information you want. It’s like a "signature" space that allows you to express yourself. The content of this zone can be displayed as a signature for articles on your site, if the site theme used allows it.
 
-### Modifier son mot de passe
-Vous pouvez modifier votre mot de passe de connexion à l’interface d’administration. En cas de problème, vous devez contacter l’administrateur du site.
+### Modify password
+You can change your login password in the administration panel. If there is a problem, you should contact the site administrator.
 
-La couleur du champ indique le niveau de sécurité du mot de passe.
+The color of the field indicates the password security level.
 
-* Rouge : Niveau de sécurité faible
-* Jaune : Niveau de sécurité moyen
-* Vert : Niveau de sécurité fort
+* Red : weak security level
+* Yellow : medium security level
+* Green : strong security level
 
-# Vérifier si une nouvelle mise à jour de PluXml est disponible
-Pour vérifier l’existence d’une nouvelle version de PluXml, connectez-vous à votre administration, cliquez sur le menu Paramètres, puis sur le menu Informations. En bas de cette page, PluXml vous indiquera si une nouvelle version est disponible sur le site officiel PluXml.org.
+# Check if a new PluXml update is available
+To check for the existence of a new version of PluXml, log into your administration panel, click on the *Parameters* menu, then on the *Information* menu. At the top of this page, PluXml will tell you if a new version is available on the official PluXml.org site.
 
-# Les templates
-## Les templates pour les articles
-Chacun de vos articles peut utiliser son propre template (si votre thème le propose). Par exemple, sur le thème par défaut de PluXml, vous avez la possibilité de choisir de présenter votre article en pleine page, avec ou sans le bandeau de droite appelé sidebar. Vous disposez des templates article-full-width.php et article.php.
+# Templates
+## Articles templates
+Each of your articles can use its own template (if your theme offers it). For example, on the PluXml default theme, you have the possibility to display your article in full page, with or without the right banner called sidebar. You have the *article-full-width.php* and *article.php* templates.
 
-Pour choisir un template d'article, éditez un article, puis dans la colonne des options, sélectionnez dans la liste déroulante Template le nom du template à utiliser. Cliquez sur le bouton Publier pour valider vos changements.
+To choose an article template, edit an article, then in the options column, select from the *Template* drop-down list the name of the template to use. Click on the *Publish* button to validate your changes.
 
-## Les templates pour les pages statiques
-Chacune de vos pages statiques peut utiliser son propre template (si votre thème le propose) : par exemple, sur le thème par défaut, vous avez la possibilité de choisir de présenter votre page en pleine page, avec ou sans la sidebar.
+## Static pages templates
+Each of your static pages can use its own template (if your theme offers it): for example, on the default theme, you can choose to display your page in full page, with or without the sidebar.
 
-Les templates disponibles sont nommés static-full-width.php et static.php. Pour modifier le template utilisé pour une page statique, accédez à la page permettant de modifier le contenu de la page statique, puis dans la liste déroulante Template, choisissez le nom du template à appliquer. Pour valider le changement, cliquez sur le bouton Enregistrer cette page statique.
+The available templates are named *static-full-width.php* and *static.php*. To modify the template used for a static page, navigate to the page allowing you to modify the content of the static page, then in the *Template* drop-down list, choose the name of the template to apply. To validate the change, click on the *Save this page* button.
 
-## Les templates pour les catégories
-Chacune de vos catégories peut utiliser son propre template (si votre thème le propose). Pour modifier le template d’une de vos catégories, cliquez sur le menu Catégories, repérez la ligne correspondant à la catégorie que vous souhaitez modifier. Cliquez sur le lien Options. Dans la liste déroulante Template, sélectionnez le nom du template à appliquer. Pour valider le changement, cliquez sur le bouton Mettre à jour cette catégorie.
+## Categories template
+Each of your categories can use its own template (if your theme offers it). To modify the template of one of your categories, click on the *Categories* menu, locate the line corresponding to the category you want to modify. Click on the *Options* link. From the *Template* drop-down list, select the name of the template to apply. To validate the change, click the *Update this category* button.
