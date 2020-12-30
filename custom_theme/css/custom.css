@@ -100,4 +100,8 @@ img {
 
 .wrapper .toc {
 	border-left: 1px solid #DDD;
+	position: fixed;
+	right: 0;
+	overflow-y: scroll;
+	height: 80%;
 }
