@@ -1,18 +1,18 @@
 Documentation de PluXml
 =======================
 
+Cette section vous accompagnera tout au long de votre utilisation de PluXml. Vous y trouverez le guide d'utilisateur, le guide développeur et un ensemble d'aides et d'astuces.
+
+Disponible pour toute information complémentaire ou pour demander de l'aide, le forum est accessible à cette adresse :  `forum.pluxml.org <https://forum.pluxml.org>`_
+
+Il est possible de contribuer à PluXml de plusieurs manières, que vous soyez développeurs ou utilisateur. :doc:`Cliquer ici </docs/contribuer/contribuer>` pour en savoir plus.
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    docs/installer/index
    docs/utiliser/index
    docs/personnaliser/index
    docs/developper/index
    docs/divers/index
-
-Index
-=====
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   docs/contribuer/contribuer

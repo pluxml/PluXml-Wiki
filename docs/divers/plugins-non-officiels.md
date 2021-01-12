@@ -311,13 +311,12 @@ Un "plugin technique" est un plugin offrant des services à d'autres plugins. Il
 
 ## Boutons pour la plxToolbar
 
-[__Youtube__](Youtube)
+[__Youtube__](https://github.com/pluxml/PluXml-Plugins/raw/master/plxtoolbar.buttons/button.youtube.zip)
 
+[__Smilies__](https://github.com/pluxml/PluXml-Plugins/raw/master/plxtoolbar.buttons/button.smilies.zip)
 
-[__Smilies__](Smilies)
+[__Color__](https://github.com/pluxml/PluXml-Plugins/raw/master/plxtoolbar.buttons/button.color.zip)
 
-[__Color__](Color)
+[__Tab__](https://github.com/pluxml/PluXml-Plugins/raw/master/plxtoolbar.buttons/button.tab.zip)
 
-[__Tab__](Tab)
-
-[__Lecteur de vidéos Flowplayer__](Lecteur de vidéos Flowplayer)
+[__Lecteur de vidéos Flowplayer__](https://github.com/pluxml/PluXml-Plugins/raw/master/plxtoolbar.buttons/button.flowplayer.zip)
