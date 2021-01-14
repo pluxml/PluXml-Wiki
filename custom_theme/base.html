@@ -69,31 +69,7 @@
 
     <body{% if page and page.is_homepage %} class="homepage"{% endif %}>
 
-      <nav class="plx-nav">
-        <div class="container">
-          <div class="grid">
-            <div class="col sml-12 med-3">
-              <ul class="menu text-center">
-                <li class="logo"><a href="https://www.pluxml.org" title="PluXml"><img class="float-left" src="{{ 'img/favicon/favicon-32x32.png'|url }}"><strong>PluXml.org</strong></a></li>
-              </ul>
-            </div>
-            <div class="col sml-12 med-9 lrg-6">
-              <ul class="menu text-center">
-                <li><a href="https://wiki.pluxml.org" title="Documentation">Documentation</a></li>
-                <li><a href="https://ressources.pluxml.org" title="Ressources">Ressources</a></li>
-                <li><a href="https://forum.pluxml.org" title="Forum">Forum</a></li>
-                <li><a href="https://www.pluxml.org/blog" title="Blog">Blog</a></li>
-              </ul>
-            </div>
-            <div class="col sml-hide med-hide lrg-3 lrg-show">
-              <ul class="menu text-right">
-                <li><a href="http://plucss.pluxml.org/" title="PluCSS">PluCSS</a></li>
-                <li><a href="http://visualwizard.pluxml.org/" title="Visual Wizard">Visual Wizard</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <div id="plxnav" data-title="Wiki" data-logo="yellow"></div>
 
       <div class="wrapper">
 
@@ -195,6 +171,7 @@
         </footer>
 
       {%- block scripts %}
+        <script src="https://medias.pluxml.org/navigation/nav.js"></script>
         <script>
             var base_url = {{ base_url | tojson }},
                 shortcuts = {{ config.theme.shortcuts | tojson }};
