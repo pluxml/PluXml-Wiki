@@ -27,11 +27,24 @@
           <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
         {%- endif -%}
     {%- endblock linktags %}
-
     {# Favicon #}
-    {%- if favicon -%}
-      <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
-    {%- endif -%}
+    <link rel="apple-touch-icon" sizes="57x57" href="https://medias.pluxml.org/favicon/green//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://medias.pluxml.org/favicon/green//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://medias.pluxml.org/favicon/green//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://medias.pluxml.org/favicon/green//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://medias.pluxml.org/favicon/green//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://medias.pluxml.org/favicon/green//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://medias.pluxml.org/favicon/green//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://medias.pluxml.org/favicon/green//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://medias.pluxml.org/favicon/green//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://medias.pluxml.org/favicon/green//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://medias.pluxml.org/favicon/green//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://medias.pluxml.org/favicon/green//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://medias.pluxml.org/favicon/green//favicon-16x16.png">
+    <link rel="manifest" href="https://medias.pluxml.org/favicon/green/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://medias.pluxml.org/favicon/green/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     {#- Generator banner -#}
     <meta name="generator" content="sphinx-{{ sphinx_version }}, furo {{ furo_version }}"/>
@@ -92,11 +105,9 @@
 
     {#- Custom front matter #}
     {%- block extrahead -%}{%- endblock -%}
-    <link href="https://www.pluxml.org/assets/plucss-min.css"
-          rel="stylesheet">
   </head>
   <body dir="{{ direction }}">
-    <div id="plxnav" data-logo="blue"></div>
+    <div id="plxnav" data-title="Docs" data-logo="green" data-link="docs"></div>
     {% block body %}{% endblock %}
     <script src="https://medias.pluxml.org/navigation/nav.js"></script>
   </body>
