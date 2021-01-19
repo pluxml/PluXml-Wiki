@@ -115,33 +115,6 @@ PluXml est disponible sous la forme d'un paquet Debian/Ubuntu, maintenu par la c
     - install.php : fichier d’installation
     - sitemap.php : le fichier de construction du sitemap
 
-# Mise à jour
-
-## Sauvegarder ses données
-Avant une mise à jour de PluXml, il faut par précaution, sauvegarder votre site web. La procédure est la même pour une sauvegarde régulière.
-
-PluXml n’ayant pas de base de données, la sauvegarde est très simple. Tous les fichiers de PluXml sont dans un seul et même dossier, qui correspond à la racine de votre site web. Il suffit de sauvegarder ce dossier racine, par exemple, en local sur votre ordinateur, sur une clé USB ou sur un autre support externe.
-
-Ainsi, si votre site se trouve dans le répertoire /var/www/pluxml, il suffit de faire une copie du dossier pluxml.
-
-Si vous souhaitez sauvegarder uniquement les articles, les commentaires, les pages statiques et la
-configuration du site et des plugins, une copie du répertoire /var/www/pluxml/data suffit.
-
-## Lancer la mise à jour
-
-!!! danger "Important"
-    Assurez-vous d’avoir fait une sauvegarde de votre site avant de mettre à jour PluXml (voir *Sauvegarder ses données*).
-
-![login](img/update.jpg)
-
-Suivre les étapes ci-dessous pour effectuer la mise à jour :
-
-- Télécharger la nouvelle version de PluXml sur pluxml.org.
-- Décompresser l'archive pluxml-lastest.zip précédemment téléchargée.
-- Sélectionner tout le contenu de l’archive, sauf les dossiers data, plugins et themes.
-- Déposer tout le contenu sélectionné à la racine du site en écrasant les anciens fichiers.
-- Se connecter à l’adresse du site avec un navigateur internet et suivre les instructions pour lancer la mise à jour.
-
 # Accéder à la l'administration
 
 PluXml installé, vous pouvez accéder à l’administration du site. Avec le thème par défaut, le lien

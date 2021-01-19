@@ -10,7 +10,7 @@ Il est possible de contribuer à PluXml de plusieurs manières, que vous soyez d
 .. toctree::
    :maxdepth: 1
 
-   docs/installer/index
+   docs/install/index
    docs/utiliser/index
    docs/personnaliser/index
    docs/developper/index
