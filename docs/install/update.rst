@@ -1,6 +1,9 @@
 Mise à jour de PluXml
 =====================
 
+Pour vérifier l’existence d’une nouvelle version de PluXml, connectez-vous à l'administration de votre site et
+rendez-vous sur la page *Informations* depuis le menu *Paramtres*.
+
 Sauvegarder son site web
 ------------------------
 Avant une mise à jour de PluXml, il faut par précaution, sauvegarder votre site web. La procédure est la même pour une sauvegarde régulière.

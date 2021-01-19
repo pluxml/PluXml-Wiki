@@ -4,7 +4,7 @@ Gérer les articles
 La liste des articles
 ---------------------
 
-La page Articles liste tous vos articles, qu’ils soient en cours de rédaction, publiés, brouillons, ou en attente de validation.
+La page *Articles* liste tous vos articles, qu’ils soient en cours de rédaction, publiés, brouillons, ou en attente de validation.
 
 .. image:: img/liste-articles.jpg
    :align: center

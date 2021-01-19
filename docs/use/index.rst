@@ -11,3 +11,4 @@ Documentation destinées aux utilisateurs de PluXml. Publier des articles et con
    pages
    categories
    medias
+   profil
