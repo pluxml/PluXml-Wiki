@@ -7,3 +7,4 @@ Divers
    divers-autre
    plugins-non-officiels
    plugins-officiels
+   sites-realises-avec-pluxml

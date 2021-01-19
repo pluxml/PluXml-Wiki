@@ -1,4 +1,4 @@
-Pré-requis et installation
+Installation et pré-requis
 ==========================
 
 Pré-requis
@@ -18,18 +18,18 @@ Téléchargez la dernière version de PluXml sur https://www.pluxml.org
 
 Installer PluXml en local sur son ordinateur
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Nous allons installer un serveur web de type AMP (Apache MySQL PHP). L'installation de MySQL n'est pas nécessaire dans le cas présent, PluXml fonctionnant sans base de données. Bien sûr, vous pouvez aussi utiliser NGINX à la place d’Apache.
+Nous allons installer un serveur web de type AMP (Apache MySQL PHP). L'installation de MySQL n'est pas nécessaire dans le cas présent,
+PluXml fonctionnant sans base de données. Bien sûr, vous pouvez aussi utiliser NGINX à la place d’Apache.
 
 .. image:: img/install.jpg
    :align: center
 
 **Sous MAC OS**
+
 * Télécharger le logiciel MAMP sur http://www.mamp.info/en/index.html.
 * Installer MAMP en copiant le dossier dans */Applications*.
 * Lancer le logiciel, la fenêtre de l’application s’ouvre.
-* Afin d'éviter la perte de données au moment de la mise à jour de MAMP, ouvrir les préférence de MAMP et dans l'onglet Apache saisir le chemin vers le dossier
-*Sites* présent à la racine de votre compte utilisateur. Ce chemin est du
-type */Users/votrenom/Sites*.
+* Afin d'éviter la perte de données au moment de la mise à jour de MAMP, ouvrir les préférence de MAMP et dans l'onglet Apache saisir le chemin vers le dossier **Sites** présent à la racine de votre compte utilisateur. Ce chemin est du type ``/Users/votrenom/Sites``.
 * Décompresser l'archive pluxml-lastest.zip précédemment téléchargée.
 * Ouvrir le dossier */Sites/*.
 * Glisser le dossier *PluXml* dans ce répertoire */Sites/*.
@@ -37,6 +37,7 @@ type */Users/votrenom/Sites*.
 * Suivre la procédure d’installation
 
 **Sous Linux**
+
 * Installer les outils LAMP : pour Ubuntu/Debian[1], Fedora[2] ou ArchLinux[3].
 * Décompresser l'archive pluxml-lastest.zip précédemment téléchargée.
 * Ouvrir le dossier */var/www/*.
@@ -46,10 +47,13 @@ type */Users/votrenom/Sites*.
 
 .. note::
     [1] Ubuntu/Debian : [http://doc.ubuntu-fr.org/lamp](http://doc.ubuntu-fr.org/lamp)
+
     [2] Fedora : [http://doc.fedora-fr.org/wiki/LAMP](http://doc.fedora-fr.org/wiki/LAMP)
+
     [3] ArchLinux : [http://wiki.archlinux.fr/LAMP](http://wiki.archlinux.fr/LAMP)
 
 **Sous Windows**
+
 * Télécharger le logiciel EasyPHP sur http://www.easyphp.org/.
 * Installer EasyPHP.
 * Décompresser l'archive pluxml-lastest.zip précédemment téléchargée.
@@ -60,6 +64,7 @@ type */Users/votrenom/Sites*.
 * Suivre la procédure d’installation.
 
 **Installer PluXml sur son hébergeur**
+
 * Décompresser l'archive pluxml-latest.zip sur votre ordinateur.
 * Ouvrir votre logiciel de transfert FTP (Filezilla, SmartFTP, ...).
 * Se connecter à votre hébergement, via votre compte FTP.
@@ -77,7 +82,7 @@ type */Users/votrenom/Sites*.
     (chmod -R 755 PluXml)
 
 .. note::
-    Si vous rencontrez des difficultés pour installer et utiliser PluXml sur un hébergeur (Free, OVH, ...), vous trouverez plusieurs éléments de réponses sur [cette page](hebergeurs.md).
+    Si vous rencontrez des difficultés pour installer et utiliser PluXml sur un hébergeur (Free, OVH, ...), vous trouverez plusieurs éléments de réponses sur :doc:`cette page <webhost>`.
 
 Installer PluXml sur un serveur dédié avec NGINX
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -88,36 +93,39 @@ Si vous souhaitez installer PluXml sur un serveur dédié derrière un serveur w
 Installer PluXml depuis le dépôt Debian/Ubuntu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-PluXml est disponible sous la forme d'un paquet Debian/Ubuntu, maintenu par la communauté.
+PluXml est disponible sous la forme d'un paquet Debian/Ubuntu, maintenu par la communauté. :doc:`Cliquer ici pour en savoir plus <debian>`.
 
-[Cliquer ici pour en savoir plus](debian.md)
+.. caution::
+     Ce package est maintenu par `Tanguy Ortolo <https://tracker.debian.org/pkg/pluxml>`_ et ne suis pas automatiquement la dernière version de PluXml.
 
 L'Arborescence
 --------------
 
-    - core : le cœur de Pluxml
-      - admin : les fichiers de l’administration
-      - lang : les dix langues gérées par PluXml
-      - lib : les fonctionnalités globales de PluXml
-      - templates : les templates utilisé par PluXml (exemple : mail de mot de passe oublié)
-      - vendor : librairies externes importées avec Composer (exemple : PHPMailer)
-    - data : les paramètres, documents, images et autres
-      - articles : contient tous les articles
-      - commentaires : contient tous les commentaires
-      - configuration : contient les divers fichiers de configuration de PluXml et des plugins
-      - medias : contient les images ou autres documents envoyés par le gestionnaire de médias
-      - statiques : contient toutes les pages statiques du site
-      - templates : contient des templates utilisables, par exemple, pour l'envoi d'e-mails (répertoire à créer si nécessaire)
-    - plugins : contient la liste des plugins
-    - readme : contient des fichiers d’information sur la licence de PluXml, les auteurs, et les derniers changements et évolutions
-    - themes : le ou les thèmes du site
-      - defaut : le thème par défaut fourni avec PluXml
-    - update : les fichiers de mise à jour des différentes versions
-    - config.php : le fichier qui indique où se trouve la configuration de PluXml
-    - feed.php : le fichier de gestion du flux rss
-    - index.php : le fichier qui permet l’affichage du site
-    - install.php : fichier d’installation
-    - sitemap.php : le fichier de construction du sitemap
+::
+
+    core : le cœur de Pluxml
+    ├── admin : les fichiers de l’administration
+    ├── lang : les dix langues gérées par PluXml
+    ├── lib : les fonctionnalités globales de PluXml
+    ├── templates : les templates utilisé par PluXml (exemple : mail de mot de passe oublié)
+    ├── vendor : librairies externes importées avec Composer (exemple : PHPMailer)
+    data : les paramètres, documents, images et autres
+    ├── articles : contient tous les articles
+    ├── commentaires : contient tous les commentaires
+    ├── configuration : contient les divers fichiers de configuration de PluXml et des plugins
+    ├── medias : contient les images ou autres documents envoyés par le gestionnaire de médias
+    ├── statiques : contient toutes les pages statiques du site
+    ├── templates : contient des templates utilisables, par exemple, pour l'envoi d'e-mails (répertoire à créer si nécessaire)
+    plugins : contient la liste des plugins
+    readme : contient des fichiers d’information sur la licence de PluXml, les auteurs, et les derniers changements et évolutions
+    themes : le ou les thèmes du site
+    ├── defaut : le thème par défaut fourni avec PluXml
+    update : les fichiers de mise à jour des différentes versions
+    config.php : le fichier qui indique où se trouve la configuration de PluXml
+    feed.php : le fichier de gestion du flux rss
+    index.php : le fichier qui permet l’affichage du site
+    install.php : fichier d’installation
+    sitemap.php : le fichier de construction du sitemap
 
 Accéder à la l'administration
 -----------------------------

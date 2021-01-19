@@ -8,3 +8,6 @@ Installation et mise à jour de PluXml sur un serveur mutualisé ou sur un serve
 
    install
    update
+   nginx
+   debian
+   webhost

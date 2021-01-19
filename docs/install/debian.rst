@@ -1,8 +1,10 @@
-# Installer PluXml sous Debian/Ubuntu
+Installer depuis les dépôts Debian
+==================================
 
-PluXml est disponible sous la forme d'un [paquet Debian](http://packages.debian.org/pluxml).
+PluXml est disponible sous la forme d'un `paquet Debian <http://packages.debian.org/pluxml>`_.
 
-## Intérêt
+Intérêt
+-------
 
 Le paquet Debian de PluXml contient des informations de dépendances, qui permettent d'installer automatiquement tout ce dont PluXml a besoin pour fonctionner, c'est à dire un serveur web avec un interpréteur PHP.
 
@@ -12,9 +14,12 @@ Ce paquet inclut également une série de questions de configuration, qui permet
 
 Enfin, les mises à jour sont prises en charge par le système de paquets Debian, c'est à dire que lorsqu'une mise à jour est publiée et intégrée à Debian (ce n'est pas instantané, il faut le temps de l'empaqueter, tout de même !), elle est automatiquement disponible pour tous ceux qui ont installé ce paquet.
 
-## Installation
+Installation
+------------
 
 En tant que *root*, lancez simplement la commande suivante :
+
+.. code:: shell
 
     apt-get install pluxml
 
@@ -22,17 +27,24 @@ Une série de questions devrait vous être présentée. Ces questions ont une pr
 
 Si vos réglages de *debconf* ont eu pour résultat d'omettre des questions, vous pouvez demander de reconfigurer le paquet :
 
+.. code:: shell
+
     dpkg-reconfigure pluxml
 
 Si tel est votre cas, il peut être pertinent de modifier de façon permanente les réglages de *debconf*, de façon à ce qu'il cesse d'omettre des questions de priorité moyenne pour les prochains logiciels que vous installerez :
 
+.. code:: shell
+
     dpkg-reconfigure debconf
 
-## Utilisation
+Utilisation
+-----------
 
 Après l'installation, votre instance de PluXml est disponible à l'adresse http://localhost/pluxml, ou http://SERVEUR/pluxml (remplacer *SERVEUR* par le nom ou l'adresse IP de votre serveur) s'il ne s'agit pas de l'ordinateur sur lequel vous travaillez directement.
 
 Vous pourrez par la suite définir un hôte virtuel par nom à votre guise, en utilisant simplement comme racine */usr/share/pluxml*. Par exemple, avec Apache :
+
+.. code:: apache
 
     <VirtualHost *:80>
         ServerName blog.example.com
@@ -41,9 +53,10 @@ Vous pourrez par la suite définir un hôte virtuel par nom à votre guise, en u
 
 De la même façon, vous pourrez définir des règles de réécriture d'URL, mais cela dépasse le cadre de ce guide d'installation.
 
-## Détails de l'installation
+Détails de l'installation
+-------------------------
 
-Contrairement à une installation habituelle, avec le paquet Debian les fichiers de PluXml sont séparés de façon à respecter la [FHS](https://fr.wikipedia.org/wiki/Filesystem_Hierarchy_Standard) :
+Contrairement à une installation habituelle, avec le paquet Debian les fichiers de PluXml sont séparés de façon à respecter la `FHS <https://fr.wikipedia.org/wiki/Filesystem_Hierarchy_Standard>`_ :
 
 * les fichiers constituant le code de PluXml sont placés dans */usr/share/pluxml* ;
 * les fichiers de configuration sont placés dans */etc/pluxml* ;

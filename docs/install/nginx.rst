@@ -1,18 +1,30 @@
-NGINX, configuration pour PluXml
-================================
+Configuration de NGINX
+======================
 
 Où déposer la configuration
 ---------------------------
 
-Ci-dessous, vous trouverez des exemples de fichiers de configuration pour le serveur web NGINX. Cet exemple rend possible l'utilisation de la réécriture d'url.
+Ci-dessous, vous trouverez des exemples de fichiers de configuration pour le serveur web NGINX.
+Cet exemple rend possible l'utilisation de la réécriture d'URL.
 
 Le fichier doit être placé dans l'un de ces deux emplacements :
-* /etc/nginx/conf.d/
-* /etc/nginx/sites-enabled/
 
-Vérifiez néanmoins que le fichier */etc/nginx/nginx.conf* contient bien les lignes *include /etc/nginx/conf.d/\*.conf;* ou *include /etc/nginx/sites-enabled/\*;*
+* ``/etc/nginx/conf.d/``
+* ``/etc/nginx/sites-enabled/``
 
-[Voir la documentation Ngin](http://nginx.org/en/docs/http/ngx_http_core_module.html)
+Vérifiez néanmoins que le fichier ``/etc/nginx/nginx.conf`` contient bien les lignes ci-dessous :
+
+.. code:: nginx
+
+    include /etc/nginx/conf.d/*.conf;
+
+ou
+
+.. code:: nginx
+
+    include /etc/nginx/sites-enabled/*;
+
+`Voir la documentation Nginx <http://nginx.org/en/docs/http/ngx_http_core_module.html>`_
 
 Cas 1 : Tout en HTTP
 --------------------
@@ -51,7 +63,7 @@ Cas 1 : Tout en HTTP
 
             # Utilisez PHP5 ou PHP7, mais pas les deux
             # fastcgi_pass unix:/run/php5-fpm.sock;
-            fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+            fastcgi_pass unix:/run/php/php7.4-fpm.sock;
             # Sous Alpinelinux v3.8, utiliser le socket comme suit :
             # fastcgi_pass unix:/run/php-fpm7/php-fpm.sock;
         }
@@ -109,7 +121,7 @@ C'est un cas hybride que vous pouvez utiliser si vous n'avez pas de bonnes perfo
     upstream PHP_SOCKET {
         # Utilisez PHP5 ou PHP7, mais pas les deux
         #server unix unix:/run/php5-fpm.sock;
-        server unix:/run/php/php7.0-fpm.sock;
+        server unix:/run/php/php7.4-fpm.sock;
         # Sous Alpinelinux v3.8, utiliser le socket comme suit :
         # fastcgi_pass unix:/run/php-fpm7/php-fpm.sock;
     }
@@ -268,7 +280,7 @@ Cas 3 : Tout en HTTPS
 
             # Utilisez PHP5 ou PHP7, mais pas les deux
             # fastcgi_pass unix:/run/php5-fpm.sock;
-            fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+            fastcgi_pass unix:/run/php/php7.4-fpm.sock;
             # Sous Alpinelinux v3.8, utiliser le socket comme suit :
             # fastcgi_pass unix:/run/php-fpm7/php-fpm.sock;
         }
@@ -326,9 +338,13 @@ Notes sur les fichiers de configuration
 ---------------------------------------
 
 **Gestion du HTTP/2**
-Les configurations proposée ci-dessous pour HTTPS utilisent HTTP/2 (cas 2 et cas 3). Cette nouvelle version du protocole HTTP est disponible à partir de NGINX 1.9.5. Si vous utilisez une version plus ancienne, supprimez *http2* dans la ligne *listen 443 ssl http2;* sinon NGINX ne pourra pas démarrer.
+
+Les configurations proposée ci-dessous pour HTTPS utilisent HTTP/2 (cas 2 et cas 3). Cette nouvelle version du protocole HTTP
+est disponible à partir de NGINX 1.9.5. Si vous utilisez une version plus ancienne, supprimez ``http2`` au niveau de la ligne
+``listen 443 ssl http2;`` sinon NGINX ne pourra pas démarrer.
 
 **Attention**, pour fonctionner il faut remplacer les valeurs des variables sur les lignes suivantes :
-* *server_name nom_du_site;* : "nom_du_site" doit être remplacé par le DNS ou l'adresse IP de votre serveur, vous pouvez également le remplacer par *localhost* si vous lancez le serveur web en local sur votre machine. Exemple : *server_name pluxml.org www.pluxml.org 5.123.123.321;*
-* *root /var/www/PluXml;*  : modifier le chemin d'accès root */var/www/PluXml* si l'archive Zip de PluXml a été décompréssée dans un répertoire différent.
-* Si vous utilisez php5, décommentez la ligne *fastcgi_pass unix:/run/php5-fpm.sock;* (en supprimant le "#" devant la ligne) et commentez la ligne *fastcgi_pass unix:/run/php/php7.0-fpm.sock;* (en ajoutant un "#" devant la ligne). Inversement si vous utilisez php7.
+
+* ``server_name nom_du_site;`` : "nom_du_site" doit être remplacé par le DNS ou l'adresse IP de votre serveur, vous pouvez également le remplacer par ``localhost`` si vous lancez le serveur web en local sur votre ordinateur. Exemple : ``server_name pluxml.org www.pluxml.org 5.123.123.321;``
+* ``root /var/www/PluXml;``  : modifier le chemin d'accès root ``/var/www/PluXml`` si l'archive zip de PluXml a été décompressée dans un répertoire différent.
+* Si vous utilisez PHP en version 5, décommentez la ligne ``fastcgi_pass unix:/run/php5-fpm.sock;`` (en supprimant le "#" devant la ligne) et commentez la ligne ``fastcgi_pass unix:/run/php/php7.4-fpm.sock;`` (en ajoutant un "#" devant la ligne). Inversement si vous utilisez PHP 7.
