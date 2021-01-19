@@ -6,4 +6,8 @@ Documentation destinées aux utilisateurs de PluXml. Publier des articles et con
 .. toctree::
    :maxdepth: 2
 
-   utilisation
+   articles
+   comments
+   pages
+   categories
+   medias

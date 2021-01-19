@@ -11,7 +11,7 @@ Il est possible de contribuer à PluXml de plusieurs manières, que vous soyez d
    :maxdepth: 1
 
    docs/install/index
-   docs/utiliser/index
+   docs/use/index
    docs/personnaliser/index
    docs/developper/index
    docs/divers/index
