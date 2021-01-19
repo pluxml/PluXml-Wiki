@@ -1,24 +1,29 @@
-# Pré-requis et installation
+Pré-requis et installation
+==========================
 
-## Pré-requis
-Que ce soit en local sur votre ordinateur ou sur internet, votre hébergement doit posséder les éléments suivants pour pouvoir utiliser PluXml :
+Pré-requis
+----------
+Pour fonctionner, PluXml nécessite :
 
-* PHP 5.6 ou supérieur
-* Librairie GD pour la gestion des images
-* Fonction PHP d'envoi d'emails autorisée (non obligatoire)
-* Le module Apache *mod_rewrite* activé pour utiliser la réécriture d'url (non obligatoire)
+* PHP 5.6 ou supérieur (7.4 recommandé)
+* La librairie PHP GD pour la gestion des images (module php-gd)
+* Nginx ou Apache avec le module ``mod_rewrite`` activé pour utiliser la réécriture d'URL (optionnel)
 
-## Installation
+Installation
+------------
 
-### Télécharger PluXml sur le site officiel
-Téléchargez la dernière version sur http://pluxml.org
+Télécharger PluXml depuis le site officiel
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Téléchargez la dernière version de PluXml sur https://www.pluxml.org
 
-### Installer PluXml en local sur son ordinateur
+Installer PluXml en local sur son ordinateur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Nous allons installer un serveur web de type AMP (Apache MySQL PHP). L'installation de MySQL n'est pas nécessaire dans le cas présent, PluXml fonctionnant sans base de données. Bien sûr, vous pouvez aussi utiliser NGINX à la place d’Apache.
 
-![installation](img/install.jpg)
+.. image:: img/install.jpg
+   :align: center
 
-#### Sous MAC OS
+**Sous MAC OS**
 * Télécharger le logiciel MAMP sur http://www.mamp.info/en/index.html.
 * Installer MAMP en copiant le dossier dans */Applications*.
 * Lancer le logiciel, la fenêtre de l’application s’ouvre.
@@ -31,7 +36,7 @@ type */Users/votrenom/Sites*.
 * Ouvrir votre navigateur à l’adresse suivante : http://localhost:8888/pluxml/.
 * Suivre la procédure d’installation
 
-#### Sous Linux
+**Sous Linux**
 * Installer les outils LAMP : pour Ubuntu/Debian[1], Fedora[2] ou ArchLinux[3].
 * Décompresser l'archive pluxml-lastest.zip précédemment téléchargée.
 * Ouvrir le dossier */var/www/*.
@@ -39,15 +44,12 @@ type */Users/votrenom/Sites*.
 * Ouvrir votre navigateur à l’adresse : http://localhost ou http://127.0.0.1
 * Suivre la procédure d’installation.
 
-!!! note
+.. note::
     [1] Ubuntu/Debian : [http://doc.ubuntu-fr.org/lamp](http://doc.ubuntu-fr.org/lamp)
-
     [2] Fedora : [http://doc.fedora-fr.org/wiki/LAMP](http://doc.fedora-fr.org/wiki/LAMP)
-
     [3] ArchLinux : [http://wiki.archlinux.fr/LAMP](http://wiki.archlinux.fr/LAMP)
 
-
-#### Sous Windows
+**Sous Windows**
 * Télécharger le logiciel EasyPHP sur http://www.easyphp.org/.
 * Installer EasyPHP.
 * Décompresser l'archive pluxml-lastest.zip précédemment téléchargée.
@@ -57,7 +59,7 @@ type */Users/votrenom/Sites*.
 * Cliquez-droit sur l’icôneEasyPHP, puis sur local web pour ouvrir votre navigateur.
 * Suivre la procédure d’installation.
 
-### Installer PluXml sur son hébergeur
+**Installer PluXml sur son hébergeur**
 * Décompresser l'archive pluxml-latest.zip sur votre ordinateur.
 * Ouvrir votre logiciel de transfert FTP (Filezilla, SmartFTP, ...).
 * Se connecter à votre hébergement, via votre compte FTP.
@@ -65,7 +67,7 @@ type */Users/votrenom/Sites*.
 * Ouvrir votre navigateur sur l’adresse de votre site.
 * Suivre la procédure d’installation.
 
-!!! danger "Important"
+.. attention::
     Pour fonctionner chez votre hébergeur, en règle générale, il faut que les droits en lecture/écriture soient définis de la manière suivante :
 
     * Propriétaire : rwx (tout)
@@ -74,22 +76,24 @@ type */Users/votrenom/Sites*.
 
     (chmod -R 755 PluXml)
 
-!!! note
+.. note::
     Si vous rencontrez des difficultés pour installer et utiliser PluXml sur un hébergeur (Free, OVH, ...), vous trouverez plusieurs éléments de réponses sur [cette page](hebergeurs.md).
 
-### Installer PluXml sur un serveur dédié avec NGINX
+Installer PluXml sur un serveur dédié avec NGINX
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Si vous souhaitez installer PluXml sur un serveur dédié derrière un serveur web NGINX, vous pouvez vous référer à la page ci-dessous :
+Si vous souhaitez installer PluXml sur un serveur dédié derrière un serveur web NGINX, vous pouvez vous référer à la page
+:doc:`NGINX, configuration pour PluXml <nginx>`.
 
-[Configuration NGINX pour PluXml](nginx.md)
-
-### Installer PluXml depuis le dépôt Debian/Ubuntu
+Installer PluXml depuis le dépôt Debian/Ubuntu
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PluXml est disponible sous la forme d'un paquet Debian/Ubuntu, maintenu par la communauté.
 
 [Cliquer ici pour en savoir plus](debian.md)
 
-# L'Arborescence
+L'Arborescence
+--------------
 
     - core : le cœur de Pluxml
       - admin : les fichiers de l’administration
@@ -115,31 +119,36 @@ PluXml est disponible sous la forme d'un paquet Debian/Ubuntu, maintenu par la c
     - install.php : fichier d’installation
     - sitemap.php : le fichier de construction du sitemap
 
-# Accéder à la l'administration
+Accéder à la l'administration
+-----------------------------
 
 PluXml installé, vous pouvez accéder à l’administration du site. Avec le thème par défaut, le lien
 Administration pour se connecter à la zone d'administration est affiché tout en bas de votre site.
 
-!!! note
+.. note::
     Retenez l’URL car elle vous permettra d'accéder à votre administration si vous modifiez votre thème
     et ne désirez pas laisser apparaître ce lien.
 
 Le login de connexion et le mot de passe sont ceux que vous avez définis lors de l’installation.
 
-![login](img/login.jpg)
+.. image:: img/login.jpg
+   :align: center
 
-# Réinitialiser le mot de passe admin
+Réinitialiser le mot de passe admin
+-----------------------------------
 
-!!! note
+.. note::
     La procédure suivante, vous permettra de réinitialiser votre mot de passe admin, dans le cas ou la procédure "mot de passe" oublié via l'envoi d'un e-mail n'a pas fonctionné.
 
-__Récupérer un nouveau mot de passe__
+**Récupérer un nouveau mot de passe**
 
 Prés-requis : avoir une deuxième installation de PluXml avec un mot de passe connu.
 
 Ouvrir le fichier *data/configuration/users.xml* d'une deuxième installation de PluXml dont ont connait le mot de passe.
 
-Récupérer le mot de passe chiffré en copiant la ligne *password*. Récupérer aussi le champ *salt.
+Récupérer le mot de passe chiffré en copiant la ligne *password*. Récupérer aussi le champ *salt*.
+
+.. code:: xml
 
     <?xml version="1.0" encoding="UTF-8"?>
     <document>
@@ -154,16 +163,18 @@ Récupérer le mot de passe chiffré en copiant la ligne *password*. Récupérer
         </user>
     </document>
 
-__Remplacer le mot de passe perdu__
+**Remplacer le mot de passe perdu**
 
 Ouvrir le fichier *data/configuration/users.xml* sur le site dont le mot de passe est perdu. Remplacer les lignes *password* et *salt* par les lignes récupérées ci-dessus sur votre deuxième installation de PluXml.
 
 Enregistrer et vous pourrez désormais vous connecter dans la zone d'administration avec le mot de passe copié. Pour le modifier, aller dans l'administration, à la section "Profil".
 
-# Recommandation après une installation ou une mise à jour
+Recommandation après une installation ou une mise à jour
+--------------------------------------------------------
 
 Après une installation ou une mise à jour, par mesure de sécurité, supprimez le fichier install.php et le dossier update qui se trouvent à la racine de votre site.
 
 Le cas échéant un message s’affichera dans l’administration du site. Cliquez sur le bouton « supprimer » pour effacer le fichier install.php.
 
-![recommandation](img/recommandation.jpg)
+.. image:: img/recommandation.jpg
+   :align: center

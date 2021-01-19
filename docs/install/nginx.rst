@@ -1,6 +1,8 @@
-# NGINX, configuration pour PluXml
+NGINX, configuration pour PluXml
+================================
 
-## Où déposer la configuration
+Où déposer la configuration
+---------------------------
 
 Ci-dessous, vous trouverez des exemples de fichiers de configuration pour le serveur web NGINX. Cet exemple rend possible l'utilisation de la réécriture d'url.
 
@@ -12,7 +14,10 @@ Vérifiez néanmoins que le fichier */etc/nginx/nginx.conf* contient bien les li
 
 [Voir la documentation Ngin](http://nginx.org/en/docs/http/ngx_http_core_module.html)
 
-## Cas 1 : Tout en HTTP
+Cas 1 : Tout en HTTP
+--------------------
+
+.. code:: nginx
 
     server {
         listen 80;
@@ -93,9 +98,12 @@ Vérifiez néanmoins que le fichier */etc/nginx/nginx.conf* contient bien les li
 
     }
 
-## Cas 2 : Site HTTP et administration HTTPS
+Cas 2 : Site HTTP et administration HTTPS
+-----------------------------------------
 
 C'est un cas hybride que vous pouvez utiliser si vous n'avez pas de bonnes performances en HTTPS mais que vous voulez tout de même sécuriser l'administration.
+
+.. code:: nginx
 
     # Paramètrage du socket PHP
     upstream PHP_SOCKET {
@@ -220,7 +228,10 @@ C'est un cas hybride que vous pouvez utiliser si vous n'avez pas de bonnes perfo
         }
     }
 
-## Cas 3 : Tout en HTTPS
+Cas 3 : Tout en HTTPS
+---------------------
+
+.. code:: nginx
 
     server {
         listen 443 ssl http2;
@@ -311,14 +322,13 @@ C'est un cas hybride que vous pouvez utiliser si vous n'avez pas de bonnes perfo
     	return 301 https://$host$request_uri;
     }
 
-## Notes sur les fichiers de configuration
+Notes sur les fichiers de configuration
+---------------------------------------
 
-__Gestion du HTTP/2__
-
+**Gestion du HTTP/2**
 Les configurations proposée ci-dessous pour HTTPS utilisent HTTP/2 (cas 2 et cas 3). Cette nouvelle version du protocole HTTP est disponible à partir de NGINX 1.9.5. Si vous utilisez une version plus ancienne, supprimez *http2* dans la ligne *listen 443 ssl http2;* sinon NGINX ne pourra pas démarrer.
 
-__Attention__, pour fonctionner il faut remplacer les valeurs des variables sur les lignes suivantes :
-
+**Attention**, pour fonctionner il faut remplacer les valeurs des variables sur les lignes suivantes :
 * *server_name nom_du_site;* : "nom_du_site" doit être remplacé par le DNS ou l'adresse IP de votre serveur, vous pouvez également le remplacer par *localhost* si vous lancez le serveur web en local sur votre machine. Exemple : *server_name pluxml.org www.pluxml.org 5.123.123.321;*
 * *root /var/www/PluXml;*  : modifier le chemin d'accès root */var/www/PluXml* si l'archive Zip de PluXml a été décompréssée dans un répertoire différent.
 * Si vous utilisez php5, décommentez la ligne *fastcgi_pass unix:/run/php5-fpm.sock;* (en supprimant le "#" devant la ligne) et commentez la ligne *fastcgi_pass unix:/run/php/php7.0-fpm.sock;* (en ajoutant un "#" devant la ligne). Inversement si vous utilisez php7.
