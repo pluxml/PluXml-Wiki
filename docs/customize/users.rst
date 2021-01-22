@@ -26,19 +26,46 @@ Dans la colonne Profils, définissez le statut que vous donnez à un utilisateur
 
 Vue d’ensemble des droits accordés aux différents profils :
 
-+----------------+----------+------------+--------------+-----------------+------------+
-|                | Articles | Catégories | Commentaires | Pages statiques | Paramètres |
-+================+==========+============+==============+=================+============+
-| Administrateur | X        | X          | X            | X               | X          |
-+----------------+----------+------------+--------------+-----------------+------------+
-| Manager        | X        | X          | X            | X               |            |
-+----------------+----------+------------+--------------+-----------------+------------+
-| Modérateur     | X        | X          | X            |                 |            |
-+----------------+----------+------------+--------------+-----------------+------------+
-| Éditeur        | X        | X          |              |                 |            |
-+----------------+----------+------------+--------------+-----------------+------------+
-| Rédacteur      | X        |            |              |                 |            |
-+----------------+----------+------------+--------------+-----------------+------------+
+.. list-table::
+   :widths: 25 15 15 15 15 15
+   :header-rows: 1
+
+   * -
+     - Articles
+     - Catégories
+     - Commentaires
+     - Pages statiques
+     - Paramètres
+   * - Administrateur
+     - X
+     - X
+     - X
+     - X
+     - X
+   * - Manager
+     - X
+     - X
+     - X
+     - X
+     -
+   * - Modérateur
+     - X
+     - X
+     - X
+     -
+     -
+   * - Éditeur
+     - X
+     - X
+     -
+     -
+     -
+   * - Rédacteur
+     - X
+     -
+     -
+     -
+     -
 
 **Changer le mot de passe d’un utilisateur**
 
