@@ -5,6 +5,5 @@ Divers
    :maxdepth: 2
 
    divers-autre
-   plugins-non-officiels
-   plugins-officiels
+   plugins
    sites-realises-avec-pluxml
