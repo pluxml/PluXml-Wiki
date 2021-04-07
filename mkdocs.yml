@@ -19,6 +19,5 @@ nav:
 - Personnaliser: personnaliser/personnalisation.md
 - Développer: developper/developpement.md
 - Contribuer: contribuer/contribuer.md
-- Plugins officiels: divers/plugins-officiels.md
-- Plugins non officiels: divers/plugins-non-officiels.md
+- Plugins: divers/plugins.md
 - Divers: divers/divers-autre.md

@@ -25,10 +25,10 @@ Clone the PluXml-Wiki git repository :
 git clone https://github.com/pluxml/PluXml-Wiki.git
 ```
 
-Launch the MkDocs built-in web server :
+Build and launch the MkDocs built-in web server :
 
 ```
 cd PluXml-Wiki
+mkddoc build
 mkdocs serve
 ```
-
