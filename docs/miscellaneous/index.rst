@@ -4,6 +4,6 @@ Divers
 .. toctree::
    :maxdepth: 2
 
-   divers-autre
+   miscellaneous
    plugins
-   sites-realises-avec-pluxml
+   done-with-pluxml

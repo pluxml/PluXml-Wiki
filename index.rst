@@ -14,5 +14,5 @@ Il est possible de contribuer à PluXml de plusieurs manières, que vous soyez d
    docs/use/index
    docs/customize/index
    docs/develop/index
-   docs/divers/index
-   docs/contribute/contribute
+   docs/miscellaneous/index
+   docs/contribute
