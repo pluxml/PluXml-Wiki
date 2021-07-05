@@ -8,7 +8,7 @@ Thèmes et plugins
 
 Vous pouvez développer un thème ou un plugin pour PluXml. Pour ce faire nous mettons à disposition un `guide du développeur <https://wiki.pluxml.org/developper/developpement>`_.
 
-Vous pouvez utiliser le forum pour faire connaître votre theme `ici <https://forum.pluxml.org/categories/vos-creations>`_, ou votre plugin `ici <https://forum.pluxml.org/categories/plugins>`_.
+Vous pouvez utiliser le forum pour faire connaître `votre theme <https://forum.pluxml.org/categories/vos-creations>`_, ou `votre plugin <https://forum.pluxml.org/categories/plugins>`_.
 
 Wiki
 ----

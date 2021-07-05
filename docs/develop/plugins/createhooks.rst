@@ -122,6 +122,7 @@ Il est possible de combiner valeur de retour et passage de paramètres.
 
 
 .. code:: php
+
     <?php $retour = $plxShow->callHook('MyHook', 'azerty') ?>
 
 Exemple :

@@ -431,6 +431,8 @@ Exemple :
 
 Exemple :
 
+..code php
+
     <?php
         class test extends plxPlugin {
             public function __construct($default_lang) {
@@ -447,7 +449,10 @@ Exemple :
 
 Dans cet exemple, le hook va ajouter dans le fichier *core/admin/top.php* le code suivant avant la balise \</head\>
 
+..code html
+
     <script src="../../plugins/test/test.js"></script>
 
-!!! note
+.. note::
+
     Il est conseillé de nommer la méthode avec même nom que le hook.

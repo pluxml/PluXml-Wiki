@@ -13,8 +13,7 @@ Liste des fichiers situés à la racine de votre thème (par ordre alphabétique
 * ``article.php`` : gère les articles avec sidebar
 * ``article-full-width.php`` : template qui gère les articles en pleine page (sans sidebar)
 * ``categorie.php`` : gère l’affichage des articles en fonction d’une catégorie
-* ``categorie-full-width.php`` : template qui gère les articles d’une catégorie en pleine page (sans
-sidebar)
+* ``categorie-full-width.php`` : template qui gère les articles d’une catégorie en pleine page (sans sidebar)
 * ``commentaires.php`` : gère la partie commentaires des articles
 * ``erreur.php`` : gère la page d’erreur
 * ``footer.php`` : gère le pied de page de votre site
@@ -31,10 +30,9 @@ sidebar)
 Votre thème contient également plusieurs dossiers importants :
 
 * ``css/`` : contient les feuilles de style utilisées pour l’affichage du thème
-    - Le thème par défaut s’appuie sur le framework css PluCSS développé par l’équipe de PluXml disponible à cette adresse : http://plucss.pluxml.org/. Il a pour objectif de faciliter et d’unifier l’utilisation du css pour homogénéiser le développement des
-thèmes en se basant sur une même syntaxe de référence
-    - Fichier ``plucss.css`` : framework css PluCSS
-    - Fichier ``theme.css`` : contient la personnalisation propre au thème
+    * Le thème par défaut s’appuie sur le framework css PluCSS développé par l’équipe de PluXml disponible à cette adresse : http://plucss.pluxml.org/. Il a pour objectif de faciliter et d’unifier l’utilisation du css pour homogénéiser le développement des thèmes en se basant sur une même syntaxe de référence
+    * Fichier ``plucss.css`` : framework css PluCSS
+    * Fichier ``theme.css`` : contient la personnalisation propre au thème
 * ``img/`` : contient les images utilisées dans votre thème (par exemple le favicon ou l’image présente en face des commentaires)
 * ``lang/`` : contient les fichiers prenant en charge les différentes langues gérées par le thème (français, anglais, espagnol, ...)
 
