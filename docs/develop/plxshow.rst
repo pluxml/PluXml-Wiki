@@ -1,31 +1,39 @@
-# Documentation de plxShow
+plxShow
+=======
 
 Toutes les fonctions offertes par PluXml pour personnaliser votre thème.
 
-La classe __plxShow__ est responsable de l'affichage. Elle permet donc de modifier cet affichage, ce qui se fait grâce à des fonctions prédéfinies.
+La classe **plxShow** est responsable de l'affichage. Elle permet donc de modifier cet affichage, ce qui se fait grâce à des fonctions prédéfinies.
 
 Vous trouverez dans le menu de droite ces différentes fonctions qui vous permettront de modifier l'affichage par défaut de PluXml.
 
-__Usage__
+**Usage**
 
-Le principe général pour utiliser la classe __plxShow__ est le suivant :
+Le principe général pour utiliser la classe **plxShow** est le suivant :
+
+.. code:: php
 
     <?php $plxShow->nomFonction() ?>
 
 Certaines fonctions possèdent des variables prédéfinies, l'usage général devient ainsi :
 
+.. code:: php
+
     <?php $plxShow->nomFonction('$variable') ?>
 
 
-## fuction archList
+archList
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->archList('$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour l'affichage ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour l'affichage ; valeurs possibles :
     * archives_id : affiche l'ID de l'archive
     * archives_status : affiche le status de l'archive (active / noactive)
     * archives_nbart : affiche le nombre d'articles
@@ -35,135 +43,200 @@ __Détails des paramètres__
     * archives_year : affiche l'année de l'archive
     * valeur libre : caractère libre
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->archList() ?>
-    <?php $plxShow->archList('<li id="#archives_id"><a class="#archives_status" href="#archives_url" title="#archives_name">#archives_name (#archives_nbart)</a></li>') ?>
 
-## fuction artAuthorEmail
+.. code:: php
 
-__Usage__
+    <?php $plxShow->archList('<li id="#archives_id">
+    <a class="#archives_status" href="#archives_url" title="#archives_name">
+    #archives_name (#archives_nbart)</a></li>') ?>
+
+artAuthorEmail
+--------------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artAuthorEmail() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->artAuthorEmail() ?>
 
-## fuction artAuthorInfos
+artAuthorInfos
+--------------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artAuthorInfos('$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : permet de préciser une mise en page. Formatage par défaut : `<div class="author-infos"></div>`. Valeur disponible :
+* **$format** (string) (optionnel) : permet de préciser une mise en page. Formatage par défaut : `<div class="author-infos"></div>`. Valeur disponible :
     *  art_authorinfos : permet d'afficher les informations sur l'auteur  (utile quand on personnalise la mise en page)
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artAuthorInfos() ?>
+
+.. code:: php
+
     <?php $plxShow->artAuthorInfos('<div>#art_authorinfos</div>') ?>
 
-## fuction artAuthor
+artAuthor
+---------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artAuthor($echo) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$echo__ (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors le nom de l'auteur ne sera pas affiché
+* **$echo** (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors le nom de l'auteur ne sera pas affiché
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artAuthor() ?>
+
+.. code:: php
+
     <?php $plxShow->artAuthor(true) ?>
+
+.. code:: php
+
     <?php $plxShow->artAuthor(false) ?>
 
-## fuction artCatId
+artCatId
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artCatId() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->artCatId() ?>
 
-__Exemple avancé__
+**Exemple avancé**
+
+.. code:: php
 
     <?php
         $var = $plxShow->artCatId();
         echo $var;
     ?>
 
-## fuction artCat
+artCat
+------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artCat('$separator') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$separator__ (string) (optionnel) : caractère de séparation entre les catégories affichées ; valeur par défaut : ','
+* **$separator** (string) (optionnel) : caractère de séparation entre les catégories affichées ; valeur par défaut : ','
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->artCat('|') ?>
 
-## fuction artChapo
+artChapo
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artChapo('$format',$content) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format d'affichage du lien pour lire la suite de l'article ; valeur par défaut : #art_title ; valeurs possibles :
+* **$format** (string) (optionnel) : format d'affichage du lien pour lire la suite de l'article ; valeur par défaut : #art_title ; valeurs possibles :
     *  art_title : affiche le titre de l'article dans le lien "pour lire la suite" de l'article
     *  valeur libre : chaîne de caractère de son choix
-* __$content__ (boolean) (optionnel) : affichage oui ou non le contenu de l'article si le chapô est vide ; valeur par défaut : true ; valeurs possibles : true / false ; *Note* : si la valeur est à false, alors $format ne sera pas affiché.
+* **$content** (boolean) (optionnel) : affichage oui ou non le contenu de l'article si le chapô est vide ; valeur par défaut : true ; valeurs possibles : true / false ; *Note* : si la valeur est à false, alors $format ne sera pas affiché.
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artChapo('#art_title',true) ?>
+
+.. code:: php
+
     <?php $plxShow->artChapo('Continuer la lecture',true) ?>
 
-## fuction artContent
+artContent
+----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artContent($chapo) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$chapo__ (boolean) (requis) : affiche oui ou non le chapô ; valeurs possible : true / false ; valeur par défaut : true
+* **$chapo** (boolean) (requis) : affiche oui ou non le chapô ; valeurs possible : true / false ; valeur par défaut : true
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artContent() ?>
+
+.. code:: php
+
     <?php $plxShow->artContent(true) ?>
+
+.. code:: php
+
     <?php $plxShow->artContent(false) ?>
 
-## fuction artDate
+artDate
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artDate('$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format de la date ; valeurs par défaut : '#day #num_day #month #num_year(4)' ; valeurs possibles :
+* **$format** (string) (optionnel) : format de la date ; valeurs par défaut : '#day #num_day #month #num_year(4)' ; valeurs possibles :
     *  minute : affiche les minutes
     *  hour : affiche l'heure de publication
     *  day : affiche le jour (au format texte : lundi, mardi, etc...)
@@ -174,288 +247,404 @@ __Détails des paramètres__
     *  num_year(2) : affiche l'année sur 2 chiffres (ex: 12)
     *  valeur libre : chaîne de caractère de son choix
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artDate() ?>
+
+.. code:: php
+
     <?php $plxShow->artDate('#num_day #month #num_year(4)') ?>
 
-__Exemples avancés__
+**Exemples avancés**
 
 Formatage avancé avec des caractères libres :
 
+.. code:: php
+
     <?php $plxShow->artDate('#hour:#minute') ?>
+
+.. code:: php
+
     <?php $plxShow->artDate('#num_day/#num_month/#num_year(4)') ?>
 
-## fuction  artFeed
+artFeed
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artFeed('$type',$categorie,'$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (obsolete)
-* __$categorie__ (integer) (optionnel) : identifiant (ID sans les 0) d'une catégorie
-* __$format__ (string) (optionnel) : format du lien ; valeurs possibles :
+* **$type** (obsolete)
+* **$categorie** (integer) (optionnel) : identifiant (ID sans les 0) d'une catégorie
+* **$format** (string) (optionnel) : format du lien ; valeurs possibles :
     *  feedUrl : url du flux RSS
     *  feedName : nom du flux RSS
 
-__Exemples__
+**Exemples**
 
 Flux RSS des articles de tout le site :
+
+.. code:: php
 
     <?php $plxShow->artFeed() ?>
 
 Flux RSS des articles de la catégorie 1 :
 
+.. code:: php
+
     <?php $plxShow->artFeed('',1, '<a href="#feedUrl" title="#feedTitle">#feedName</a>') ?>
 
-*Note* : les guillemets simples vides ('') sont obligatoires quand on précise une catégorie, à cause du paramètre obsolete __$type__
+*Note* : les guillemets simples vides ('') sont obligatoires quand on précise une catégorie, à cause du paramètre obsolete **$type**
 
-## fuction artId
+artId
+-----
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artId() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->artId() ?>
 
-__Exemple avancé__
+**Exemple avancé**
+
+.. code:: php
 
     <?php
         $var = $plxShow->artId();
         echo $var;
     ?>
 
-## fuction artNbCom
+artNbCom
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artNbCom('$f1','$f2','$f3') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$f1__ (string) (optionnel) : format d'affichage si nombre de commentaire = 0 ; variable possible : #nb pour afficher le nombre de commentaire ; valeur par défaut 'aucun commentaire'
-* __$f2__ (string) (optionnel) : format d'affichage si nombre de commentaire = 1 ; variable possible : #nb pour afficher le nombre de commentaire ; valeur par défaut '#nb commentaire'
-* __$f2__ (string) (optionnel) : format d'affichage si nombre de commentaire > 1 ; variable possible : #nb pour afficher le nombre de commentaires ; valeur par défaut '#nb commentaires'
+* **$f1** (string) (optionnel) : format d'affichage si nombre de commentaire = 0 ; variable possible : #nb pour afficher le nombre de commentaire ; valeur par défaut 'aucun commentaire'
+* **$f2** (string) (optionnel) : format d'affichage si nombre de commentaire = 1 ; variable possible : #nb pour afficher le nombre de commentaire ; valeur par défaut '#nb commentaire'
+* **$f2** (string) (optionnel) : format d'affichage si nombre de commentaire > 1 ; variable possible : #nb pour afficher le nombre de commentaires ; valeur par défaut '#nb commentaires'
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artNbCom() ?>
+
+.. code:: php
+
     <?php $plxShow->artNbCom('#nb commentaire','#nb commentaire','#nb commentaires') ?>
+
+.. code:: php
+
     <?php $plxShow->artNbCom('#nb','#nb','#nb') ?>
 
-## fuction artTags
+artTags
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artTags('$format','$separor') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour chaque tag ; valeurs par défauts : `<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>` ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour chaque tag ; valeurs par défauts : `<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>` ; valeurs possibles :
     *  tag_status : permet d'ajouter 'class="noactive"' ou 'class="active"' à l'attribut HTML 'a' (permet de définir un style CSS quand un tag est actif, c'est à dire consulté)
     *  tag_url : l'URL du tag
     *  tag_name : le nom du tag
-* __$separator__ (string) (optionnel) : caractère de séparation entre les tags affichées ; valeur par défaut : ','
+* **$separator** (string) (optionnel) : caractère de séparation entre les tags affichées ; valeur par défaut : ','
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artTags('<a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a>',',') ?>
+
+.. code:: php
+
     <?php $plxShow->artTags('<a href="#tag_url" title="#tag_name">#tag_name</a>',' |') ?>
 
-__Exemple avancé__
+**Exemple avancé**
+
+.. code:: php
 
     <ul>
         <?php $plxShow->artTags('<li><a href="#tag_url" title="#tag_name">#tag_name</a></li>','') ?>
     </ul>
-## function artTitle
 
-__Usage__
+artTitle
+--------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artTitle('$type') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (string) (optionnel) : valeur possible : 'link'. Affiche le titre de l'article sous forme d'un lien cliquable
+* **$type** (string) (optionnel) : valeur possible : 'link'. Affiche le titre de l'article sous forme d'un lien cliquable
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artTitle() ?>
-    <?php $plxShow->artTitle('link') ?>
-    
-## function artThumbnail
 
-__Usage__
+.. code:: php
+
+    <?php $plxShow->artTitle('link') ?>
+
+artThumbnail
+------------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artThumbnail('$format', $echo); ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour chaque tag ; valeurs par défauts : `<a href="#img_url"><img class="art_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>` ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour chaque tag ; valeurs par défauts : `<a href="#img_url"><img class="art_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>` ; valeurs possibles :
     *  img_url : l'URL de l'image d'accroche
     *  img_thumb_url : l'URL de la miniature de l'image d'accroche
     *  img_title : Titre de l'image d'accroche
     *  img_alt : Texte alternatif d'affichage de l'image d'accroche
-* __$echo__ (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors l'image ne sera pas affiché
-* __$article__ (boolean) (optionnel) : valeurs possibles : true / false. Par défait la valeur est false. Si la valeur est true, alors au clic sur l'image PluXml redirige vers l'article et non vers l'image.
+* **$echo** (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors l'image ne sera pas affiché
+* **$article** (boolean) (optionnel) : valeurs possibles : true / false. Par défait la valeur est false. Si la valeur est true, alors au clic sur l'image PluXml redirige vers l'article et non vers l'image.
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->artThumbnail() ?>
-    <?php $plxShow->artThumbnail('<a href="#img_url"><img class="art_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>', true) ?>
 
-## function artUrl
+.. code:: php
 
-__Usage__
+    <?php $plxShow->artThumbnail('<a href="#img_url">
+    <img class="art_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>', true) ?>
+
+artUrl
+------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->artUrl() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (deprecated) : lien relatif ou absolu
+* **$type** (deprecated) : lien relatif ou absolu
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->artUrl() ?>
 
-__Exemple avancé__
+**Exemple avancé**
 
 Partager facilement un article sur les réseaux sociaux :
 
+.. code:: html
+
     <a href="http://www.facebook.com/sharer.php?u=<?php $plxShow->artUrl() ?>">Partager sur Facebook</a>
 
-## function callHook
+callHook
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->callHook('$hookName','$parms') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$hookName__ (string) (requis) : nom du hook
-* __$parms__ (string) (requis) : paramètre ou liste de paramètres sous forme de array
+* **$hookName** (string) (requis) : nom du hook
+* **$parms** (string) (requis) : paramètre ou liste de paramètres sous forme de array
 
-__Exemple__
+**Exemple**
 
 Sans return, passage d'un paramètre :
+
+.. code:: php
 
     <?php eval($plxShow->callHook('MyPluginFunction', 'AZERTY')); ?>
 
 Avec return, passage de 2 paramètres à faire sous forme de tableau :
 
+.. code:: php
+
     <?php $b = $plxShow->callHook('MyPluginFunction', array('AZERTY', 'QWERTY')); ?>
 
-## function capchaQ
+capchaQ
+-------
 
-__Usage__
+**Usage**
 
-    <?php $plxShow->capchaQ() ?>
-
-__Détails des paramètres__
-
-aucun
-
-__Exemple__
+.. code:: php
 
     <?php $plxShow->capchaQ() ?>
 
-## function capchaR
+**Détails des paramètres**
 
-__Usage__
+aucun
+
+**Exemple**
+
+.. code:: php
+
+    <?php $plxShow->capchaQ() ?>
+
+capchaR
+-------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->capchaR() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->capchaR() ?>
 
-## function catDescription
+catDescription
+--------------
 
-__Usage__
+**Usage**
 
-    <?php $plxShow->catDescription() ?>
-
-__Détails des paramètres__
-
-aucun
-
-__Exemple__
+.. code:: php
 
     <?php $plxShow->catDescription() ?>
 
-## function catId
-
-__Usage__
-
-    <?php $plxShow->catId() ?>
-
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
+
+    <?php $plxShow->catDescription() ?>
+
+catId
+-----
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->catId() ?>
 
-__Exemple avancé__
+**Détails des paramètres**
+
+aucun
+
+**Exemple**
+
+.. code:: php
+
+    <?php $plxShow->catId() ?>
+
+**Exemple avancé**
+
+.. code:: php
 
     <?php
         $var = $plxShow->catId();
         echo $var;
     ?>
 
-## function catList
+catList
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->catList('$extra','$format','include','exclude') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$extra__ (string) (requis) : nom du lien vers la page d'accueil ; si on ne veut pas de lien vers la page d'accueil, mettre des guillemets simples vides ('')
-* __$format__ (string) (requis) : format du texte pour chaque catégorie ; valeurs possibles :
+* **$extra** (string) (requis) : nom du lien vers la page d'accueil ; si on ne veut pas de lien vers la page d'accueil, mettre des guillemets simples vides ('')
+* **$format** (string) (requis) : format du texte pour chaque catégorie ; valeurs possibles :
     *  cat_id : ID de la catégorie
     *  cat_status : statut de la catégorie (active, noactive)
     *  cat_url : url de la catégorie
     *  cat_name : nom de la catégorie
     *  art_nb : nombre d'articles dans cette catégorie
-* __$include__ (integer) (optionnel) : liste des catégories à afficher séparées par le caractère '|'
-* __$exclude__ (integer) (optionnel) : liste des catégories à ne pas afficher séparées par le caractère '|' ; si renseigné, $include doit contenir des guillements simples vides
+* **$include** (integer) (optionnel) : liste des catégories à afficher séparées par le caractère '|'
+* **$exclude** (integer) (optionnel) : liste des catégories à ne pas afficher séparées par le caractère '|' ; si renseigné, $include doit contenir des guillements simples vides
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->catList('Accueil','<li><a href="#cat_url" title="#cat_name">#cat_name</a></li>'); ?>
-    <?php $plxShow->catList('','<li id="#cat_id" class="#cat_status"><a href="#cat_url" title="#cat_name">#cat_name</a> (#art_nb)</li>'); ?>
+
+.. code:: php
+
+    <?php $plxShow->catList('','<li id="#cat_id" class="#cat_status">
+    <a href="#cat_url" title="#cat_name">#cat_name</a> (#art_nb)</li>'); ?>
 
 *Note* : on notera les guillemets simples vides '' obligatoires quand on ne veut pas de lien vers la page d'accueil.
 
 L'exemple suivant n'affichera que la catégorie numéro 1 :
 
+.. code:: php
+
     <?php $plxShow->catList('','<li><a href="#cat_url" title="#cat_name">#cat_name</a></li>',1); ?>
 
-L'exemple suivant affichera toutes les catégories __sauf__ la catégorie numéro 2 :
+L'exemple suivant affichera toutes les catégories **sauf** la catégorie numéro 2 :
+
+.. code:: php
 
     <?php $plxShow->catList('','<li><a href="#cat_url" title="#cat_name">#cat_name</a></li>','',2); ?>
 
-__Exemple avancé__
+**Exemple avancé**
 
 Il est possible de passer une variable dans les paramètres :
+
+.. code:: php
 
     <?php
         $catInclude = 3;
         $plxShow->catList('','<li><a href="#cat_url" title="#cat_name">#cat_name</a></li>',$catInclude);
     ?>
+
+.. code:: php
 
     <?php
         $homeTitle = 'Accueil';
@@ -463,6 +652,8 @@ Il est possible de passer une variable dans les paramètres :
     ?>
 
 Voyons à présent un exemple avec la fonction mode :
+
+.. code:: php
 
     <?php
         $mode = $plxShow->mode();
@@ -475,56 +666,80 @@ Voyons à présent un exemple avec la fonction mode :
         $plxShow->catList($homeTitle,'<li><a href="#cat_url" title="#cat_name">#cat_name</a></li>');
     ?>
 
-## function catName
+catName
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->catName('$type') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (string) (optionnel) : valeur possible : 'link'. Affiche le nom de la catégorie sous forme d'un lien cliquable
+* **$type** (string) (optionnel) : valeur possible : 'link'. Affiche le nom de la catégorie sous forme d'un lien cliquable
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->catName() ?>
+
+.. code:: php
+
     <?php $plxShow->catName('link') ?>
 
-## function catThumbnail
+catThumbnail
+------------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->catThumbnail('$format', $echo); ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour chaque tag ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour chaque tag ; valeurs possibles :
     *  img_url : l'URL de l'image d'accroche
     *  img_thumb_url : l'URL de la miniature de l'image d'accroche
     *  img_title : Titre de l'image d'accroche
     *  img_alt : Texte alternatif d'affichage de l'image d'accroche
-* __$echo__ (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors l'image ne sera pas affichée
+* **$echo** (boolean) (optionnel) : valeurs possibles : true / false. Par défaut la valeur est à true. Si la valeur est à false, alors l'image ne sera pas affichée
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->catThumbnail() ?>
-    <?php $plxShow->catThumbnail('<a href="#img_url"><img class="cat_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>', true) ?>
 
-## function catUrl
+.. code:: php
 
-__Usage__
+    <?php $plxShow->catThumbnail('<a href="#img_url">
+    <img class="cat_thumbnail" src="#img_thumb_url" alt="#img_alt" title="#img_title" /></a>', true) ?>
+
+catUrl
+------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->catUrl($id) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$id__ (integer) (requis) : id de la categorie sous la forme numérique ou formatée (ex: 1 ou 001)
+* **$id** (integer) (requis) : id de la categorie sous la forme numérique ou formatée (ex: 1 ou 001)
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->catUrl(1) ?>
 
-__Exemple avancé__
+**Exemple avancé**
+
+.. code:: php
 
     <?php
         $var = $plxShow->catUrl(1);
@@ -533,88 +748,122 @@ __Exemple avancé__
 
 Cet exemple affichera *http://example.org/categorie1/nom-de-ma-categorie*
 
-## function charset
+charset
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->charset('$casse'); ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$casse__ (string) (optionnel) : la $casse est soit 'min' soit 'maj'. Par défaut 'min'.
+* **$casse** (string) (optionnel) : la $casse est soit 'min' soit 'maj'. Par défaut 'min'.
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->charset(); ?>
 
 Affichera par exemple :
 
+.. code:: none
+
     utf-8
 
 Autre exemple
+
+.. code:: php
 
     <?php $plxShow->charset('maj'); ?>
 
 Affichera par exemple :
 
+.. code:: none
+
     UTF-8
 
-__Exemple avancé__
+**Exemple avancé**
+
+.. code:: html
 
     <meta http-equiv="Content-Type" content="text/html; charset=<?php $plxShow->charset(); ?>" />
 
-## function chrono
+chrono
+------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->chrono() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: html
 
     <p>Page générée en <?php $plxShow->chrono() ?></p>
 
-## function comAuthor
+comAuthor
+---------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comAuthor('$type') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (string) (optionnel) : affiche le nom de l'auteur sous forme de lien vers son site ; valeur possible : 'link' ;
+* **$type** (string) (optionnel) : affiche le nom de l'auteur sous forme de lien vers son site ; valeur possible : 'link' ;
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->comAuthor() ?>
+
+.. code:: php
+
     <?php $plxShow->comAuthor('link') ?>
 
-## function comContent
+comContent
+----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comContent() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->comContent() ?>
 
-## function comDate
+comDate
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comDate('$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte de la date ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte de la date ; valeurs possibles :
     *  minute : affiche les minutes
     *  hour : affiche l'heure
     *  day : affiche le nom du jour (lundi, mardi, etc...)
@@ -625,154 +874,204 @@ __Détails des paramètres__
     *  num_year(4) : affiche l'année au format long (ex: 2012)
     *  valeur libre : un caractère au choix
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->comDate('#day #num_day #month #num_year(4)') ?>
+
+.. code:: php
+
     <?php $plxShow->comDate('#num_day/num_#month/#num_year(4)') ?>
 
-## function comFeed
+comFeed
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comFeed('$type',$article,'$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (string) (OBSOLETE - requis, vide) : type de flux
-* __$article__ (integer) (optionnel) : identifiant (sans les 0) d'un article
-* __$format__ (string) (optionnel) : format du lien ; valeurs possibles :
+* **$type** (string) (OBSOLETE - requis, vide) : type de flux
+* **$article** (integer) (optionnel) : identifiant (sans les 0) d'un article
+* **$format** (string) (optionnel) : format du lien ; valeurs possibles :
     *  feedUrl : url du flux RSS
     *  feedName : nom du flux RSS
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->comFeed() ?>
+
+.. code:: php
+
     <?php $plxShow->comFeed('',3,'<a href="#feedUrl" title="#feedTitle">#feedName</a>') ?>
 
 *Note* : les guillemets simples sont obligatoires quand on précise l'ID de l'article en raison du paramètre $type obsolète
 
-## function comGet
+comGet
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comGet($key,'$defaut') ?>
 
 *Note* : manque de précision
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$key__ (string) (requis) : clé du tableau GET
-* __$defaut__ (string) (requis) : valeur par défaut si variable vide
+* **$key** (string) (requis) : clé du tableau GET
+* **$defaut** (string) (requis) : valeur par défaut si variable vide
 
-__Exemple__
+comId
+-----
 
-## function comId
+**Usage**
 
-__Usage__
+.. code:: php
 
     <?php $plxShow->comId() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->comId() ?>
 
-## function comMessage
+comMessage
+----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comMessage() ?>
 
 *Note* : manque de précision
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->comMessage() ?>
 
-## function comType
+comType
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comType() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->comType() ?>
 
-__Exemple avancé__
+**Exemple avancé**
 
 Cette fonction est utile pour un habillage CSS différent quand le commentaire est écrit par l'admin du site :
 
+.. code:: php
+
     <div class="<?php $plxShow->comType() ?>">ON AFFICHE ICI LE COMMENTAIRE</div>
 
-## function comUrl
+comUrl
+------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->comUrl() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->comUrl() ?>
 
-## function defaultLang
+defaultLang
+-----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->defaultLang($echo) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$echo__ (boolean) (optionnel) : si TRUE, affichage à l'écran
+* **$echo** (boolean) (optionnel) : si TRUE, affichage à l'écran
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->defaultLang(true) ?>
 
-## function erreurMessage
+erreurMessage
+-------------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->erreurMessage() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->erreurMessage() ?>
 
-## function getLang
+getLang
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->getLang('$key') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$key__ (string) (requis) : clé de traduction à afficher
+* **$key** (string) (requis) : clé de traduction à afficher
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->getLang('HOME') ?>
 
-__Liste des termes__
+**Liste des termes**
 
 Vous pouvez trouver la liste dans termes dans les fichiers du répertoire */themes/defaut/lang/*.
 
@@ -822,31 +1121,37 @@ Voici la liste des termes :
     *  COMMENTS_CLOSED
     *  ANTISPAM_WARNING
 
-## function get
+get
+---
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->get() ?>
 
 *Note* : manque de précision
 
-__Détail des paramètres__
+**Détail des paramètres**
 
 aucun
 
-__Exemple__
+httpEncoding
+------------
 
-## function httpEncoding
+**Usage**
 
-__Usage__
+.. code:: php
 
     <?php $plxShow->httpEncoding() ?>
 
-__Détail des paramètres__
+**Détail des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->httpEncoding() ?>
 
@@ -854,23 +1159,28 @@ Si la compression Gzip est activée dans les paramètres avancés de PluXml, alo
 
     Compression GZIP activée
 
-## function lang
+lang
+----
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->lang('$key') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$key__ (string) (requis) : texte traduit par PluXml
+* **$key** (string) (requis) : texte traduit par PluXml
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->lang('CATEGORIES') ?>
 
-__Liste des termes__
+**Liste des termes**
 
-Vous pouvez trouver la liste dans termes dans les fichiers du répertoire __/themes/defaut/lang/__.
+Vous pouvez trouver la liste dans termes dans les fichiers du répertoire **/themes/defaut/lang/**.
 
 Voici la liste des termes :
 
@@ -918,15 +1228,18 @@ Voici la liste des termes :
     *  COMMENTS_CLOSED
     *  ANTISPAM_WARNING
 
-## function lastArtList
+lastArtList
+-----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->lastArtList('$format',$max,$cat_id,'$ending',$sort) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour chaque article ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour chaque article ; valeurs possibles :
     *  art_id : affiche l'ID de l'article
     *  art_url : affiche l'URL de l'article
     *  art_status : affiche le status de l'article (active / noactive)
@@ -939,28 +1252,35 @@ __Détails des paramètres__
     *  art_hour : affiche l'heure de publication de l'article au format court (hh:mm)
     *  cat_list : affiche les catégories auxquelles appartient l'article sous forme d'un lien
     *  art_nbcoms : affiche le nombre de commentaires pour chaque article
-* __$max__ (integer) (optionnel) : nombre d'article à afficher ; valeur par defaut : 5
-* __$cat_id__ (integer) (optionnel) : limiter l'affiche des articles à une catégorie précise
-* __$ending__ (string) (optionnel) : texte à ajouter en fin de ligne ; *Note* : ne semble pas fonctionner
-* __$sort__ (string) (optionnel) : ordre de trie. Valeur possible sort|rsort|alpha|random
+* **$max** (integer) (optionnel) : nombre d'article à afficher ; valeur par defaut : 5
+* **$cat_id** (integer) (optionnel) : limiter l'affiche des articles à une catégorie précise
+* **$ending** (string) (optionnel) : texte à ajouter en fin de ligne ; *Note* : ne semble pas fonctionner
+* **$sort** (string) (optionnel) : ordre de trie. Valeur possible sort|rsort|alpha|random
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->lastArtList('<li><a href="#art_url" title="#art_title">#art_title</a></li>',3) ?>
 
 Limiter l'affichage aux 5 derniers articles de la catégorie 1 :
 
+.. code:: php
+
     <?php $plxShow->lastArtList('<li><a href="#art_url" title="#art_title">#art_title</a></li>',5,1) ?>
 
-## function lastComList
+lastComList
+-----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->lastComList('$format',$max,$art_id,$cat_ids) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour chaque commentaire ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour chaque commentaire ; valeurs possibles :
     *  com_id : affiche l'ID du commentaire
     *  com_url : affiche l'URL du commentaire
     *  com_author : affiche l'auteur du commentaire
@@ -969,50 +1289,70 @@ __Détails des paramètres__
     *  com_date : affiche la date du commentaire
     *  com_hour : affiche l'heure de commentaire
     *  valeur libre : caractère libre
-* __$max__ (integer) (optionnel) : nombre de commentaires maximum à afficher ; valeur par défaut : 5
-* __$art_id__ (integer) (optionnel) : restreindre l'affichage des derniers commentaires à un article précis via son ID (ex: 24, 3)
-* __$cat_ids__ (integer) (optionnel) : restreindre l'affichage des derniers commentaires à certaines catégories via leur ID (ex: 1|2 ; voir exemples)
+* **$max** (integer) (optionnel) : nombre de commentaires maximum à afficher ; valeur par défaut : 5
+* **$art_id** (integer) (optionnel) : restreindre l'affichage des derniers commentaires à un article précis via son ID (ex: 24, 3)
+* **$cat_ids** (integer) (optionnel) : restreindre l'affichage des derniers commentaires à certaines catégories via leur ID (ex: 1|2 ; voir exemples)
 
-__Exemples__
+**Exemples**
 
 Affichage basique :
+
+.. code:: php
 
     <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>') ?>
 
 Afficher seulement les 3 derniers commentaires :
 
+.. code:: php
+
     <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3) ?>
 
 Afficher seulement les 3 derniers commentaires de l'article ayant l'ID 9 :
+
+.. code:: php
 
     <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,9) ?>
 
 Afficher seulement les 3 derniers commentaires de la catégorie 6 :
 
+.. code:: php
+
     <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,'',6) ?>
 
-*Note* : notez les guillements simples '' à la place de __$art_id__
+*Note* : notez les guillements simples '' à la place de **$art_id**
 
 Afficher seulement les 3 derniers commentaires des catégories 6 et 8 :
 
+.. code:: php
+
     <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,'',6|8) ?>
 
-## function mainTitle
+mainTitle
+---------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->mainTitle('$type') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (string) (optionnel) : type d'affichage en format texte ou sous forme de lien ; valeur possible : link
+* **$type** (string) (optionnel) : type d'affichage en format texte ou sous forme de lien ; valeur possible : link
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->mainTitle() ?>
+
+.. code:: php
+
     <?php $plxShow->mainTitle('link') ?>
 
-__Exemple avancé__
+**Exemple avancé**
+
+.. code:: html
 
     <div id="header"><h1><?php $plxShow->mainTitle('link') ?></h1></div>
 
@@ -1020,20 +1360,31 @@ __Exemple avancé__
 
 * cette fonction définie le contenu et la cible du lien. Pour personnaliser le contenu du lien, voir la [fontion racine|plxShow-racine]
 
-## function meta
+meta
+----
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->meta('$meta') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$meta__ (string) (requis) : nom du meta à afficher ; les différentes valeurs possibles sont : description, keywords, author
+* **$meta** (string) (requis) : nom du meta à afficher ; les différentes valeurs possibles sont : description, keywords, author
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->meta('description') ?>
+
+.. code:: php
+
     <?php $plxShow->meta('keywords') ?>
+
+.. code:: php
+
     <?php $plxShow->meta('author') ?>
 
 *Note*
@@ -1041,17 +1392,22 @@ __Exemples__
 * Cette fonction sert principalement à remplir automatiquement les champs "meta" de la balise `<head></head>`
 * Lors de la rédaction d'un article, vous pouvez indiquer le contenu des balises "description" et "keywords"
 
-## function mode
+mode
+----
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->mode() ?>
 
-__Détail des paramètres__
+**Détail des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php
         $var = $plxShow->mode();
@@ -1060,7 +1416,9 @@ __Exemple__
 
 Affichera soit home, article, categorie, static, archives ou tags.
 
-__Exemple avancé__
+**Exemple avancé**
+
+.. code:: php
 
     <?php
         $var = $plxShow->mode();
@@ -1072,71 +1430,100 @@ __Exemple avancé__
         }
     ?>
 
-## function nbAllArt
+nbAllArt
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
+
+    <?php $plxShow->nbAllArt() ?>
+
+**Détails des paramètres**
+
+* **$f1** (string) (optionnel) : format d'affichage si nombre d'article = 0 ; variable possible : `#nb` pour afficher le nombre d'article ; valeur par défaut 'aucun article'
+* **$f2** (string) (optionnel) : format d'affichage si nombre d'article = 1 ; variable possible : `#nb` pour afficher le nombre d'article ; valeur par défaut '#nb article'
+* **$f2** (string) (optionnel) : format d'affichage si nombre d'article > 1 ; variable possible : `#nb` pour afficher le nombre d'articles ; valeur par défaut '#nb articles'
+
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->nbAllArt() ?>
 
-__Détails des paramètres__
+.. code:: php
 
-* __$f1__ (string) (optionnel) : format d'affichage si nombre d'article = 0 ; variable possible : `#nb` pour afficher le nombre d'article ; valeur par défaut 'aucun article'
-* __$f2__ (string) (optionnel) : format d'affichage si nombre d'article = 1 ; variable possible : `#nb` pour afficher le nombre d'article ; valeur par défaut '#nb article'
-* __$f2__ (string) (optionnel) : format d'affichage si nombre d'article > 1 ; variable possible : `#nb` pour afficher le nombre d'articles ; valeur par défaut '#nb articles'
-
-__Exemples__
-
-    <?php $plxShow->nbAllArt() ?>
     <?php $plxShow->nbAllArt('aucun article','#nb article publié','#nb articles au total') ?>
 
-## function nbAllCom
+nbAllCom
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->nbAllCom('$f1','$f2','$f3') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$f1__ (string) (optionnel) : format d'affichage si nombre de commentaire = 0 ; valeur possible : `#nb` pour afficher le nombre de commentaire
-* __$f2__ (string) (optionnel) : format d'affichage si nombre de commentaire = 1 ; valeur possible : `#nb` pour afficher le nombre de commentaire
-* __$f3__ (string) (optionnel) : format d'affichage si nombre de commentaire > 0 ; valeur possible : `#nb` pour afficher le nombre de commentaire
+* **$f1** (string) (optionnel) : format d'affichage si nombre de commentaire = 0 ; valeur possible : `#nb` pour afficher le nombre de commentaire
+* **$f2** (string) (optionnel) : format d'affichage si nombre de commentaire = 1 ; valeur possible : `#nb` pour afficher le nombre de commentaire
+* **$f3** (string) (optionnel) : format d'affichage si nombre de commentaire > 0 ; valeur possible : `#nb` pour afficher le nombre de commentaire
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->nbAllCom() ?>
 
+.. code:: php
+
     <?php $plxShow->nbAllCom('Aucun commentaire', '#nb commentaire', '#nb commentaires au total') ?>
 
-## function pageBlog
+pageBlog
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->pageBlog('$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour l'affichage ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour l'affichage ; valeurs possibles :
     *  page_id : ID de la page
     *  page_status : status de la page
     *  page_url : URL de la page
     *  page_name : nom de la page
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->pageBlog() ?>
-    <?php $plxShow->pageBlog('<li id="#page_id"><a class="#page_status" href="#page_url" title="#page_name">#page_name</a></li>') ?>
 
-## function pageTitle
+.. code:: php
 
-__Usage__
+    <?php $plxShow->pageBlog('<li id="#page_id">
+    <a class="#page_status" href="#page_url" title="#page_name">#page_name</a></li>') ?>
+
+pageTitle
+---------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->pageTitle() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->pageTitle() ?>
 
@@ -1145,71 +1532,95 @@ __Exemple__
 * Cette fonction sert principalement à remplir automatiquement le champ TITLE de la balise `<head></head>` pour la page courante.
 * Lors de la rédaction d'un article, vous pouvez personnaliser le contenu de cette balise.
 
-## function pagination
+pagination
+----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->pagination() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->pagination() ?>
 
-## function racine
+racine
+------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->racine() ?>
 
-__Détail des paramètres__
+**Détail des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->racine() ?>
 
 Si la "Racine du site" est définie sur http://example.org/, alors cette fonction affichera :
 
+.. code:: none
+
     http://example.org/
 
 Si la "Racine du site" est définie sur http://example.org/pluxml/, alors cette fonction affichera :
 
+.. code:: none
+
     http://example.org/pluxml/
 
-__Exemple avancé__
+**Exemple avancé**
 
 Une alternative à la fonction mainTitle :
 
+.. code:: html
+
     <a href="<?php $plxShow->racine() ?>">Mon super site</a>
 
-## function staticContent
+staticContent
+-------------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->staticContent() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->staticContent() ?>
 
-## function staticDate
+staticDate
+----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->staticDate('$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte de la date ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte de la date ; valeurs possibles :
     *  minute : affiche les minutes
     *  hour : affiche l'heure
     *  day : affiche le jour (lundi, mardi, ...)
@@ -1220,258 +1631,355 @@ __Détails des paramètres__
     *  num_year(2) : affiche l'année au format court (ex: 12)
     *  valeur libre : caractère libre
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->staticDate('#day #num_day #month #num_year(4)') ?>
+
+.. code:: php
+
     <?php $plxShow->staticDate('#num_day/#num_month/#num_year(4)') ?>
 
-## function staticGroup
+staticGroup
+-----------
 
-__Usage__
+**Usage**
 
-    <?php $plxShow->staticGroup() ?>
-
-__Détails des paramètres__
-
-aucun
-
-__Exemple__
+.. code:: php
 
     <?php $plxShow->staticGroup() ?>
 
-## function staticId
-
-__Usage__
-
-    <?php $plxShow->staticId() ?>
-
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
+
+    <?php $plxShow->staticGroup() ?>
+
+staticId
+--------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->staticId() ?>
 
-__Exemple avancé__
+**Détails des paramètres**
+
+aucun
+
+**Exemple**
+
+.. code:: php
+
+    <?php $plxShow->staticId() ?>
+
+**Exemple avancé**
+
+.. code:: php
 
     <?php
         $var = $plxShow->staticId();
         echo $var;
     ?>
 
-## function staticInclude
+staticInclude
+-------------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->staticInclude($id) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$id__ (integer) (requis) : ID de la page statique à inclure
+* **$id** (integer) (requis) : ID de la page statique à inclure
 
-__Exemple__
+**Exemple**
 
 Pour intégrer le contenu de la page statique ayant pour ID 1 :
 
+.. code:: php
+
     <?php $plxShow->staticInclude(1) ?>
 
-## function staticList
+staticList
+----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->staticList('$extra','$format','$format_group') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$extra__ (string) (optionnel) : nom du lien vers la page d'accueil
-* __$format__ (string) (optionnel) : format du texte pour chaque page : valeurs possibles :
+* **$extra** (string) (optionnel) : nom du lien vers la page d'accueil
+* **$format** (string) (optionnel) : format du texte pour chaque page : valeurs possibles :
     *  static_id : ID de la page statique
     *  static_status : status de la page statique (active / noactive)
     *  static_url : URL de la page statique
     *  static_name : nom de la page statique
     *  static_class : class (CSS) d'une page statique (valeur : static menu [si la page appartient à un groupe] ou static-group [si la page n'appartient pas à un groupe])
-* __$format_group__ (string) (optionnel) : format du texte pour chaque groupe de pages : valeurs possibles :
+* **$format_group** (string) (optionnel) : format du texte pour chaque groupe de pages : valeurs possibles :
     *  group_id : ID d'un groupe de pages statiques
     *  group_class : class (CSS) d'un groupe de pages statiques (valeur : static-group)
     *  group_name : nom d'un groupe de pages statiques
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->staticList() ?>
 
-    <?php $plxShow->staticList('accueil','<li id="#static_id" class="#static_class"><a href="#static_url" class="#static_status" title="#static_name">#static_name</a></li>') ?>
+.. code:: php
 
-    <?php $plxShow->staticList('','<li id="#static_id" class="#static_class"><a href="#static_url" class="#static_status" title="#static_name">#static_name</a></li>'),'<li id="#group_id" class="#group_class">GROUPE : #group_name</li>') ?>
+    <?php $plxShow->staticList('accueil','<li id="#static_id" class="#static_class">
+    <a href="#static_url" class="#static_status" title="#static_name">#static_name</a></li>') ?>
 
-*Note* : notez les guillemets simples vides '' pour __$extra__ ; ils sont obligatoires quand on ne veut pas de lien vers la page d'accueil mais qu'on personnalise __$format__ ou __$format_group__
+.. code:: php
 
-## function staticTitle
+    <?php $plxShow->staticList('','<li id="#static_id" class="#static_class">
+    <a href="#static_url" class="#static_status" title="#static_name">#static_name</a></li>'),
+    '<li id="#group_id" class="#group_class">GROUPE : #group_name</li>') ?>
 
-__Usage__
+*Note* : notez les guillemets simples vides '' pour **$extra** ; ils sont obligatoires quand on ne veut pas de lien vers la page d'accueil mais qu'on personnalise **$format** ou **$format_group**
+
+staticTitle
+-----------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->staticTitle() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->staticTitle() ?>
 
-## function staticUrl
+staticUrl
+---------
 
-__Usage__
+**Usage**
 
-    <?php $plxShow->staticUrl() ?>
-
-__Détails des paramètres__
-
-aucun
-
-__Exemple__
+.. code:: php
 
     <?php $plxShow->staticUrl() ?>
 
-## function subTitle
-
-__Usage__
-
-    <?php $plxShow->subTitle() ?>
-
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
+
+    <?php $plxShow->staticUrl() ?>
+
+subTitle
+--------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->subTitle() ?>
 
-## function tagFeed
+**Détails des paramètres**
 
-__Usage__
+aucun
+
+**Exemple**
+
+.. code:: php
+
+    <?php $plxShow->subTitle() ?>
+
+tagFeed
+-------
+
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->tagFeed('$type', '$tag', '$format') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (string) (OBSOLETE - requis, vide) : type de flux
-* __$tag__ (string) (optionnel) : le mot clé
-* __$format__ (string) (optionnel) : format du lien ; valeurs possibles :
+* **$type** (string) (OBSOLETE - requis, vide) : type de flux
+* **$tag** (string) (optionnel) : le mot clé
+* **$format** (string) (optionnel) : format du lien ; valeurs possibles :
     *  feedUrl : url du flux RSS
     *  feedTitle : valeur de la constante L_ARTFEED_RSS_TAG
     *  feedName : valeur de la constante L_ARTFEED_RSS_TAG
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->tagFeed() ?>
+
+.. code:: php
+
     <?php $plxShow->tagFeed('','pluxml','<a href="#feedUrl" title="#feedTitle">#feedName</a>') ?>
 
 *Note* : les guillemets simples sont obligatoires quand on précise l'ID de l'article en raison du paramètre $type obsolète
 
-## function tagList
+tagList
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->tagList('$format',$max) ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$format__ (string) (optionnel) : format du texte pour chaque tag ; valeurs possibles :
+* **$format** (string) (optionnel) : format du texte pour chaque tag ; valeurs possibles :
     *  tag_status : status du tag (active / noactive)
     *  tag_url : URL du tag
     *  tag_name : nom du tag
     *  nb_art : nombre d'article dans ce tag
-* __$format__ (integer) (optionnel) : nombre max de tags à afficher
+* **$format** (integer) (optionnel) : nombre max de tags à afficher
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>') ?>
+
+.. code:: php
+
     <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name (#nb_art)</a></li>,3') ?>
 
-## function tagName
+tagName
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->tagName('$type') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$type__ (string) (optionnel) : type d'affichage, soit sous forme d'un lien soit en texte seul ; valeur possible : 'link'
+* **$type** (string) (optionnel) : type d'affichage, soit sous forme d'un lien soit en texte seul ; valeur possible : 'link'
 
-__Exemples__
+**Exemples**
+
+.. code:: php
 
     <?php $plxShow->tagName() ?>
+
+.. code:: php
+
     <?php $plxShow->tagName('link') ?>
 
-__Exemple avancé__
+**Exemple avancé**
 
-Pour afficher le nom du tag dans la page tag, dans le fichier __/themes/mon-themes/tags.php__ :
+Pour afficher le nom du tag dans la page tag, dans le fichier **/themes/mon-themes/tags.php** :
+
+.. code:: none
 
     <h2>Tag : <?php $plxShow->tagName() ?></h2>
     <#-- la boucle des derniers articles -->
 
-## function templaceCss
+templaceCss
+-----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->templateCss('$css_dir') ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
-* __$css_dir__ (string) (requis) : répertoire de stockage des fichiers css (avec un / à la fin)
+* **$css_dir** (string) (requis) : répertoire de stockage des fichiers css (avec un / à la fin)
 
 *Note* : manque de précision
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->templateCss() ?>
 
-## function template
+template
+--------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->template() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->template() ?>
 
-__Exemple avancé__
+**Exemple avancé**
 
-Cet exemple affichera l'image contenue dans __/themes/mon-theme/img/image.png__ :
+Cet exemple affichera l'image contenue dans **/themes/mon-theme/img/image.png** :
+
+.. code:: html
 
     <img src="<?php $plxShow->template() ?>/img/image.png" />
 
-## function urlRewrite
+urlRewrite
+----------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->urlRewrite('$url') ?>
 
-__Détail des paramètres__
+**Détail des paramètres**
 
-* __$url__ (string) (requis) : url à réécrire
+* **$url** (string) (requis) : url à réécrire
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <a href="<?php $plxShow->urlRewrite('feed.php?rss') ?>">RSS</a>
 
-## function version
+version
+-------
 
-__Usage__
+**Usage**
+
+.. code:: php
 
     <?php $plxShow->version() ?>
 
-__Détails des paramètres__
+**Détails des paramètres**
 
 aucun
 
-__Exemple__
+**Exemple**
+
+.. code:: php
 
     <?php $plxShow->version() ?>
