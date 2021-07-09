@@ -5,7 +5,7 @@ Cette section vous accompagnera tout au long de votre utilisation de PluXml. Vou
 
 Disponible pour toute information complémentaire ou pour demander de l'aide, le forum est accessible à cette adresse :  `forum.pluxml.org <https://forum.pluxml.org>`_
 
-Il est possible de contribuer à PluXml de plusieurs manières, que vous soyez développeurs ou utilisateur. :doc:`Cliquer ici </docs/contribuer/contribuer>` pour en savoir plus.
+Il est possible de contribuer à PluXml de plusieurs manières, que vous soyez développeurs ou utilisateur. :doc:`Cliquer ici </docs/contribute>` pour en savoir plus.
 
 .. toctree::
    :maxdepth: 1
