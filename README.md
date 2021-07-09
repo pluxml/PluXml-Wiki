@@ -1,10 +1,11 @@
-# Wiki PluXml
-PluXml Documentation : https://wiki.pluxml.org
-Built with MkDocs.
+# PluXml Docs
+
+PluXml Documentation : https://docs.pluxml.org
+Built with [Sphinx](https://www.sphinx-doc.org).
 
 ## Installation
 
-MkDocs installation using pip (Python package manager) is recommended to have the lastest MkDocs version.
+Sphinx installation using pip (Python package manager) is recommended to have the lastest Sphinx version.
 
 [Pip installation](https://pip.readthedocs.io/en/stable/installing/) (python is required) :
 
@@ -13,22 +14,23 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python get-pip.py
 ```
 
-MkDocs installation :
+Sphinx and dependencies installation:
 
 ```
-pip install mkdocs
-mkdocs --version
+pip install -U sphinx
+pip install furo recommonmark
 ```
+
 Clone the PluXml-Wiki git repository :
 
 ```
 git clone https://github.com/pluxml/PluXml-Wiki.git
 ```
 
-Build and launch the MkDocs built-in web server :
+Build the project :
 
 ```
-cd PluXml-Wiki
-mkddoc build
-mkdocs serve
+make html
 ```
+
+Open the file `_build/html/index.html` in your browser to access the documentation.
