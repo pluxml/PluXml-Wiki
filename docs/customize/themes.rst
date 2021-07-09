@@ -26,7 +26,6 @@ Pour installer un thème : décompressez l’archive du thème dans le dossier t
 
 .. note::
 
-    Voir la section : `L’Arborescence de PluXml`_
+    Voir la section : :doc:`L’Arborescence de PluXml </docs/install/install>`
 
-    Voir la section : `Les Thèmes`_
-
+    Voir la section : :doc:`Les Thèmes </docs/develop/themes>`

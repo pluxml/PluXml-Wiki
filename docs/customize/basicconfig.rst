@@ -42,7 +42,7 @@ Fuseau horaire pour prendre en compte le décalage date/heure en fonction du pay
 
 .. note::
 
-    Voir la section : `Les Comptes utilisateurs`_
+    Voir la section : :doc:`Comptes utilisateurs <users>`
 
 **Modérer les articles pour les profils Rédacteur et Éditeur**
 
@@ -50,4 +50,4 @@ Activée, cette fonction permettra à l’administrateur du site de publier (ou 
 
 .. note::
 
-    Voir la section : `Les Comptes utilisateurs`_
+    Voir la section : :doc:`Comptes utilisateurs <users>`

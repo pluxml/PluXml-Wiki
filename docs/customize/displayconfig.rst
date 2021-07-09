@@ -11,7 +11,7 @@ Permet de définir un template spécifique à la page d'accueil de votre site.
 
 .. note::
 
-    Voir la section : `Les Templates`_
+    Voir la section : :doc:`Les Templates <templates>`
 
 **Tri des articles**
 
@@ -47,7 +47,7 @@ Par défaut le nom des catégories qui ne contiennent pas d'articles n'est pas a
 
 .. note::
 
-    Voir la section : `Les Catégories`_
+    Voir la section : :doc:`Les Catégories </docs/use/categories>`
 
 **Taille des images et des miniatures (largeur x hauteur)**
 
@@ -55,7 +55,7 @@ Lors de l'envoi d'images sur votre site à partir du gestionnaire de médias, un
 
 .. note::
 
-    Voir la section : `Gestionnaire de médias`_
+    Voir la section : :doc:`Gestionnaire de médias </docs/use/medias>`
 
 **Créer miniatures**
 
@@ -63,7 +63,7 @@ Si réglé sur *Oui*, le système créera automatiquement des miniatures lors de
 
 .. note::
 
-    Voir la section : `Gestionnaire de médias`_
+    Voir la section : :doc:`Gestionnaire de médias </docs/use/medias>`
 
 **Nombre d’articles/commentaires affichés sur les fils RSS**
 
@@ -83,4 +83,3 @@ Vous pouvez ici rajouter un texte, une signature, un lien ou un slogan, qui sera
 .. attention::
 
     N’oubliez pas de valider après les paramétrages de cette section en cliquant sur *Modifier les options d’affichage*.
-
