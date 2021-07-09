@@ -420,9 +420,13 @@ Ajouter un hook
 
 L’ajout d’un hook se fait par l’instruction
 
+.. code:: php
+
     $this->addHook
 
 Exemple :
+
+.. code:: php
 
     $this->addHook('AdminTopEndHead', 'AdminTopEndHead');
 
@@ -431,7 +435,7 @@ Exemple :
 
 Exemple :
 
-..code php
+::
 
     <?php
         class test extends plxPlugin {
@@ -449,7 +453,7 @@ Exemple :
 
 Dans cet exemple, le hook va ajouter dans le fichier *core/admin/top.php* le code suivant avant la balise \</head\>
 
-..code html
+::
 
     <script src="../../plugins/test/test.js"></script>
 

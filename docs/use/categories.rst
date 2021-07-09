@@ -62,7 +62,7 @@ Pour attribuer un template à une catégorie, cliquez sur le menu Catégorie, re
 
 .. note::
 
-    Voir la section : `Les Templates`_
+    Voir la section : :doc:`Les Templates </docs/customize/templates>`
 
 **Image d’accroche**
 

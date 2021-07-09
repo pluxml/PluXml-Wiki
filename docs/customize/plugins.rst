@@ -70,7 +70,7 @@ Dans le cas d'un plugin dont le nom n'a aucune couleur de fond, alors il sera ch
 
 .. note::
 
-    Voir la documentation du fichier :doc:`infos.xml <dev>`, qui permet de définir la variable *scope*.
+    Voir la documentation du fichier :doc:`infos.xml </docs/develop/plugins/infosfile>`, qui permet de définir la variable *scope*.
 
 Supprimer un plugin
 -------------------

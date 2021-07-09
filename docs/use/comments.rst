@@ -106,7 +106,7 @@ Pour un commentaire en ligne, toute modification apportée à l’un de ces cham
 
 .. note::
 
-    Voir la section : `Plugins`_
+    Voir la section : :doc:`Plugins </docs/customize/plugins>`
 
 Pour un commentaire hors ligne, la modification apportée sera enregistrée en cliquant sur le bouton *Mettre à jour*. Vous pouvez enregistrer et publier le commentaire en même temps en cliquant sur le bouton Valider la publication.
 
@@ -127,7 +127,7 @@ Pour répondre, saisir du texte dans le champ Informations puis cliquez sur le b
 
 .. note::
 
-    Voir la section : `Plugins`_
+    Voir la section : :doc:`Plugins </docs/customize/plugins>`
 
 Supprimer un commentaire
 ------------------------

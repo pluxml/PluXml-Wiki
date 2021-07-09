@@ -22,9 +22,9 @@ Ce sont les articles en attente de validation. Ils sont prêts pour être publi�
 
 .. note::
 
-    Voir la section : `Paramétrage de PluXml`_
+    Voir la section : :doc:`Paramétrage de PluXml </docs/customize/basicconfig>`
 
-    Voir la section : `Les Comptes utilisateurs`_
+    Voir la section : :doc:`Les Comptes utilisateurs </docs/customize/users>`
 
 **Filtrer la liste des articles**
 Vous pouvez filtrer les articles apparaissant dans la liste en fonction des rubriques pour faciliter ainsi la recherche et la gestion de vos articles.
@@ -54,7 +54,7 @@ Le bouton Aperçu permet de visualiser l'article en cours de rédaction coté vi
 
 .. note::
 
-    Voir la section : `Les Comptes utilisateurs`_
+    Voir la section : :doc:`Les Comptes utilisateurs </docs/customize/users>`
 
 **Bouton Enregistrer**
 
@@ -89,7 +89,7 @@ Si le chapô n’est pas renseigné, le contenu de l’article sera affiché en 
 
 .. note::
 
-    Voir la section : `Les Plugins`_
+    Voir la section : :doc:`Les Plugins </docs/customize/plugins>`
 
 **Lien de l’article**
 
@@ -112,7 +112,7 @@ Par défaut, c’est le nom de l’utilisateur en cours qui apparaît mais il es
 
 .. note::
 
-    Voir la section : `_Les Comptes utilisateurs`_
+    Voir la section : :doc:`Les Comptes utilisateurs </docs/customize/users>`
 
 **Date de publication**
 
@@ -122,7 +122,7 @@ Par défaut, les articles apparaîtront sur le site par ordre chronologique croi
 
 .. note::
 
-    Voir la section : `Paramétrage de PluXml`_
+    Voir la section : :doc:`Paramétrage de PluXml </docs/customize/basicconfig>`
 
 Il est possible de mettre une date future afin de planifier la date de publication de l'article. Tant que la date n'est pas atteinte, l'article n'est pas visible sur la partie publique du site.
 
@@ -146,7 +146,7 @@ Ce champ permet de créer une nouvelle catégorie sans passer par l'écran de ge
 
 .. note::
 
-    Voir la section : `Les Catégories`_
+    Voir la section : :doc:`Les Catégories <categories>`
 
 **Mots clés**
 
@@ -158,9 +158,9 @@ Vous pouvez autoriser le système de commentaires pour l'article. Pour qu'il soi
 
 .. note::
 
-    Voir la section : `Paramétrage de PluXml`_
+    Voir la section : :doc:`Paramétrage de PluXml </docs/customize/basicconfig>`
 
-    Voir la section : `Les Commentaires`_
+    Voir la section : :doc:`Les Commentaires <comments>`
 
 **Url**
 
@@ -172,7 +172,7 @@ L'affichage du contenu de tous les articles coté visiteur se base sur le fichie
 
 .. note::
 
-    Voir la section : `Les Templates`_
+    Voir la section : :doc:`Les Templates </docs/customize/templates>`
 
 **Contenu balise title (option)**
 
@@ -192,6 +192,6 @@ Il s’agit de deux liens pour gérer les commentaires ou rédiger un commentair
 
 .. note::
 
-    Voir la section : `Les Commentaires`_
+    Voir la section : :doc:`Les Commentaires <comments>`
 
 En dessous du lien *Gérer les commentaires* sont affichés les nombres de commentaires en ligne et hors ligne rattaché à l’article.

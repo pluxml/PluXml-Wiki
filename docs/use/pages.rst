@@ -59,7 +59,7 @@ Vous avez la possibilité de choisir une mise en page pour votre page statique (
 
 .. note::
 
-    Voir la section : `Les Templates`_
+    Voir la section : :doc:`Les Templates </docs/customize/templates>`
 
 Si vous n’êtes pas familier avec le langage HTML, il existe plusieurs plugins qui vous permettront d’enrichir ces formulaires avec un éditeur WYSIWYG.
 
@@ -69,7 +69,7 @@ PluXml vous offre la possibilité de choisir vos balises title et méta pour cha
 
 .. note::
 
-    Voir la section : `Paramétrage de PluXml`_
+    Voir la section : :doc:`Paramétrage de PluXml </docs/customize/basicconfig>`
 
 Pour éditer vos balises title et méta pour chacune de vos pages, éditez la page voulue, puis saisissez les champs nommés Contenu balise title (option), Contenu de la balise meta « description » pour cette page statique (option) et Contenu de la balise meta « keywords » pour cette page statique (option). Pour finir, cliquez sur le bouton Enregistrer cette page statique pour valider vos
 changements.
@@ -84,4 +84,3 @@ Supprimer une page statique
 ---------------------------
 
 Pour supprimer une page statique, cliquez sur le menu Pages statiques, repérez la colonne nommée Identifiant, et cochez la case sur la ligne ou les lignes des pages correspondantes à celles que vous souhaitez supprimer. Pour valider la suppression, cliquez sur le bouton Modifier la liste des pages statiques.
-
