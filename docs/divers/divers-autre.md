@@ -10,6 +10,5 @@ Liste de site utilisant PluXml.
 
 Pour inscrire votre site sur cette page, celui-ci doit entièrement être dédié à PluXml.
 
-* [NextuM](http://nextum.fr/)
-* [Pluxopolis](http://pluxopolis.net/)
-* [Pluxml pour Les Nuls](http://tuto-pluxml.reseauk.info/)
+* [Pluxopolis](https://ressources.pluxopolis.net)
+* [Pluxml pour Les Nuls](https://tuto-pluxml.reseauk.info/allarchive)
