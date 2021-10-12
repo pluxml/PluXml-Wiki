@@ -13,6 +13,5 @@ Sites dédiés à PluXml
 
 Pour inscrire votre site sur cette page, celui-ci doit entièrement être dédié à PluXml.
 
-- `NextuM <http://nextum.fr/>`_
-- `Pluxopolis <http://pluxopolis.net/>`_
-- `Pluxml pour Les Nuls <http://tuto-pluxml.reseauk.info/>`_
+- `Pluxopolis <https://ressources.pluxopolis.net/>`_
+- `Pluxml pour Les Nuls <https://tuto-pluxml.reseauk.info/allarchie>`_
