@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) GNU Public Licence v3
+# This file is distributed under the same license as the PluXml package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PluXml \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-12 16:53+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: ../../index.rst:2
+msgid "Documentation de PluXml"
+msgstr ""
+
+#: ../../index.rst:4
+msgid ""
+"Cette section vous accompagnera tout au long de votre utilisation de "
+"PluXml. Vous y trouverez le guide d'utilisateur, le guide développeur et "
+"un ensemble d'aides et d'astuces."
+msgstr ""
+
+#: ../../index.rst:6
+msgid ""
+"Disponible pour toute information complémentaire ou pour demander de "
+"l'aide, le forum est accessible à cette adresse :  `forum.pluxml.org "
+"<https://forum.pluxml.org>`_"
+msgstr ""
+
+#: ../../index.rst:8
+msgid ""
+"Il est possible de contribuer à PluXml de plusieurs manières, que vous "
+"soyez développeurs ou utilisateur. :doc:`Cliquer ici </docs/contribute>` "
+"pour en savoir plus."
+msgstr ""
+

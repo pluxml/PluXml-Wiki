@@ -1,0 +1,23 @@
+[main]
+host = https://www.transifex.com
+
+[pluxml-documentation.sphinx-po]
+file_filter = locale/<lang>/LC_MESSAGES
+minimum_perc = 0
+source_file = locale/en/LC_MESSAGES/sphinx.po
+source_lang = fr
+type = PO
+
+[pluxml-documentation.index-po]
+file_filter = locale/<lang>/LC_MESSAGES
+minimum_perc = 0
+source_file = locale/en/LC_MESSAGES/index.po
+source_lang = fr
+type = PO
+
+[pluxml-documentation.docs-po]
+file_filter = locale/<lang>/LC_MESSAGES
+minimum_perc = 0
+source_file = locale/en/LC_MESSAGES/docs.po
+source_lang = fr
+type = PO
