@@ -17,7 +17,7 @@ Certaines fonctions possèdent des variables prédéfinies, l'usage général de
     <?php $plxShow->nomFonction('$variable') ?>
 
 
-## fuction archList
+## function archList
 
 __Usage__
 
@@ -40,7 +40,7 @@ __Exemples__
     <?php $plxShow->archList() ?>
     <?php $plxShow->archList('<li id="#archives_id"><a class="#archives_status" href="#archives_url" title="#archives_name">#archives_name (#archives_nbart)</a></li>') ?>
 
-## fuction artAuthorEmail
+## function artAuthorEmail
 
 __Usage__
 
@@ -54,7 +54,7 @@ __Exemple__
 
     <?php $plxShow->artAuthorEmail() ?>
 
-## fuction artAuthorInfos
+## function artAuthorInfos
 
 __Usage__
 
@@ -70,7 +70,7 @@ __Exemples__
     <?php $plxShow->artAuthorInfos() ?>
     <?php $plxShow->artAuthorInfos('<div>#art_authorinfos</div>') ?>
 
-## fuction artAuthor
+## function artAuthor
 
 __Usage__
 
@@ -86,7 +86,7 @@ __Exemples__
     <?php $plxShow->artAuthor(true) ?>
     <?php $plxShow->artAuthor(false) ?>
 
-## fuction artCatId
+## function artCatId
 
 __Usage__
 
@@ -107,7 +107,7 @@ __Exemple avancé__
         echo $var;
     ?>
 
-## fuction artCat
+## function artCat
 
 __Usage__
 
@@ -121,7 +121,7 @@ __Exemple__
 
     <?php $plxShow->artCat('|') ?>
 
-## fuction artChapo
+## function artChapo
 
 __Usage__
 
@@ -139,7 +139,7 @@ __Exemples__
     <?php $plxShow->artChapo('#art_title',true) ?>
     <?php $plxShow->artChapo('Continuer la lecture',true) ?>
 
-## fuction artContent
+## function artContent
 
 __Usage__
 
@@ -155,7 +155,7 @@ __Exemples__
     <?php $plxShow->artContent(true) ?>
     <?php $plxShow->artContent(false) ?>
 
-## fuction artDate
+## function artDate
 
 __Usage__
 
@@ -186,7 +186,7 @@ Formatage avancé avec des caractères libres :
     <?php $plxShow->artDate('#hour:#minute') ?>
     <?php $plxShow->artDate('#num_day/#num_month/#num_year(4)') ?>
 
-## fuction  artFeed
+## function  artFeed
 
 __Usage__
 
@@ -212,7 +212,7 @@ Flux RSS des articles de la catégorie 1 :
 
 *Note* : les guillemets simples vides ('') sont obligatoires quand on précise une catégorie, à cause du paramètre obsolete __$type__
 
-## fuction artId
+## function artId
 
 __Usage__
 
@@ -233,7 +233,7 @@ __Exemple avancé__
         echo $var;
     ?>
 
-## fuction artNbCom
+## function artNbCom
 
 __Usage__
 
@@ -251,7 +251,7 @@ __Exemples__
     <?php $plxShow->artNbCom('#nb commentaire','#nb commentaire','#nb commentaires') ?>
     <?php $plxShow->artNbCom('#nb','#nb','#nb') ?>
 
-## fuction artTags
+## function artTags
 
 __Usage__
 
