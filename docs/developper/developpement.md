@@ -21,6 +21,11 @@ Assurez-vous que le code ci-dessous existe entre les balises \<head\> ... \</hea
 
 
     <?php $plxShow->templaceCss(); ?>
+    
+Si vous souhaiter stocker ce fichhier .css associé à votre template dans le repertoire css du thème Il faut l'indiquer en ajoutant le chemin du dossier dans la fonction. 
+
+    <?php $plxShow->templaceCss("css/"); ?>
+    
 
 # Créer un thème
 
