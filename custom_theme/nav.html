@@ -1,9 +1,0 @@
-{%- if nav|length>1 %}
-<ul class="menu vertical expanded">
-  {%- for nav_item in nav %}
-    <li class="">
-      <a class="{% if nav_item.active %}active{% endif %}" href="{{ nav_item.url|url }}">{{ nav_item.title }}</a>
-    </li>
-  {%- endfor %}
-</ul>
-{%- endif %}

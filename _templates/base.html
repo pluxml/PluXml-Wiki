@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js"{% if language is not none %} lang="{{ language }}"{% endif %}>
+  <head>
+    {%- block site_meta -%}
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark">
+
+    {%- if metatags %}{{ metatags }}{% endif -%}
+
+    {%- block linktags %}
+        {%- if hasdoc('about') -%}
+          <link rel="author" title="{{ _('About these documents') }}" href="{{ pathto('about') }}" />
+        {%- endif -%}
+        {%- if hasdoc('genindex') -%}
+          <link rel="index" title="{{ _('Index') }}" href="{{ pathto('genindex') }}" />
+        {%- endif -%}
+        {%- if hasdoc('search') -%}
+          <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
+        {%- endif -%}
+        {%- if hasdoc('copyright') -%}
+          <link rel="copyright" title="{{ _('Copyright') }}" href="{{ pathto('copyright') }}" />
+        {%- endif -%}
+        {%- if next -%}
+          <link rel="next" title="{{ next.title|striptags|e }}" href="{{ next.link|e }}" />
+        {%- endif -%}
+        {%- if prev -%}
+          <link rel="prev" title="{{ prev.title|striptags|e }}" href="{{ prev.link|e }}" />
+        {%- endif -%}
+    {%- endblock linktags %}
+
+    {# Favicon #}
+    <link rel="apple-touch-icon" sizes="57x57" href="https://medias.pluxml.org/favicon/green//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://medias.pluxml.org/favicon/green//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://medias.pluxml.org/favicon/green//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://medias.pluxml.org/favicon/green//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://medias.pluxml.org/favicon/green//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://medias.pluxml.org/favicon/green//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://medias.pluxml.org/favicon/green//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://medias.pluxml.org/favicon/green//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://medias.pluxml.org/favicon/green//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="https://medias.pluxml.org/favicon/green//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://medias.pluxml.org/favicon/green//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://medias.pluxml.org/favicon/green//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://medias.pluxml.org/favicon/green//favicon-16x16.png">
+    <link rel="manifest" href="https://medias.pluxml.org/favicon/green/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://medias.pluxml.org/favicon/green/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    {#- Generator banner -#}
+    <meta name="generator" content="sphinx-{{ sphinx_version }}, furo {{ furo_version }}"/>
+
+    {%- endblock site_meta -%}
+
+    {#- Site title -#}
+    {%- block htmltitle -%}
+      {% if not docstitle %}
+        <title>{{ title|striptags|e }}</title>
+      {% elif pagename == master_doc %}
+        <title>{{ docstitle|striptags|e }}</title>
+      {% else %}
+        <title>{{ title|striptags|e }} - {{ docstitle|striptags|e }}</title>
+      {% endif %}
+    {%- endblock -%}
+
+    {%- block styles -%}
+
+    {# Custom stylesheets #}
+    {%- block regular_styles -%}
+    {%- for css in css_files -%}
+      {% if css|attr("filename") -%}
+        {{ css_tag(css) }}
+      {%- else -%}
+        <link rel="stylesheet" href="{{ pathto(css, 1)|e }}" type="text/css" />
+      {%- endif %}
+    {% endfor -%}
+    {%- endblock regular_styles -%}
+
+    {#- Theme-related stylesheets -#}
+    {%- block theme_styles %}
+    {% include "partials/_head_css_variables.html" with context %}
+    {%- endblock -%}
+
+    {%- block extra_styles %}
+    {%- endblock -%}
+
+    {%- endblock styles -%}
+
+    {#- Custom front matter #}
+    {%- block extrahead -%}{%- endblock -%}
+  </head>
+  <body>
+    <div id="plxnav" data-title="Docs" data-logo="green" data-link="docs" style="height: 41px; background-color: #333; border-bottom: 2px solid #cdcdcd;"></div>
+    <script src="https://medias.pluxml.org/navigation/nav.js"></script>
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    {% block body %}{% endblock %}
+
+    {%- block scripts -%}
+
+    {# Custom JS #}
+    {%- block regular_scripts -%}
+    {% for path in script_files -%}
+      {{ js_tag(path) }}
+    {% endfor -%}
+    {%- endblock regular_scripts -%}
+
+    {# Theme-related JavaScript code #}
+    {%- block theme_scripts -%}
+    {%- endblock -%}
+
+    {%- endblock scripts -%}
+  </body>
+</html>
