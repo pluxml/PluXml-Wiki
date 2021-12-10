@@ -1850,7 +1850,7 @@ tagList
 
 .. code:: php
 
-    <?php $plxShow->tagList('$format',$max) ?>
+    <?php $plxShow->tagList('$format', '$max', '$order') ?>
 
 **Détails des paramètres**
 
@@ -1859,7 +1859,8 @@ tagList
     *  tag_url : URL du tag
     *  tag_name : nom du tag
     *  nb_art : nombre d'article dans ce tag
-* **$format** (integer) (optionnel) : nombre max de tags à afficher
+* **$max** (integer) (optionnel) : nombre max de tags à afficher
+* **$order** (string) (optionnel) : tri des tags (random, alpha, '' = tri par popularité)
 
 **Exemples**
 
@@ -1871,7 +1872,7 @@ tagList
 .. code:: php
 
     <?php $plxShow->tagList(
-      '<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name (#nb_art)</a></li>,3') ?>
+      '<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>', '10', 'alpha') ?>
 
 tagName
 -------

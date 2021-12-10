@@ -23,6 +23,12 @@ thème de votre PluXml et porter le même nom que le template, mais avec l'exten
 
 Assurez-vous que le code ci-dessous existe entre les balises ``<head> ... </head>`` de votre fichier ``header.php``. C'est cette instruction qui permet de charger automatiquement le fichier .css associé à un template, lorsque celui-ci est utilisé.
 
-.. code:: none
+.. code:: php
 
     <?php $plxShow->templaceCss(); ?>
+
+Si vous souhaiter stocker ce fichier .css, associé à votre template, dans le repertoire /css du thème Il faut l'indiquer en ajoutant le chemin du dossier dans la fonction.
+
+.. code:: php
+
+    <?php $plxShow->templaceCss("css/"); ?>
