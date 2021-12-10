@@ -1,5 +1,5 @@
-plxShow
-=======
+Fonctions plxShow
+=================
 
 Toutes les fonctions offertes par PluXml pour personnaliser votre thème.
 
@@ -1299,25 +1299,29 @@ Affichage basique :
 
 .. code:: php
 
-    <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>') ?>
+    <?php $plxShow->lastComList(
+      '<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>') ?>
 
 Afficher seulement les 3 derniers commentaires :
 
 .. code:: php
 
-    <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3) ?>
+    <?php $plxShow->lastComList(
+      '<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3) ?>
 
 Afficher seulement les 3 derniers commentaires de l'article ayant l'ID 9 :
 
 .. code:: php
 
-    <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,9) ?>
+    <?php $plxShow->lastComList(
+      '<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,9) ?>
 
 Afficher seulement les 3 derniers commentaires de la catégorie 6 :
 
 .. code:: php
 
-    <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,'',6) ?>
+    <?php $plxShow->lastComList(
+      '<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,'',6) ?>
 
 *Note* : notez les guillements simples '' à la place de **$art_id**
 
@@ -1325,7 +1329,8 @@ Afficher seulement les 3 derniers commentaires des catégories 6 et 8 :
 
 .. code:: php
 
-    <?php $plxShow->lastComList('<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,'',6|8) ?>
+    <?php $plxShow->lastComList(
+      '<li><a href="#com_url">#com_author a dit :</a><p>#com_content(50)</p></li>',3,'',6|8) ?>
 
 mainTitle
 ---------
@@ -1860,11 +1865,13 @@ tagList
 
 .. code:: php
 
-    <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>') ?>
+    <?php $plxShow->tagList(
+      '<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name</a></li>') ?>
 
 .. code:: php
 
-    <?php $plxShow->tagList('<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name (#nb_art)</a></li>,3') ?>
+    <?php $plxShow->tagList(
+      '<li><a class="#tag_status" href="#tag_url" title="#tag_name">#tag_name (#nb_art)</a></li>,3') ?>
 
 tagName
 -------
