@@ -61,8 +61,9 @@ exclude_patterns = ['_build', 'README.md']
 #
 html_theme = 'furo'
 
+# Display a black header with the announcement text configured
 html_theme_options = {
-    "announcement": 'PluXml',
+    "announcement": '',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
