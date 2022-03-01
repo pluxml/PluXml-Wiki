@@ -1,6 +1,11 @@
 Faire fonctionner PluXml sur un hébergement mutualisé
 =====================================================
 
+Installation simplifiée
+-----------------------
+
+* alwaysdata (gratuit) : installation 1-click depuis la `Marketplace <https://www.alwaysdata.com/fr/marketplace/pluxml/>`_
+
 Modifier la version de PHP
 --------------------------
 
